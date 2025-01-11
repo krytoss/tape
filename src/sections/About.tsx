@@ -1,14 +1,15 @@
 import Grid from "../components/Layout/Grid"
 import Section from "../components/Layout/Section"
+import Title from "../components/Layout/Title"
 
 const About: React.FC = () => {
 	return (
 		<Section>
 			<Grid cols={2} className="h-full">
 				<div className="py-10 pl-40 pr-10 text-center justify-center items-center flex width-full">
-					<h2 className="text-8xl uppercase text-white">
+					<Title>
 						O nás
-					</h2>
+					</Title>
 				</div>
 				<div className="py-10 pl-10 pr-40 justify-center items-center flex bg-gray-300 text-slate-700">
 					<p>

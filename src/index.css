@@ -19,12 +19,20 @@
   --tape-color: #1e4487;
 }
 
+html {
+	scroll-snap-type: y mandatory;
+}
+
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+section {
+	scroll-snap-align: start;
 }
 
 h1 {
