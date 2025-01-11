@@ -1,52 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-const AnimatedLogo = () => {
+const AnimatedLogo: React.FC = () => {
   const svgRef = useRef<SVGSVGElement>(null);
-
-  useEffect(() => {
-    const tl = gsap.timeline();
-
-	tl.fromTo(
-		"#background",
-		{
-			opacity: 0
-		},
-		{
-			opacity: 1,
-			duration: .5,
-			delay: 0,
-			ease: "power2.out",
-		}
-	)
-
-    // Animácia modrého pozadia (rotácia okolo stredu)
-    tl.fromTo(
-      "#background",
-      {
-        scale: 3,
-        rotation: 0,
-        transformOrigin: "center", // Dôležité: nastavíme stred ako bod rotácie
-      },
-      {
-        scale: 1,
-        rotation: 360,
-        duration: 2,
-		delay: 0,
-        ease: "power2.inOut",
-      }
-    );
-
-    // Skrytie textu na začiatku
-    gsap.set("#text", { opacity: 0 });
-
-    // Zobrazenie textu
-    tl.to("#text", {
-      opacity: 1,
-      duration: 1,
-      delay: -2.2
-    });
-  }, []);
 
   return (
     <div
@@ -61,6 +17,7 @@ const AnimatedLogo = () => {
       }}
     >
       <svg
+		id="logo"
         ref={svgRef}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="-100 -100 1093 1093"
