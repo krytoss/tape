@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { gsap } from "gsap";
-import './App.css'
 import AnimatedLogo from './components/AnimatedLogo'
 import DotMenu from './components/DotMenu'
+import Home from './sections/Home';
 
 function App() {
 
@@ -39,6 +39,8 @@ function App() {
 		);
 	
 		gsap.set("#text", { opacity: 0 });
+		gsap.set("#home-title", { opacity: 0 });
+		gsap.set("#logo", { scale: 1 })
 
 		tl.to("#text", {
 		  opacity: 1,
@@ -56,9 +58,25 @@ function App() {
 			  opacity: 1,
 			  duration: 0.5,
 			  stagger: 0.05,
+			  delay: -0.2,
 			  ease: "power2.out",
 			}
 		);
+
+		tl.to("#logo", {
+			scale: 0.5,
+			duration: 0.8,
+			delay: -1.2,
+			top: 0,
+			ease: "power2.out",
+		})
+
+		tl.to("#home-title", {
+			opacity: 1,
+			duration: 0.8,
+			delay: -0.8,
+			ease: "power2.out",
+		})
 
 		/* tl.eventCallback("onComplete", () => {
 			gsap.to("#background, #text", {
@@ -75,6 +93,7 @@ function App() {
   return (
 	<>
 		<AnimatedLogo />
+		<Home />
 		<DotMenu />
 	</>
   )

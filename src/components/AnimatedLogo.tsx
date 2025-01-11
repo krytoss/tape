@@ -7,25 +7,20 @@ const AnimatedLogo: React.FC = () => {
   return (
     <div
       style={{
-        width: "100vw",
-        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        overflow: "hidden",
+        overflow: "visible",
         background: "transparent",
       }}
+	  className="min-w-screen min-h-screen absolute"
     >
       <svg
 		id="logo"
         ref={svgRef}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="-100 -100 1093 1093"
-        style={{
-          width: "100vw",
-          height: "100vh",
-		  overflow: "visible",
-        }}
+		className="w-screen h-screen overflow-visible"
       >
         {/* Modré pozadie */}
         <path
