@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 import { gsap } from "gsap";
-import AnimatedLogo from './components/AnimatedLogo'
 import DotMenu from './components/DotMenu'
 import Home from './sections/Home';
-import TopMenu from './components/Menu/TopMenu';
 import About from './sections/About';
 
 function App() {

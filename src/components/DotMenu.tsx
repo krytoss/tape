@@ -1,10 +1,6 @@
-type Props = {
-	className?: string,
-}
+const DotMenu: React.FC = () => {
 
-const DotMenu: React.FC<Props> = ({ className }) => {
-
-	const menuLinks = {
+	const menuLinks: Record<string, string> = {
 		"home": "Home",
 		"about": "O nás",
 		"team": "Team",
