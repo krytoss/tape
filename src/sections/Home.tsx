@@ -7,7 +7,7 @@ const Home: React.FC = () => {
 		<Section>
 			<AnimatedLogo />
 			<h2 id="home-title" className="absolute bottom-40 left-1/2 transform -translate-x-1/2 text-white text-3xl">
-				Spoľahlivá identifikácia pre všetkých.
+				Spoľahlivá identifikácia pre všetkých
 			</h2>
 			<ArrowDown />
 		</Section>

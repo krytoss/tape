@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import AnimatedLogo from './components/AnimatedLogo'
 import DotMenu from './components/DotMenu'
 import Home from './sections/Home';
+import TopMenu from './components/Menu/TopMenu';
+import About from './sections/About';
 
 function App() {
 
@@ -41,6 +43,7 @@ function App() {
 		gsap.set("#text", { opacity: 0 });
 		gsap.set("#home-title", { opacity: 0 });
 		gsap.set("#logo", { scale: 1 })
+		gsap.set("body", { overflow: "hidden" });
 
 		tl.to("#text", {
 		  opacity: 1,
@@ -78,6 +81,10 @@ function App() {
 			ease: "power2.out",
 		})
 
+		tl.eventCallback("onComplete", () => {
+			gsap.set("body", { overflow: "visible" });
+		})
+
 		/* tl.eventCallback("onComplete", () => {
 			gsap.to("#background, #text", {
 			  y: "+=10",
@@ -92,8 +99,8 @@ function App() {
 
   return (
 	<>
-		<AnimatedLogo />
 		<Home />
+		<About />
 		<DotMenu />
 	</>
   )
