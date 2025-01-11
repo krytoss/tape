@@ -7,7 +7,7 @@ type Props = {
 
 const Grid: React.FC<Props> = ({ children, cols, gap, className }) => {
 	return (
-		<div className={`grid grid-cols-${cols} gap-${gap ?? "4"} ${className}`}>
+		<div className={`grid grid-cols-${cols} gap-${gap ?? "4"} ${className ?? ""}`}>
 			{children}
 		</div>
 	)

@@ -15,6 +15,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --tape-color: #1e4487;
 }
 
 body {
@@ -60,4 +62,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.text-tape {
+	color: var(--tape-color)
 }

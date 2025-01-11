@@ -1,22 +1,28 @@
+import Grid from "../components/Layout/Grid"
 import Section from "../components/Layout/Section"
 
 const About: React.FC = () => {
 	return (
 		<Section>
-			<h2 className="text-3xl text-white">
-				O nás
-			</h2>
-			<p className="text-white">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae nisl ac libero
-				ultrices ultricies. Nulla facilisi. Nullam nec purus et odio tincidunt
-				ultricies. Sed euismod, nisl nec interdum ultricies, ipsum nunc facilisis
-				justo, ut ultricies enim nunc nec libero. Ut nec nunc nec libero ultricies
-				ultricies. Nam nec libero nec libero ultricies ultricies. Nulla facilisi.
-				Nullam nec purus et odio tincidunt ultricies. Sed euismod, nisl nec interdum
-				ultricies, ipsum nunc facilisis justo, ut ultricies enim nunc nec libero. Ut
-				nec nunc nec libero ultricies ultricies. Nam nec libero nec libero ultricies
-				ultricies.
-			</p>
+			<Grid cols={2} className="h-full">
+				<div className="py-10 pl-40 pr-10 text-center justify-center items-center flex width-full">
+					<h2 className="text-8xl uppercase text-white">
+						O nás
+					</h2>
+				</div>
+				<div className="py-10 pl-10 pr-40 justify-center items-center flex bg-gray-300 text-slate-700">
+					<p>
+						<span className="text-2xl block mb-10">
+							Spoločnosť <span className="text-3xl text-tape font-bold mx-1">TAPE</span>, s.r.o. pôsobí na trhu identifikácie osôb 20 rokov v rôznych formách.
+							<br />Momentálne je čas vydať sa opäť svojou cestou.
+						</span>
+						Venujeme sa zvyšovaniu bezpečnosti v nemocniciach.<br />
+						Sme dodávateľom identifikačných náramkov pre pacientov, etikiet a ďalších produktov.<br />
+						Ďalšou oblasťou je identifikácia zamestnancov, návštevníkov koncertov, festivalov, konferencií a rôznych podujatí.<br />
+						Dodávame plastové karty, šnúrky na krk, puzdra, látkové a silikónové náramky.
+					</p>
+				</div>
+			</Grid>
 		</Section>
 	)
 }
