@@ -6,7 +6,7 @@ type Props = {
 const Section: React.FC<Props> = ({ className, children }) => {
 
 	return (
-		<section className={`h-screen w-screen ${className}`}>
+		<section className={`h-screen w-screen overflow-hidden relative ${className}`}>
 			{children}
 		</section>
 	)
