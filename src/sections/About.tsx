@@ -1,4 +1,4 @@
-import Section from "../components/Section"
+import Section from "../components/Layout/Section"
 
 const About: React.FC = () => {
 	return (

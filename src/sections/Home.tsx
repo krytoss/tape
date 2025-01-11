@@ -1,6 +1,6 @@
 import AnimatedLogo from "../components/AnimatedLogo"
 import ArrowDown from "../components/ArrowDown"
-import Section from "../components/Section"
+import Section from "../components/Layout/Section"
 
 const Home: React.FC = () => {
 	return (
