@@ -7,7 +7,7 @@ const About: React.FC = () => {
 		<Section>
 			<Grid cols={2} className="h-full">
 				<div className="py-10 pl-40 pr-10 text-center justify-center items-center flex width-full">
-					<Title>
+					<Title color="light">
 						O nás
 					</Title>
 				</div>

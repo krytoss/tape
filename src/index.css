@@ -75,3 +75,7 @@ button:focus-visible {
 .text-tape {
 	color: var(--tape-color)
 }
+
+.bg-tape {
+	background-color: var(--tape-color)
+}
