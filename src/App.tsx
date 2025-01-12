@@ -4,6 +4,9 @@ import DotMenu from './components/DotMenu'
 import Home from './sections/Home';
 import About from './sections/About';
 import Team from './sections/Team';
+import { Observer } from 'gsap/all';
+
+gsap.registerPlugin(Observer)
 
 function App() {
 
@@ -83,6 +86,63 @@ function App() {
 		tl.eventCallback("onComplete", () => {
 			gsap.set("body", { overflow: "visible" });
 		})
+
+		// ODTIALTO
+
+		/* let sections = document.querySelectorAll("section"),
+		outerWrappers = gsap.utils.toArray(".outer"),
+		innerWrappers = gsap.utils.toArray(".inner"),
+		currentIndex = -1,
+		wrap = gsap.utils.wrap(0, sections.length),
+		animating;
+
+		gsap.set(outerWrappers, { yPercent: 100 });
+		gsap.set(innerWrappers, { yPercent: -100 });
+
+		function gotoSection(index, direction) {
+			index = wrap(index);
+			if (direction !== 0) {
+				animating = true;
+				let fromTop = direction === -1,
+					dFactor = fromTop ? -1 : 1,
+					tl2 = gsap.timeline({
+						defaults: { duration: 1.25, ease: "power1.inOut" },
+						onComplete: () => animating = false
+					});
+				if (currentIndex >= 0) {
+					console.log("current index", currentIndex)
+					gsap.set(sections[currentIndex], { zIndex: 0 });
+					//tl2.set(sections[currentIndex], { autoAlpha: 0 });
+				}
+				gsap.set(sections[index], { autoAlpha: 1, zIndex: 1 });
+				tl2.fromTo([outerWrappers[index], innerWrappers[index]], { 
+					yPercent: i => i ? -100 * dFactor : 100 * dFactor
+				}, { 
+					yPercent: 0 
+				}, 0).set(sections[currentIndex], { autoAlpha: 0 });
+			} else {
+				console.log("som tu?")
+				gsap.set(sections[index], { zIndex: 1, autoAlpha: 1 });
+				gsap.set(sections[currentIndex], { zIndex: 0, autoAlpha: 0 });
+				gsap.set(outerWrappers, { yPercent: 0 });
+				gsap.set(innerWrappers, { yPercent: 0 });
+			}
+		  
+			currentIndex = index;
+		  }
+
+		Observer.create({
+			type: "wheel,touch,pointer",
+			wheelSpeed: -1,
+			onDown: () => !animating && gotoSection(currentIndex - 1, -1),
+			onUp: () => !animating && gotoSection(currentIndex + 1, 1),
+			tolerance: 10,
+			preventDefault: true
+		  });
+
+		  gotoSection(0, 0) */
+
+		// POTIALTO + zmazat inner a outer v section.tsx
 
 		/* tl.eventCallback("onComplete", () => {
 			gsap.to("#background, #text", {
