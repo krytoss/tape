@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import DotMenu from './components/DotMenu'
 import Home from './sections/Home';
 import About from './sections/About';
+import Team from './sections/Team';
 
 function App() {
 
@@ -99,6 +100,7 @@ function App() {
 	<>
 		<Home />
 		<About />
+		<Team />
 		<DotMenu />
 	</>
   )
