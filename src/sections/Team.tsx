@@ -86,13 +86,13 @@ const Team: React.FC = () => {
 				<div className="col-span-2 py-10 pl-10 pr-40 justify-center items-center flex text-slate-700">
 					<Grid cols={3}>
 						<div className="p-10">
-							<PersonCard img="./person.png" name="Tatiana Reindlová" position="konateľ, strategický manažér" />
+							<PersonCard img="./team/tatiana.png" name="Tatiana Reindlová" position="konateľ, strategický manažér" />
 						</div>
 						<div className="p-10">
-							<PersonCard img="./person.png" name="Peter Reindl" position="konateľ, obchodný manažér" />
+							<PersonCard img="./team/peter.png" name="Peter Reindl" position="konateľ, obchodný manažér" />
 						</div>
 						<div className="p-10">
-							<PersonCard img="./person.png" name="Monika Šafárová" position="koordinátor predaja" />
+							<PersonCard img="./team/monika.png" name="Monika Šafárová" position="koordinátor predaja" />
 						</div>
 					</Grid>
 				</div>
