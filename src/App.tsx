@@ -5,6 +5,7 @@ import Home from './sections/Home';
 import About from './sections/About';
 import Team from './sections/Team';
 import { Observer } from 'gsap/all';
+import Offers from './sections/Offers';
 
 gsap.registerPlugin(Observer)
 
@@ -159,6 +160,7 @@ function App() {
   return (
 	<>
 		<Home />
+		<Offers />
 		<About />
 		<Team />
 		<DotMenu />
