@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 	return (
 		<Section>
 			<AnimatedLogo />
-			<h2 id="home-title" className="absolute bottom-40 left-1/2 transform -translate-x-1/2 text-white text-3xl">
+			<h2 id="home-title" className="absolute bottom-40 left-1/2 transform -translate-x-1/2 text-white text-3xl text-center">
 				Spoľahlivá identifikácia pre všetkých
 			</h2>
 			<ArrowDown />
