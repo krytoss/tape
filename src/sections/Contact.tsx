@@ -1,6 +1,7 @@
 import Grid from "../components/Layout/Grid"
 import Section from "../components/Layout/Section"
 import Title from "../components/Layout/Title"
+import Map from "../components/Map/Map"
 
 const Contact: React.FC = () => {
 	return (
@@ -11,22 +12,8 @@ const Contact: React.FC = () => {
 						Kontakt
 					</Title>
 				</div>
-				<div className="py-10 pl-10 pr-40 justify-center items-center flex text-slate-700">
-					<p>
-						<span className="text-2xl block mb-10">
-							Telefón: +421 123 456 789
-						</span>
-						<span className="text-2xl block mb-10">
-							Email:
-							<a href="mailto:
-							">
-								{" "}
-							</a>
-						</span>
-						<span className="text-2xl block mb-10">
-							Adresa:
-						</span>
-					</p>
+				<div className="p-0 justify-center items-center flex text-slate-700">
+					<Map />
 				</div>
 			</Grid>
 		</Section>
