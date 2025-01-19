@@ -4,7 +4,7 @@ import Section from "../components/Layout/Section"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Title from "../components/Layout/Title"
 import Cover from "../components/Layout/Cover"
-import Link from "../components/Link"
+import Link from "../components/Navigation/Link"
 import { useEffect } from "react"
 
 gsap.registerPlugin(ScrollTrigger)

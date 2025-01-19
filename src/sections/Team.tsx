@@ -4,7 +4,7 @@ import Section from "../components/Layout/Section"
 import Title from "../components/Layout/Title"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import PersonCard from "../components/PersonCard"
+import PersonCard from "../components/Team/PersonCard"
 
 gsap.registerPlugin(ScrollTrigger)
 
