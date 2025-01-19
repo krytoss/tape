@@ -14,8 +14,10 @@ const Section: React.FC<Props> = ({ className, children }) => {
 					</div>
 				</div>
 			</div>
-		</section> */
-		<section className={`h-screen w-screen relative overflow-hidden shadow-[0_-5px_20px_0px_rgba(0,0,0,0.3)] ${className}`}>
+		</section>
+		 shadow-[0_-5px_20px_0px_rgba(0,0,0,0.3)]
+		*/
+		<section className={`h-screen w-screen relative overflow-hidden ${className}`}>
 			{children}
 		</section>
 	)

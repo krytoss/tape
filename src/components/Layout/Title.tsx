@@ -1,11 +1,11 @@
 type Props = {
 	children: React.ReactNode,
-	color: "light" | "dark",
+	color?: "light" | "dark",
 	className?: string,
 	size?: string
 }
 
-const Title: React.FC<Props> = ({ children, color, className, size = "8xl" }) => {
+const Title: React.FC<Props> = ({ children, color = "dark", className, size = "8xl" }) => {
 
 	const colorClass = color === "light" ? "text-white" : "text-slate-700";
 
