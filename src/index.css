@@ -75,10 +75,10 @@ button:focus-visible {
   }
 }
 
-.text-tape {
+.text-tape, .text-brand {
 	color: var(--tape-color)
 }
 
-.bg-tape {
+.bg-tape, .bg-brand {
 	background-color: var(--tape-color)
 }

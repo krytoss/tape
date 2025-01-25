@@ -12,7 +12,7 @@ const DotMenu: React.FC = () => {
 
 	return (
 		<ul id="menu" className={`
-			fixed right-0 top-1/2 transform -translate-y-1/2
+			fixed right-0 top-1/2 transform -translate-y-1/2 z-50
 		`}>
 
 			{/* Object.keys(menuLinks).map((key: string, index: number) => (

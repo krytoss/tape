@@ -16,6 +16,9 @@ export default {
 		"gap-4",
 		"gap-8",
 		"gap-12",
+		{
+			pattern: /^text-(red|blue|white|green|yellow|gray|black|slate)-?\d{0,3}$/,
+		},
 	  ],
 }
 

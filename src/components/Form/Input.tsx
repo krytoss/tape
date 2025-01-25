@@ -1,17 +1,30 @@
+import { Dispatch, SetStateAction } from "react"
+
 type InputProps = {
-	label: string,
+	label?: string,
 	id: string,
 	type: string,
 	value: string,
-	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+	name: string,
+	placeholder?: string,
+	onChange: Dispatch<SetStateAction<string>>,
 }
 
 const Input: React.FC<InputProps> = ({ label, ...props }) => {
+
+	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+		props.onChange(event.target.value)
+	}
+
 	return (
 		<div className="flex flex-col mb-4">
-			<label htmlFor={props.id} className="text-sm text-gray-600">
-				{label}
-			</label>
+			{
+				label && (
+					<label htmlFor={props.id} className="text-sm text-gray-600">
+						{label}
+					</label>
+				)
+			}
 			<input
 				{...props}
 				className={`
@@ -20,6 +33,7 @@ const Input: React.FC<InputProps> = ({ label, ...props }) => {
 					rounded-md
 					focus:outline-none focus:ring focus:ring-blue-500
 				`}
+				onChange={handleChange}
 			/>
 		</div>
 	)

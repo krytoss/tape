@@ -3,15 +3,21 @@ type Props = {
 	fullSize?: boolean,
 	children: React.ReactNode,
 	center?: boolean,
+	color?: string,
+	className?: string,
+	uppercase?: boolean
 }
 
-const Link: React.FC<Props> = ({ to, fullSize = false, children, center }) => {
+const Link: React.FC<Props> = ({ to, color = "white", fullSize = false, children, center, uppercase = true, className }) => {
+
+	const colorClass = `text-${color}`;
 
 	return (
 		<a href={to} className={`
-			text-white text-2xl font-semibold uppercase
+			${colorClass} text-2xl font-semibold ${ uppercase ? "uppercase" : "" }
 			${fullSize ? "w-full h-full" : ""}
 			${center ? "flex items-center justify-center" : ""}
+			${className}
 		`}>
 			{children}
 		</a>
