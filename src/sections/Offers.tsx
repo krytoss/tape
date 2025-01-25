@@ -39,7 +39,7 @@ const Offers: React.FC = () => {
 				<div className="offer justify-center items-center flex w-full bg-red-100 group relative">
 					<img src="./offers/health_industry.jpeg" className="h-full w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Health industry" />
 					<Cover className="hover:bg-opacity-0 transition transition-colors">
-						<Link to="#" fullSize={true} center={true}>
+						<Link to="zdravotnictvo" fullSize={true} center={true}>
 							<Title color="light" size="3xl text-center">
 								Bezpečnosť v zdravotníctve
 							</Title>
@@ -49,7 +49,7 @@ const Offers: React.FC = () => {
 				<div className="offer justify-center items-center flex w-full bg-pink-100 group relative">
 					<img src="./offers/business.jpeg" className="h-full w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Business" />
 					<Cover className="hover:bg-opacity-0 transition transition-colors">
-						<Link to="#" fullSize={true} center={true}>
+						<Link to="biznis" fullSize={true} center={true}>
 							<Title color="light" size="3xl text-center">
 								Biznis
 							</Title>
@@ -59,7 +59,7 @@ const Offers: React.FC = () => {
 				<div className="offer justify-center items-center flex w-full bg-green-100 group relative">
 					<img src="./offers/entertainment.jpeg" className="h-full w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Entertainment" />
 					<Cover className="hover:bg-opacity-0 transition transition-colors">
-						<Link to="#" fullSize={true} center={true}>
+						<Link to="zabava" fullSize={true} center={true}>
 							<Title color="light" size="3xl text-center">
 								Zábava
 							</Title>

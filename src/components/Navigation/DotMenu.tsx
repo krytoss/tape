@@ -38,24 +38,24 @@ const DotMenu: React.FC = () => {
 				<li
 					key={index}
 					className={`
-						text-white text-2xl text-right
+						text-slate-700 text-2xl text-right
 						relative
 						rounded-sm mr-0
 						my-0
 						whitespace-nowrap
 					`}
 				>
-					<a href="#" className="block py-2 text-white uppercase text-right mr-10 inline-flex group relative">
+					<a href="#" className="block py-2 text-slate-700 uppercase text-right mr-10 inline-flex group relative">
 						<span className="absolute hidden group-hover:inline-block text-xs leading-5 right-10 top-1/2 transform -translate-y-1/2">
 							{menuLinks[key]}
 						</span>
 						<div className={`
 							w-5 h-5 inline-block
 							rounded-full p-1
-							border-2 border-transparent group-hover:border-white
+							border-2 border-transparent group-hover:border-slate-700
 							ml-3
 						`}>
-							<div className="w-full h-full block bg-white rounded-full" />
+							<div className="w-full h-full block bg-slate-700 rounded-full" />
 						</div>
 					</a>
 				</li>
