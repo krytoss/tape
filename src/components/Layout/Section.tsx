@@ -1,9 +1,10 @@
 type Props = {
 	className?: string,
 	children: React.ReactNode,
+	fullHeight?: boolean
 }
 
-const Section: React.FC<Props> = ({ className, children }) => {
+const Section: React.FC<Props> = ({ className, children, fullHeight = true }) => {
 
 	return (
 		/* <section className={`h-screen w-screen overflow-hidden fixed top-0 opacity-0 ${className}`}>
@@ -17,7 +18,7 @@ const Section: React.FC<Props> = ({ className, children }) => {
 		</section>
 		 shadow-[0_-5px_20px_0px_rgba(0,0,0,0.3)]
 		*/
-		<section className={`h-screen w-screen relative overflow-hidden ${className}`}>
+		<section className={`${fullHeight && 'h-screen'} w-screen relative overflow-hidden ${className}`}>
 			{children}
 		</section>
 	)
