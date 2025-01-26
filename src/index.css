@@ -84,3 +84,7 @@ button:focus-visible {
 .bg-tape, .bg-brand {
 	background-color: var(--tape-color)
 }
+
+.border-tape, .border-brand {
+	border-color: var(--tape-color)
+}
