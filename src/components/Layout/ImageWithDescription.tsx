@@ -16,7 +16,7 @@ const ImageWithDescription: React.FC<Props> = ({
   height = "200px",
 }) => (
   <div
-    className={`relative group overflow-hidden rounded-lg shadow-lg inline-block ${className}`}
+    className={`relative group overflow-hidden rounded-md shadow-lg inline-block ${className}`}
     style={{ height }}
   >
     <div className="absolute inset-0">
