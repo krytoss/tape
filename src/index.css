@@ -28,16 +28,16 @@ html {
 	scroll-snap-type: y mandatory;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+#homepage section {
+	scroll-snap-align: start;
 }
 
-section {
-	scroll-snap-align: start;
+body {
+  margin: 0;
+  /* display: flex;
+  place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 h1 {

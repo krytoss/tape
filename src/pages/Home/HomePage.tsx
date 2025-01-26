@@ -1,16 +1,16 @@
 import { useEffect } from 'react';
 import { gsap } from "gsap";
-import DotMenu from '../components/Navigation/DotMenu';
-import Home from '../sections/Home';
-import About from '../sections/About';
-import Team from '../sections/Team';
+import DotMenu from '../../components/Navigation/DotMenu';
+import Home from '../../sections/Home';
+import About from '../../sections/About';
+import Team from '../../sections/Team';
 import { Observer } from 'gsap/all';
-import Offers from '../sections/Offers';
-import Contact from '../sections/Contact';
+import Offers from '../../sections/Offers';
+import Contact from '../../sections/Contact';
 
 gsap.registerPlugin(Observer)
 
-function Health() {
+function HomePage() {
 
 	  useEffect(() => {
 		const tl = gsap.timeline();
@@ -160,15 +160,15 @@ function Health() {
 	  }, []);
 
   return (
-	<>
+	<div id="homepage">
 		<Home />
 		<Offers />
 		<About />
 		<Team />
 		<Contact />
 		<DotMenu />
-	</>
+	</div>
   )
 }
 
-export default Health
+export default HomePage
