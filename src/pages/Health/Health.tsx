@@ -1,5 +1,6 @@
 import Cover from "../../components/Layout/Cover"
 import Header from "../../components/Layout/Header"
+import ImageWithDescription from "../../components/Layout/ImageWithDescription"
 import Section from "../../components/Layout/Section"
 import Title from "../../components/Layout/Title"
 import Link from "../../components/Navigation/Link"
@@ -28,6 +29,14 @@ const Health: React.FC = () => {
 						Sme oficiálnym distribútorom spoločnosti <Link className="text-brand text-[1rem] !font-bold" to="https://www.pdcorp.com">PDC Precision Dynamics Corporation</Link> (patriaceho do skupiny Brady Corporation) pre Slovenskú republiku. 
 					</span>
 				</p>
+			</Section>
+			<Section className="p-10">
+				<ImageWithDescription
+					className="w-80"
+					title="Na termálnu potlač/s čiarovým alebo QR kódom"
+					image="./health/scanner.jpg"
+					description="Identifikačné náramky pre pacientov, ktoré využívajú termotlač na zabezpečenie správnej identifikácie a bezpečnosti pacientov. Náramky majú za cieľ zlepšiť identifikáciu pacientov, komunikáciu a bezpečnosť pri operáciách a medikamentóznej liečbe."
+				/>
 			</Section>
 		</>
 	)
