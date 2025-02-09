@@ -26,12 +26,11 @@ const TopMenu: React.FC = () => {
 
 	return (
 		<div className="fixed z-50 top-0 left-0 w-full h-16 text-white flex justify-center items-center h-20 bg-black/30 backdrop-blur-md">
-			<img src="./logo.png" alt="Logo" className="h-24 absolute left-6 top-4" />
+			<img src="/logo.png" alt="Logo" className="h-24 absolute left-6 top-4" />
 			<div className="text-right w-full px-4">
 				<ul className="h-full">
 					{
 						links.map((link, index) => {
-							console.log(location.pathname, link.to)
 							const isActive = location.pathname === link.to;
 							return (
 								<li key={index} className="inline-block mx-4 h-full">

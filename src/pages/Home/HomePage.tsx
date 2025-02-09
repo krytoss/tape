@@ -113,7 +113,6 @@ function HomePage() {
 						onComplete: () => animating = false
 					});
 				if (currentIndex >= 0) {
-					console.log("current index", currentIndex)
 					gsap.set(sections[currentIndex], { zIndex: 0 });
 					//tl2.set(sections[currentIndex], { autoAlpha: 0 });
 				}
@@ -124,7 +123,6 @@ function HomePage() {
 					yPercent: 0 
 				}, 0).set(sections[currentIndex], { autoAlpha: 0 });
 			} else {
-				console.log("som tu?")
 				gsap.set(sections[index], { zIndex: 1, autoAlpha: 1 });
 				gsap.set(sections[currentIndex], { zIndex: 0, autoAlpha: 0 });
 				gsap.set(outerWrappers, { yPercent: 0 });
