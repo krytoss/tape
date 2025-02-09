@@ -1,14 +1,29 @@
-.product-img {
-	transition: all 0.3s ease;
-	position: relative;
-	top:0;
+html {
+	--tape-color: #1e4487;
 }
 
-.product-link:hover .product-img {
-	transform: scale(1.2);
+.product-img {
+	transition: all 0.3s ease;
+	top:0;
+}
+.product-link:hover .product-img,
+.product-link.active .product-img {
 	top: 20px;
-	-webkit-filter: drop-shadow(2px 2px 0 rgba(0,0,0,.3))
-					drop-shadow(-2px -2px 0 rgba(0,0,0,.3));
-	filter: drop-shadow(3px 3px 8px rgba(0,0,0,.2)) 
-			drop-shadow(-3px -3px 8px rgba(0,0,0,.2));
+}
+
+@media screen and (min-width: 768px) {
+	.product-link:hover .product-img,
+	.product-link.active .product-img {
+		top: 20px;
+		-webkit-filter: drop-shadow(2px 2px 0 rgba(0,0,0,.3))
+						drop-shadow(-2px -2px 0 rgba(0,0,0,.3));
+		filter: drop-shadow(3px 3px 8px rgba(0,0,0,.2)) 
+				drop-shadow(-3px -3px 8px rgba(0,0,0,.2));
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.product-link-wrapper:hover {
+		background-color: var(--tape-color)
+	}
 }

@@ -16,7 +16,7 @@ const Layout: React.FC = () => {
 		},
 		"/zabava/silikonove-naramky": {
 			title: "Silikónové náramky",
-			img: "/offers/entertainment.jpeg"
+			img: "/pages/entertainment/silikonove.jpeg"
 		}
 	}
 
