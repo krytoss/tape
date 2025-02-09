@@ -36,7 +36,7 @@ const Layout: React.FC = () => {
 					<Title color="light" size="3xl text-center">
 						{ currentData.title }
 					</Title>
-					<div className="xl:block hidden">
+					<div className={`${!isSubpage && 'xl:block'} hidden`}>
 						<ArrowDown color="light" />
 					</div>
 				</Cover>
