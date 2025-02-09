@@ -8,19 +8,19 @@ const TopMenu: React.FC = () => {
 	const links = [
 		{
 			name: "Domov",
-			to: "home"
+			to: "/"
 		},
 		{
 			name: "Bezpečnosť v zdravotníctve",
-			to: "zdravotnictvo"
+			to: "/zdravotnictvo"
 		},
 		{
 			name: "Biznis",
-			to: "business"
+			to: "/business"
 		},
 		{
 			name: "Zábava",
-			to: "zabava"
+			to: "/zabava"
 		},
 	]
 
@@ -31,7 +31,8 @@ const TopMenu: React.FC = () => {
 				<ul className="h-full">
 					{
 						links.map((link, index) => {
-							const isActive = location.pathname.includes(link.to);
+							console.log(location.pathname, link.to)
+							const isActive = location.pathname === link.to;
 							return (
 								<li key={index} className="inline-block mx-4 h-full">
 									<Link to={link.to} className={`

@@ -85,7 +85,10 @@ const Health: React.FC = () => {
 								height="400px"
 								title="Na termálnu potlač/s čiarovým alebo QR kódom"
 								image="./health/scanner.jpg"
-								description="Identifikačné náramky pre pacientov, ktoré využívajú termotlač na zabezpečenie správnej identifikácie a bezpečnosti pacientov. Náramky majú za cieľ zlepšiť identifikáciu pacientov, komunikáciu a bezpečnosť pri operáciách a medikamentóznej liečbe."
+								description="Identifikačné náramky pre pacientov, ktoré využívajú termotlač na zabezpečenie správnej identifikácie a bezpečnosti pacientov. Náramky majú za cieľ zlepšiť identifikáciu pacientov, komunikáciu a bezpečnosť pri operáciách a medikamentóznej liečbe.
+Vysoká kvalita tlače zaručuje spoľahlivé skenovanie čiarových a QR kódov.
+Náramky sú odolné voči svetlu, vlhkosti, čistiacim prostriedkom a tekutinám.
+Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie a neobsahuje latex. Majú antimikrobiálnu vrstvu, ktorá chráni povrch proti prenosu baktérií."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
