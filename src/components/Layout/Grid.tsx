@@ -14,7 +14,7 @@ const Grid: React.FC<Props> = ({ children, cols, colsXs, colsSm, colsMd, colsLg,
 
 	const classes = [
 		"w-full grid",
-		`grid-cols-${cols}`,
+		cols ? `grid-cols-${cols}` : "",
 		colsXs ? `xs:grid-cols-${colsXs}` : "",
 		colsSm ? `sm:grid-cols-${colsSm}` : "",
 		colsMd ? `md:grid-cols-${colsMd}` : "",

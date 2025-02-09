@@ -16,6 +16,10 @@ export default {
 			pattern: /^grid-cols-?\d{0,3}$/
 		},
 		{
+		  pattern: /^grid-cols-\d+$/, 
+		  variants: ["xs", "sm", "md", "lg", "xl", "2xl"],
+		},
+		{
 			pattern: /^text-(red|blue|white|green|yellow|gray|black|slate)-?\d{0,3}$/,
 		},
 	  ],

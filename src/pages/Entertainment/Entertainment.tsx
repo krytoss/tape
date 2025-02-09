@@ -35,7 +35,7 @@ const Entertainment: React.FC = () => {
 					/>
 				</svg>
 				{ /* <div className="relative z-20 w-full m-auto"> */ }
-				<Grid className="xl:h-[calc(100vh-5rem)] relative z-20" colsXs={1} colsSm={2} colsMd={8} colsXl={3} >
+				<Grid className="xl:h-[calc(100vh-5rem)] relative z-20" colsXs={1} colsMd={2} colsXl={3} >
 					<ProductCard
 						link="/zabava/plastove-karty"
 						className="h-full"
@@ -44,30 +44,35 @@ const Entertainment: React.FC = () => {
 						image="./pages/entertainment/plastove_karty.png"
 					/>
 					<ProductCard
+						link="/zabava/latkove-naramky"
 						className="h-full"
 						title="Látkové náramky"
 						description="Látkové náramky sú štýlovou voľbou pre festivaly, koncerty a športové podujatia. Vyberte si z vyšívaných a saténových náramkov s plnofarebnou potlačou, rôznymi uzávermi a možnosťami opakovaného použitia. Skvelý suvenír, ktorý vydrží."
 						image="./pages/entertainment/latkove.png"
 					/>
 					<ProductCard
+						link="/zabava/vinylove-naramky"
 						className="h-full"
 						title="Vinylové, plastové a tyvek náramky"
 						description="Vinylové, plastové i Tyvek náramky sú určené na označovanie návštevníkov na diskotékach, festivaloch, kúpaliskách či hromadných podujatiach. Sú neprenosné, čo zvyšuje bezpečnosť a znižuje možné straty pri organizácii masových akcií. Cenová dostupnosť je benefitom a môžu byť alternatívou k látkovým náramkom."
 						image="./pages/entertainment/tyvek.png"
 					/>
 					<ProductCard
+						link="/zabava/silikonove-naramky"
 						className="h-full"
 						title="Silikónové náramky"
 						description="Silikónové náramky sa používajú na propagáciu značky alebo podujatia, ako reklamné a darčekové predmety. Sú vodeodolné a trvácne. V ponuke máme rôzne šírky, prevedenia a veľkosti pre deti aj dospelých."
 						image="./pages/entertainment/silikonove.png"
 					/>
 					<ProductCard
+						link="/zabava/snurky"
 						className="h-full"
 						title="Šnúrky na krk"
 						description="Šnúrky na krk sú skvelým reklamným prvkom na spropagovanie vašej značky alebo sponzorov. Vyberte si saténové šnúrky alebo textilné šnúrky s plnofarebnou potlačou či bez potlače. S rôznymi typmi karabín, puzdier a bezpečnostných zapínaní sú perfektné pre identifikačné karty, backstage pasy a kľúče. Ideálne riešenie pre každé podujatie."
 						image="./pages/entertainment/snurky.png"
 					/>
 					<ProductCard
+						link="/zabava/menovky"
 						title="Puzdrá, menovky, rolery"
 						description="Chráňte a prezentujte identifikačné karty vašich návštevníkov, VIP hostí a personálu s našimi kvalitnými plastovými visačkami/puzdrami. Sú výborným doplnkom ku šnúrkam na krk alebo PVC kartám.
 Menovky sú neoceniteľným nástrojom na budovanie vzťahov na hromadných podujatiach. Umožňujú rýchlu vzájomnú identifikáciu, čo prispieva k ľahšiemu kontaktu a zvýšeniu bezpečnosti.
@@ -76,12 +81,14 @@ V našej ponuke nájdete rôzne veľkosti, materiály a prevedenia. "
 						image="./pages/entertainment/puzdra.png"
 					/>
 					<ProductCard
+						link="/zabava/rfid"
 						title="RFID"
 						description="Ponúkame širokú škálu RFID produktov vrátane čipových kariet, látkových a silikónových náramkov a kľúčeniek. RFID riešenia umožňujú bezhotovostný styk na festivaloch, koncertoch, v aquaparkoch a na kúpaliskách, čím zvyšujú pohodlie a bezpečnosť vašich zákazníkov. 
 Uľahčite si život s našimi inovatívnymi RFID riešeniami."
 						image="./pages/entertainment/rfid.png"
 					/>
 					<ProductCard
+						link="/zabava/eko-produkty"
 						title="EKO produkty"
 						description="Posuňte svoje podujatia na vyššiu úroveň s našimi ekologickými šnúrkami, náramkami a kartami! Naša ponuka zahŕňa bambusové, papierové a recyklované plastové šnúrky.
 Ponúkame náramky šetrné k životnému prostrediu, vyrobené z recyklovaných PVC fliaš. Tieto náramky sú odolné, trvácne a vhodné na dlhodobé používanie.
@@ -89,6 +96,7 @@ Kolekcia ekologických kariet zahŕňa rôzne typy materiálov (PET-G, Graspaper
 						image="./pages/entertainment/eko.png"
 					/>
 					<ProductCard
+						link="/zabava/tlaciarne"
 						title="Tlačiarne"
 						description="Vytlačte čiarové kódy, text, logá a jedinečné variabilné údaje na každý náramok priamo na mieste podujatia. Pri atrakciách s časovanými aktivitami je možné termálne náramky s čiarovými kódmi vytlačiť aj s dátumom a časom vstupu."
 						image="./pages/entertainment/tlaciarne.png"

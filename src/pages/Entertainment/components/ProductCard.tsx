@@ -1,5 +1,4 @@
 import Cover from "../../../components/Layout/Cover";
-import ArrowDown from "../../../components/Navigation/ArrowDown";
 
 type Props = {
 	className?: string;
