@@ -1,5 +1,6 @@
 import { AnchorHTMLAttributes, useCallback, useState } from 'react';
 import './ProductsNav.css'
+import { Link } from 'react-router';
 
 const ProductsNav: React.FC = () => {
 
@@ -88,8 +89,8 @@ const ProductsNav: React.FC = () => {
 							overflow-visible
 							${active === product.to ? 'bg-brand sm:bg-transparent' : ''}
 						`}>
-							<a
-								href={product.to}
+							<Link
+								to={product.to}
 								key={index}
 								className={`
 									product-link
@@ -129,7 +130,7 @@ const ProductsNav: React.FC = () => {
 								>
 									{product.name}
 								</span>
-							</a>
+							</Link>
 						</div>
 					))
 				}

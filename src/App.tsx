@@ -15,6 +15,7 @@ function App() {
 			<Route path="zabava" element={<Layout />}>
 				<Route path=""	element={<Entertainment />} />
 				<Route path="silikonove-naramky" element={<Silicones />} />
+				<Route path="plastove-karty" element={<Silicones />} />
 			</Route>
 		</Routes>
 	</BrowserRouter>
