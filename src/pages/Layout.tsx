@@ -4,6 +4,8 @@ import Header from "../components/Layout/Header";
 import Cover from "../components/Layout/Cover";
 import Title from "../components/Layout/Title";
 import ArrowDown from "../components/Navigation/ArrowDown";
+import Contact from "../sections/Contact";
+import ContactForm from "../sections/ContactForm";
 
 const Layout: React.FC = () => {
 
@@ -46,6 +48,7 @@ const Layout: React.FC = () => {
 				</Cover>
 			</Header>
 			<Outlet />
+			<ContactForm />
 		</>
 	)
 }

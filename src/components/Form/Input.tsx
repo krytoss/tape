@@ -7,7 +7,9 @@ type InputProps = {
 	value: string,
 	name: string,
 	placeholder?: string,
+	required?: boolean,
 	onChange: Dispatch<SetStateAction<string>>,
+	
 }
 
 const Input: React.FC<InputProps> = ({ label, ...props }) => {
@@ -20,8 +22,9 @@ const Input: React.FC<InputProps> = ({ label, ...props }) => {
 		<div className="flex flex-col mb-4">
 			{
 				label && (
-					<label htmlFor={props.id} className="text-sm text-gray-600">
+					<label htmlFor={props.id} className="text-sm font-medium text-gray-600">
 						{label}
+						{props.required && <span className="-ml-0.5 align-middle text-red-500 text-xl font-bold leading-[1]"> *</span>}
 					</label>
 				)
 			}
