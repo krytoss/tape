@@ -32,6 +32,8 @@ const Input: React.FC<InputProps> = ({ label, ...props }) => {
 					border border-gray-300
 					rounded-md
 					focus:outline-none focus:ring focus:ring-blue-500
+					bg-white
+					w-full
 				`}
 				onChange={handleChange}
 			/>

@@ -1,9 +1,10 @@
 type Props = {
 	onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void,
 	children: React.ReactNode,
+	className?: string
 }
 
-const Form: React.FC<Props> = ({ onSubmit, children }) => {
+const Form: React.FC<Props> = ({ onSubmit, children, className }) => {
 
 	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		if (onSubmit) {
@@ -13,7 +14,7 @@ const Form: React.FC<Props> = ({ onSubmit, children }) => {
 	}
 
 	return (
-		<form onSubmit={handleSubmit}>
+		<form onSubmit={handleSubmit} className={className}>
 			{ children }
 		</form>
 	)

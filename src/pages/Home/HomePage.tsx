@@ -7,6 +7,7 @@ import Team from '../../sections/Team';
 import { Observer } from 'gsap/all';
 import Offers from '../../sections/Offers';
 import Contact from '../../sections/Contact';
+import ContactForm from '../../sections/ContactForm';
 
 gsap.registerPlugin(Observer)
 
@@ -164,6 +165,7 @@ function HomePage() {
 		<About />
 		<Team />
 		<Contact />
+		<ContactForm />
 		<DotMenu />
 	</div>
   )
