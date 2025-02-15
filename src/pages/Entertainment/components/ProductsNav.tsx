@@ -64,7 +64,7 @@ const ProductsNav: React.FC = () => {
 
 
 	return (
-		<div className="w-full overflow-x-auto scrollbar-hide bg-white">
+		<div className="w-full overflow-x-auto scrollbar-hide bg-white shadow-xl">
 			<div className={`flex ${isOpen ? "h-auto" : "h-14"} sm:h-auto flex-col sm:flex-row whitespace-nowrap relative`}>
 				<a
 					href="#"

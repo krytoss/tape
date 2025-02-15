@@ -4,6 +4,7 @@ import Health from './pages/Health/Health';
 import Entertainment from './pages/Entertainment/Entertainment';
 import Silicones from './pages/Entertainment/subpages/Silicones';
 import Layout from './pages/Layout';
+import Fabric from './pages/Entertainment/subpages/Fabric';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 			<Route path="zabava" element={<Layout />}>
 				<Route path=""	element={<Entertainment />} />
 				<Route path="silikonove-naramky" element={<Silicones />} />
+				<Route path="latkove-naramky" element={<Fabric />} />
 				<Route path="plastove-karty" element={<Silicones />} />
 			</Route>
 		</Routes>

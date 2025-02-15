@@ -59,7 +59,7 @@ const Silicones: React.FC = () => {
 			  ease: "power2.out",
 			  scrollTrigger: {
 				trigger: section,
-				start: "top 80%",
+				start: "top 90%",
 				toggleActions: "play none none reverse"
 			  }
 			}
@@ -72,35 +72,35 @@ const Silicones: React.FC = () => {
 		<>
 			<Section fullHeight={true} className="overflow-visible">
 				<ProductsNav />
-				<div className="relative w-full bg-gray-100 py-10">
+				<div className="relative w-full bg-gradient-to-r from-gray-50 to-gray-200 py-10">
 					<p className="text-xl font-semibold p-10 text-center block">
 						V ponuke silikóny fosforeskujúce, segmentované, silikónová kľúčenka, silikónové hodinky, náramok s potlačou QR kódu, náramok s číslovaním, atypický náramok, náramok s viacfarebnou potlačou.
 					</p>
 					{products.map((product, index) => (
 						<section
-						key={index}
-						ref={(el) => (sectionsRef.current[index] = el!)}
-						className={`w-full flex flex-col md:flex-row items-center justify-between py-12 px-6 md:px-20 gap-10
-							${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
+							key={index}
+							ref={(el) => (sectionsRef.current[index] = el!)}
+							className={`w-full flex flex-col md:flex-row items-center justify-between py-12 px-6 md:px-20 gap-10
+								${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
 						>
 						{/* Obrázok */}
-						<div className="w-full md:w-1/2">
-							<img
-							src={product.image}
-							alt={product.title}
-							className="w-full h-auto rounded-lg shadow-lg"
-							/>
-						</div>
+							<div className="w-full md:w-1/2">
+								<img
+								src={product.image}
+								alt={product.title}
+								className="w-full h-auto rounded-lg shadow-lg"
+								/>
+							</div>
 
-						{/* Obsah */}
-						<div className="w-full md:w-1/2">
-							<h2 className="text-3xl font-bold text-gray-900">{product.title}</h2>
-							<ul className="mt-4 text-gray-700 space-y-2">
-							{product.description.map((line, i) => (
-								<li key={i} className="text-lg">• {line}</li>
-							))}
-							</ul>
-						</div>
+							{/* Obsah */}
+							<div className="w-full md:w-1/2">
+								<h2 className="text-3xl font-bold text-gray-900">{product.title}</h2>
+								<ul className="mt-4 text-gray-700 space-y-2">
+								{product.description.map((line, i) => (
+									<li key={i} className="text-lg">• {line}</li>
+								))}
+								</ul>
+							</div>
 						</section>
 					))}
 				</div>
