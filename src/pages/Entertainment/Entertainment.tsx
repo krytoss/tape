@@ -4,7 +4,7 @@ import ProductCard from "./components/ProductCard"
 
 const Entertainment: React.FC = () => {
 	return (
-		<Section fullHeight={true} className="overflow-visible pt-20">
+		<Section fullHeight={false} className="overflow-visible pt-20 min-h-screen">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="-100 -100 1093 1093"
