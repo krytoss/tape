@@ -11,7 +11,7 @@ const Textbox: React.FC<Props> = ({ label, value, onChange }) => {
 	}
 
 	return (
-		<div className="flex flex-col mb-4">
+		<div className="flex flex-col font-medium mb-4">
 			{
 				label && (
 					<label className="text-sm text-gray-600">

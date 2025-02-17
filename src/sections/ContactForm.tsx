@@ -6,11 +6,15 @@ import Form from "../components/Form/Form"
 import Grid from "../components/Layout/Grid"
 import Selectbox from "../components/Form/Selectbox"
 import Textbox from "../components/Form/Textbox"
+import Checkbox from "../components/Form/Checkbox"
 
 const ContactForm: React.FC = () => {
 
 	const [ mail, setMail ] = useState<string>("")
 	const [ phone, setPhone ] = useState<string>("")
+	const [ service, setService ] = useState<string>("")
+	const [ message, setMessage ] = useState<string>("")
+	const [ agreement, setAgreement ] = useState<boolean>(false)
 
 	const options = [
 		{
@@ -81,6 +85,12 @@ const ContactForm: React.FC = () => {
 							label="Správa"
 							value=""
 							onChange={(value) => {}}
+						/>
+						<Checkbox
+							label="Súhlasím s používaním mojich údajov na uvedený účel"
+							checked={agreement}
+							onChange={(checked) => {setAgreement(checked)}}
+							required={true}
 						/>
 					</Form>
 				</div>
