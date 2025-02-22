@@ -86,14 +86,17 @@ const Fabric: React.FC = () => {
 
 	return (
 		<>
-			<p className="text-xl font-semibold p-10 text-center block">
-				V ponuke silikóny fosforeskujúce, segmentované, silikónová kľúčenka, silikónové hodinky, náramok s potlačou QR kódu, náramok s číslovaním, atypický náramok, náramok s viacfarebnou potlačou.
-			</p>
-			<Grid cols={1} colsMd={2} colsLg={3} className="gap-10 px-6 flex-1">
-				{products.map((product, index) => (
-					<Product title={product.title} description={product.description} image={product.image} />
-				))}
-			</Grid>
+			<ProductsNav />
+			<div className="relative w-full lg:w-4/5 m-auto h-full py-10 flex-1">
+				<p className="text-xl font-semibold p-10 text-center block">
+					V ponuke silikóny fosforeskujúce, segmentované, silikónová kľúčenka, silikónové hodinky, náramok s potlačou QR kódu, náramok s číslovaním, atypický náramok, náramok s viacfarebnou potlačou.
+				</p>
+				<Grid cols={1} colsMd={2} colsLg={3} className="gap-10 px-6 flex-1">
+					{products.map((product, index) => (
+						<Product title={product.title} description={product.description} image={product.image} />
+					))}
+				</Grid>
+			</div>
 		</>
 	)
 }

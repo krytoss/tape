@@ -7,7 +7,6 @@ import ArrowDown from "../components/Navigation/ArrowDown";
 import Contact from "../sections/Contact";
 import ContactForm from "../sections/ContactForm";
 import Section from "../components/Layout/Section";
-import ProductsNav from "./Entertainment/components/ProductsNav";
 
 const Layout: React.FC = () => {
 
@@ -50,10 +49,7 @@ const Layout: React.FC = () => {
 				</Cover>
 			</Header>
 			<Section fullHeight={false} className="overflow-visible min-h-screen h-auto flex flex-col">
-				<ProductsNav />
-				<div className="relative w-full lg:w-4/5 m-auto h-full py-10 flex-1">
-					<Outlet />
-				</div>
+				<Outlet />
 			</Section>
 			<ContactForm />
 		</>
