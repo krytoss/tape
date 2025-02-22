@@ -35,7 +35,7 @@ const ProductsNav: React.FC = () => {
 		{
 			name: "Puzdrá, menovky, rolery",
 			img: "/pages/entertainment/puzdra.png",
-			to: "/zabava/menovky"
+			to: "/zabava/puzdra-menovky-rolery"
 		},
 		{
 			name: "RFID",

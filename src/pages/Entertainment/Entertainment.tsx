@@ -55,7 +55,7 @@ const Entertainment: React.FC = () => {
 					image="./pages/entertainment/snurky.png"
 				/>
 				<ProductCard
-					link="/zabava/menovky"
+					link="/zabava/puzdra-menovky-rolery"
 					title="Puzdrá, menovky, rolery"
 					description="Chráňte a prezentujte identifikačné karty vašich návštevníkov, VIP hostí a personálu s našimi kvalitnými plastovými visačkami/puzdrami. Sú výborným doplnkom ku šnúrkam na krk alebo PVC kartám.
 Menovky sú neoceniteľným nástrojom na budovanie vzťahov na hromadných podujatiach. Umožňujú rýchlu vzájomnú identifikáciu, čo prispieva k ľahšiemu kontaktu a zvýšeniu bezpečnosti.

@@ -6,6 +6,7 @@ import Silicones from './pages/Entertainment/subpages/Silicones';
 import Layout from './pages/Layout';
 import Fabric from './pages/Entertainment/subpages/Fabric';
 import PlasticCards from './pages/Entertainment/subpages/PlasticCards';
+import Cases from './pages/Entertainment/subpages/Cases';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
 				<Route path="silikonove-naramky" element={<Silicones />} />
 				<Route path="latkove-naramky" element={<Fabric />} />
 				<Route path="plastove-karty" element={<PlasticCards />} />
+				<Route path="puzdra-menovky-rolery" element={<Cases />} />
 			</Route>
 		</Routes>
 	</BrowserRouter>
