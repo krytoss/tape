@@ -10,7 +10,7 @@ type Props = {
 			category: string;
 			items: {
 				title: string;
-				description: string[];
+				description: (string | React.ReactNode)[];
 				image: string | string[];
 			}[]
 		}[]
@@ -94,7 +94,15 @@ const Subpage: React.FC<Props> = ({ description, products, withCategories = fals
 					<Grid cols={1} colsMd={2} colsXl={3} className="gap-10 px-6 flex-1">
 						{
 							products.map((product, index) => (
-								<Product title={product.title} description={product.description} image={product.image} />
+								<div ref={(el) => (sectionsRef.current[index] = el)} key={index}>
+									<Product
+										title={product.title}
+										description={product.description}
+										image={product.image}
+										maxHeight={maxHeight}
+										setMaxHeight={updateMaxHeight}
+									/>
+								</div>
 							))
 						}
 					</Grid>

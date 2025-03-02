@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Subpage from "../components/subpages/Subpage";
 
 const products = [
@@ -30,10 +31,11 @@ const products = [
 		"Tvar oválny alebo guľatý",
 		"Farebnosť podľa pantone vzorkovníka",
 		"Veľké množstvo čipov (MF, FUDAN, EM4200, TK4100 a iné)",
+		<>Viac informácií v kategórii <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link></>
 	  ],
 	  image: "/pages/entertainment/silikonove_naramky/rfid.png"
 	}
-  ];
+];
 
 const Silicones: React.FC = () => {
 

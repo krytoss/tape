@@ -9,6 +9,8 @@ import Cases from './pages/Entertainment/subpages/Cases';
 import Cords from './pages/Entertainment/subpages/Cords';
 import Bracelets from './pages/Entertainment/subpages/Bracelets';
 import Cards from './pages/Entertainment/subpages/Cards';
+import Eco from './pages/Entertainment/subpages/Eco';
+import Rfid from './pages/Entertainment/subpages/Rfid';
 
 type Page = {
 	component: React.FC,
@@ -55,7 +57,22 @@ export const pages: Record<string, Page> = {
 			"naramky": {
 				component: Bracelets,
 				title: "Náramky",
-				img: "/pages/entertainment/plastove_karty.png"
+				img: "/pages/entertainment/tyvek.png"
+			},
+			"snurky": {
+				component: Cords,
+				title: "Šnúrky na krk",
+				img: "/pages/entertainment/snurky.png"
+			},
+			"eko-produkty": {
+				component: Eco,
+				title: "EKO produkty",
+				img: "/pages/entertainment/eko.png"
+			},
+			"rfid": {
+				component: Rfid,
+				title: "RFID",
+				img: "/pages/entertainment/rfid.png"
 			}
 		}
 	}
