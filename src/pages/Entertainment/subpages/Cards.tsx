@@ -1,12 +1,4 @@
-import { useEffect, useRef } from "react";
-import Section from "../../../components/Layout/Section"
-import ProductsNav from "../components/ProductsNav"
-import Product from "../components/subpages/Product";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Grid from "../../../components/Layout/Grid";
-
-gsap.registerPlugin(ScrollTrigger);
+import Subpage from "../components/subpages/Subpage";
 
 const products = [
 	{
@@ -78,47 +70,14 @@ const products = [
 	}
   ];
 
-const PlasticCards: React.FC = () => {
-
-	const sectionsRef = useRef<HTMLDivElement[]>([]);
-  
-	useEffect(() => {
-		sectionsRef.current.forEach((section, index) => {
-		  gsap.fromTo(
-			section,
-			{ opacity: 0, x: index % 2 === 0 ? -200 : 200 },
-			{
-			  opacity: 1,
-			  x: 0,
-			  y: 0,
-			  duration: 1,
-			  ease: "power2.out",
-			  scrollTrigger: {
-				trigger: section,
-				start: "top 90%",
-				toggleActions: "play none none reverse"
-			  }
-			}
-		  );
-		});
-	  }, []);
-
+const Cards: React.FC = () => {
 
 	return (
-		<>
-			<ProductsNav />
-			<div className="relative w-full lg:w-4/5 m-auto h-full py-10 flex-1">
-				<p className="text-xl font-semibold p-10 text-center block">
-					V ponuke silikóny fosforeskujúce, segmentované, silikónová kľúčenka, silikónové hodinky, náramok s potlačou QR kódu, náramok s číslovaním, atypický náramok, náramok s viacfarebnou potlačou.
-				</p>
-				<Grid cols={1} colsMd={2} colsLg={3} className="gap-10 px-6 flex-1">
-					{products.map((product, index) => (
-						<Product title={product.title} description={product.description} image={product.image} />
-					))}
-				</Grid>
-			</div>
-		</>
+		<Subpage
+			description="V ponuke plastové karty, papierové karty, papierový obal s kartou, EKO karty, RFID karty"
+			products={products}
+		/>
 	)
 }
 
-export default PlasticCards
+export default Cards

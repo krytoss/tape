@@ -4,15 +4,24 @@ import Header from "../components/Layout/Header";
 import Cover from "../components/Layout/Cover";
 import Title from "../components/Layout/Title";
 import ArrowDown from "../components/Navigation/ArrowDown";
-import Contact from "../sections/Contact";
 import ContactForm from "../sections/ContactForm";
 import Section from "../components/Layout/Section";
+import { pages } from "../App";
 
 const Layout: React.FC = () => {
 
 	const location = useLocation();
 
-	const data: Record<string, { title: string, img: string }> = {
+	const data = Object.keys(pages.zabava.children ?? {}).reduce((acc: any, key: string) => {
+		const _key = key as keyof typeof pages.zabava.children;
+		acc[`/zabava/${_key}`] = {
+			title: pages.zabava.children?.[_key].title,
+			img: pages.zabava.children?.[_key].img
+		};
+		return acc;
+	}, {});
+
+	/* const data: Record<string, { title: string, img: string }> = {
 		"/zabava": {
 			title: "Zábava",
 			img: "/offers/entertainment.jpeg"
@@ -24,8 +33,12 @@ const Layout: React.FC = () => {
 		"/zabava/latkove-naramky": {
 			title: "Látkové náramky",
 			img: "/pages/entertainment/latkove.jpeg"
-		}
-	}
+		},
+		"/zabava/karty": {
+			title: "Karty",
+			img: "/pages/entertainment/plastove_karty.png"
+		},
+	} */
 
 	const currentData = data[location.pathname] || "Tape, s.r.o";
 	const isSubpage = location.pathname.split("/").length > 2;
@@ -36,7 +49,8 @@ const Layout: React.FC = () => {
 			<Header
 				className={`
 					h-[50vh] ${!isSubpage && 'xl:h-[100vh]'}
-					relative z-20`}
+					relative z-20`
+				}
 				img={currentData.img}
 			>
 				<Cover>

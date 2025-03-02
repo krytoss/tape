@@ -1,11 +1,4 @@
-import { useEffect, useRef } from "react";
-import ProductsNav from "../components/ProductsNav"
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Grid from "../../../components/Layout/Grid";
-import Product from "../components/subpages/Product";
-
-gsap.registerPlugin(ScrollTrigger);
+import Subpage from "../components/subpages/Subpage";
 
 const products = [
   {
@@ -208,50 +201,13 @@ const products = [
 ];
 
 const Cases: React.FC = () => {
-  const sectionsRef = useRef<HTMLDivElement[]>([]);
-
-  useEffect(() => {
-    sectionsRef.current.forEach((section, index) => {
-      gsap.fromTo(
-        section,
-        { opacity: 0, y: -200 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: section,
-            start: "top 90%",
-            toggleActions: "play none none reverse"
-          }
-        }
-      );
-    });
-  }, []);
 
   return (
-    <>
-      <ProductsNav />
-      <div className="relative w-full lg:w-4/5 m-auto h-full py-10 flex-1">
-        <p className="text-xl font-semibold p-10 text-center block">
-          V ponuke nájdete široký výber puzdier, rolerov a menoviek. Ak potrebujete kompletný katalóg, kontaktujte nás cez formulár alebo telefonicky.
-        </p>
-
-        {products.map((category, categoryIndex) => (
-          <div key={categoryIndex} className="mb-16">
-            <h2 className="text-2xl font-bold text-center mb-6">{category.category}</h2>
-            <Grid cols={1} colsMd={2} colsLg={3} className="gap-10 px-6 flex-1">
-              {category.items.map((product, productIndex) => (
-                <div ref={(el) => (sectionsRef.current[categoryIndex * 10 + productIndex] = el)} key={productIndex}>
-                  <Product title={product.title} description={product.description} image={product.image} />
-                </div>
-              ))}
-            </Grid>
-          </div>
-        ))}
-      </div>
-    </>
+	<Subpage
+		description="V ponuke nájdete široký výber puzdier, rolerov a menoviek. Ak potrebujete kompletný katalóg, kontaktujte nás cez formulár"
+		products={products}
+		withCategories={true}
+	/>
   );
 };
 

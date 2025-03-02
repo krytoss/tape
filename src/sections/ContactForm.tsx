@@ -18,38 +18,35 @@ const ContactForm: React.FC = () => {
 	const rightRef = useRef(null)
 
 	useEffect(() => {
-		const elLeft = leftRef.current;
-		const elRight = rightRef.current;
-		gsap.fromTo(elLeft, {
-			opacity: 0,
-			x: -100
-		}, {
-			opacity: 1,
-			x: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: elLeft,
-				start: "top 50%",
-				end: "bottom 50%",
-				toggleActions: "play reverse play reverse",
-				once: false,
-			}
-		})
-		gsap.fromTo(elRight, {
-			opacity: 0,
-			x: 100
-		}, {
-			opacity: 1,
-			x: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: elRight,
-				start: "top 50%",
-				end: "bottom 50%",
-				toggleActions: "play reverse play reverse",
-				once: false
-			}
-		})
+		const ctx = gsap.context(() => {
+			gsap.fromTo(leftRef.current, { opacity: 0, x: -100 }, {
+				opacity: 1,
+				x: 0,
+				duration: 1,
+				scrollTrigger: {
+					trigger: leftRef.current,
+					start: "top 50%",
+					end: "bottom 50%",
+					toggleActions: "play reverse play reverse",
+					once: false
+				}
+			});
+		
+			gsap.fromTo(rightRef.current, { opacity: 0, x: 100 }, {
+				opacity: 1,
+				x: 0,
+				duration: 1,
+				scrollTrigger: {
+					trigger: rightRef.current,
+					start: "top 50%",
+					end: "bottom 50%",
+					toggleActions: "play reverse play reverse",
+					once: false
+				}
+			});
+		});
+		
+		return () => ctx.revert();
 	})
 
 	const [ mail, setMail ] = useState<string>("")
@@ -126,7 +123,9 @@ const ContactForm: React.FC = () => {
 						<Textbox
 							label="Správa"
 							value=""
-							onChange={(value) => {}}
+							onChange={(value) => {
+								setMessage(value)
+							}}
 						/>
 						<Checkbox
 							label="Súhlasím s používaním mojich údajov na uvedený účel"

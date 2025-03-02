@@ -1,4 +1,4 @@
-import { AnchorHTMLAttributes, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import './ProductsNav.css'
 import { Link } from 'react-router';
 
@@ -8,9 +8,9 @@ const ProductsNav: React.FC = () => {
 
 	const products = [
 		{
-			name: "Plastové karty",
+			name: "Karty",
 			img: "/pages/entertainment/plastove_karty.png",
-			to: "/zabava/plastove-karty"
+			to: "/zabava/karty"
 		},
 		{
 			name: "Látkové náramky",
@@ -20,7 +20,7 @@ const ProductsNav: React.FC = () => {
 		{
 			name: "Vinylové, plastové a tyvek náramky",
 			img: "/pages/entertainment/tyvek.png",
-			to: "/zabava/vinylove-naramky"
+			to: "/zabava/naramky"
 		},
 		{
 			name: "Silikónové náramky",

@@ -34,7 +34,7 @@ const Entertainment: React.FC = () => {
 					image="./pages/entertainment/latkove.png"
 				/>
 				<ProductCard
-					link="/zabava/vinylove-naramky"
+					link="/zabava/naramky"
 					className="h-full"
 					title="Vinylové, plastové a tyvek náramky"
 					description="Vinylové, plastové i Tyvek náramky sú určené na označovanie návštevníkov na diskotékach, festivaloch, kúpaliskách či hromadných podujatiach. Sú neprenosné, čo zvyšuje bezpečnosť a znižuje možné straty pri organizácii masových akcií. Cenová dostupnosť je benefitom a môžu byť alternatívou k látkovým náramkom."
