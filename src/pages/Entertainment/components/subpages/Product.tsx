@@ -113,11 +113,11 @@ const Product: React.FC<ProductProps> = ({ title, description, image, setMaxHeig
       </div>
 
       <div className="p-5">
-        <h3 className="text-xl font-bold text-gray-900">{title}</h3>
-        <ul className="mt-2 text-gray-600 space-y-1">
+        <h3 className="text-xl font-bold text-gray-900 text-center">{title}</h3>
+        <ul className="mt-2 text-gray-600 space-y-1 list-disc pl-2">
           {description.map((line, index) => (
             <li key={index} className="text-sm">
-              • {line}
+              {line}
             </li>
           ))}
         </ul>

@@ -28,7 +28,7 @@ const products = [
           "Materiál: polykarbonát"
         ],
         image: [
-			"/pages/entertainment/puzdra/pevne1.jpg",
+			"/pages/entertainment/puzdra/pevne1.png",
 			"/pages/entertainment/puzdra/pevne2.png",
 		]
       },
@@ -42,10 +42,10 @@ const products = [
           "Materiál: ABS"
         ],
         image: [
-			"/pages/entertainment/puzdra/otvorene1.jpg",
-			"/pages/entertainment/puzdra/otvorene2.jpg",
-			"/pages/entertainment/puzdra/otvorene3.jpg",
-			"/pages/entertainment/puzdra/otvorene4.jpg",
+			"/pages/entertainment/puzdra/otvorene1.png",
+			"/pages/entertainment/puzdra/otvorene2.png",
+			"/pages/entertainment/puzdra/otvorene3.png",
+			"/pages/entertainment/puzdra/otvorene4.png",
 		]
       },
       {
@@ -85,9 +85,9 @@ const products = [
           "Materiál: vinyl"
         ],
         image: [
-			"/pages/entertainment/puzdra/vinyl_farebne1.jpg",
-			"/pages/entertainment/puzdra/vinyl_farebne2.jpg",
-			"/pages/entertainment/puzdra/vinyl_farebne3.jpg",
+			"/pages/entertainment/puzdra/vinyl_farebne1.png",
+			"/pages/entertainment/puzdra/vinyl_farebne2.png",
+			"/pages/entertainment/puzdra/vinyl_farebne3.png",
 			"/pages/entertainment/puzdra/vinyl_farebne4.png",
 		]
       },
@@ -101,7 +101,7 @@ const products = [
           "Materiál: vinyl"
         ],
         image: [
-			"/pages/entertainment/puzdra/vinyl_a6_1.jpg",
+			"/pages/entertainment/puzdra/vinyl_a6_1.png",
 			"/pages/entertainment/puzdra/vinyl_a6_2.png"
 		]
       },
@@ -116,8 +116,8 @@ const products = [
           "Materiál: vinyl"
         ],
         image: [
-			"/pages/entertainment/puzdra/vinyl_zip.jpg",
-			"/pages/entertainment/puzdra/vinyl_zip2.jpg"
+			"/pages/entertainment/puzdra/vinyl_zip.png",
+			"/pages/entertainment/puzdra/vinyl_zip2.png"
 		]
       }
     ]
@@ -192,7 +192,7 @@ const products = [
           "Materiál: pružný PVC"
         ],
         image: [
-			"/pages/entertainment/puzdra/visacka1.jpg",
+			"/pages/entertainment/puzdra/visacka1.png",
 			"/pages/entertainment/puzdra/visacka2.png",
 		]
       }
