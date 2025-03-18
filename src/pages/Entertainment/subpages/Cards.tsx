@@ -18,7 +18,13 @@ const products = [
 		<>Čipy TK4100, EM 4200, MF 1k S50, Fudan a iné (pozri aj <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link>)</>,
 		"Kapacita výroby 350 tis. kariet za cca 3 týždne"
 	  ],
-	  image: "/pages/entertainment/karty/karty_plastove.png"
+	  image: [
+		"/pages/entertainment/karty/plastove_karty_1.png",
+		"/pages/entertainment/karty/plastove_karty_2.png",
+		"/pages/entertainment/karty/plastove_karty_3.png",
+		"/pages/entertainment/karty/plastove_karty_4.png",
+		"/pages/entertainment/karty/plastove_karty_5.png",
+	  ]
 	},
 	{
 	  title: "Papierové karty",
@@ -31,7 +37,13 @@ const products = [
 		"Oblé rohy",
 		"Výsek na zavesenie"
 	  ],
-	  image: "/pages/entertainment/karty/karty_papierove.png"
+	  image: [
+		"/pages/entertainment/karty/papierove_karty_1.png",
+		"/pages/entertainment/karty/papierove_karty_2.png",
+		"/pages/entertainment/karty/papierove_karty_3.png",
+		"/pages/entertainment/karty/papierove_karty_4.png",
+		"/pages/entertainment/karty/papierove_karty_5.png",
+	  ]
 	},
 	{
 	  title: "Papierový obal s kartou",
@@ -43,7 +55,9 @@ const products = [
 		"Karta vlepená do obalu",
 		"Rôzne doplnky ako stierací panel, čiarový kód, personalizácia"
 	  ],
-	  image: "/pages/entertainment/karty/karty_obaly.png"
+	  image: [
+		"/pages/entertainment/karty/obaly_na_kartu.png"
+	  ]
 	},
 	{
 	  title: "EKO karty",
@@ -54,7 +68,12 @@ const products = [
 		"Množstvo doplnkov ako personalizácia, magnetické pole a iné",
 		<>Pre viac informácií nás <Link to="" className="text-brand hover:underline">kontaktujte</Link> alebo nám odošlite správu cez <Link to="" className="text-brand hover:underline">kontaktný formulár</Link></>
 	  ],
-	  image: "/pages/entertainment/karty/karty_eko.png"
+	  image: [
+		"/pages/entertainment/karty/eko_karty_1.png",
+		"/pages/entertainment/karty/eko_karty_2.png",
+		"/pages/entertainment/karty/eko_karty_3.png",
+		"/pages/entertainment/karty/eko_karty_4.png",
+	  ]
 	},
 	{
 	  title: "RFID karty",
@@ -65,7 +84,12 @@ const products = [
 		"Rôzne povrchové prevedenia a doplnky",
 		<>Čipy TK4100, EM 4200, MF 1k S50, Fudan a iné (pozri aj <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link>)</>
 	  ],
-	  image: "/pages/entertainment/karty/karty_rfid.png"
+	  image: [
+		"/pages/entertainment/karty/rfid_karty_1.png",
+		"/pages/entertainment/karty/rfid_karty_2.png",
+		"/pages/entertainment/karty/rfid_karty_3.png",
+		"/pages/entertainment/karty/rfid_karty_4.png",
+	  ]
 	}
   ];
 

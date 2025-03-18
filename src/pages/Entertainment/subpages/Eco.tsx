@@ -11,7 +11,11 @@ const products = [
             "Potlač jednostranná alebo obojstranná",
             <>Rôzne doplnky a zakončenia (viac informácií v kategórii <Link to="/zabava/snurky" className="text-brand hover:underline">Šnúrky na krk</Link>)</>
         ],
-        image: "/pages/entertainment/eko/eko_snurky.png"
+        image: [
+			"/pages/entertainment/eko/eko_snurky1.png",
+			"/pages/entertainment/eko/eko_snurky2.png",
+			"/pages/entertainment/eko/eko_snurky3.png",
+		]
     },
     {
         title: "EKO látkové náramky",
@@ -22,7 +26,10 @@ const products = [
             "Vyrobené zo 100% recyklovaného polyesteru získaného z recyklovaných fliaš",
             "Pozri aj https://www.pdc-big.com/info/eco-friendly#"
         ],
-        image: "/pages/entertainment/eko/eko_latkove.png"
+        image: [
+			"/pages/entertainment/eko/eko_naramky1.png",
+			"/pages/entertainment/eko/eko_naramky2.png",
+		]
     },
     {
         title: "EKO karty",
@@ -33,7 +40,11 @@ const products = [
             "Množstvo doplnkov ako personalizácia, magnetické pole a iné",
             <>Pre viac informácií nás <Link to="" className="text-brand hover:underline">kontaktujte</Link> alebo nám odošlite správu cez <Link to="" className="text-brand hover:underline">kontaktný formulár</Link></>
         ],
-        image: "/pages/entertainment/eko/eko_karty.png"
+        image: [
+			"/pages/entertainment/eko/eko_karty1.png",
+			"/pages/entertainment/eko/eko_karty2.png",
+			"/pages/entertainment/eko/eko_karty3.png",
+		]
     }
 ];
 

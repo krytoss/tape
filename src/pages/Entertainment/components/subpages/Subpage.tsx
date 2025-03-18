@@ -62,10 +62,10 @@ const Subpage: React.FC<Props> = ({ description, products, withCategories = fals
 	return (
 	  <>
 		<ProductsNav />
-		<div className="relative w-full lg:w-4/5 m-auto h-full py-10 flex-1">
+		<div className="relative w-full lg:w-4/5 m-auto h-full pt-20 pb-10 flex-1">
 			{
 				description &&
-					<p className="text-xl font-semibold p-10 text-center block">
+					<p className="text-xl font-semibold px-10 pb-20 text-center block">
 						{ description }
 					</p>
 			}
