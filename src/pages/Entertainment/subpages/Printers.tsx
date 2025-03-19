@@ -40,7 +40,7 @@ const Printers: React.FC = () => {
 		<Subpage
 			products={products}
 			cols = {{
-				default: 2,
+				default: 1,
 				md: 2,
 				xl: 2,
 			}}
