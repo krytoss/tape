@@ -8,7 +8,13 @@ const products = [
 			"Možnosť použiť 7 farieb nití",
 			"Jednorazové alebo opakované použitie"
 		],
-		image: "/pages/entertainment/latkove_naramky/vysivany.jpg"
+		image: [
+			"/pages/entertainment/latkove_naramky/vysivany.jpg",
+			"/pages/entertainment/latkove_naramky/vysivany2.png",
+			"/pages/entertainment/latkove_naramky/vysivany3.png",
+			"/pages/entertainment/latkove_naramky/vysivany4.png",
+			"/pages/entertainment/latkove_naramky/vysivany5.png",
+		]
 	},
 	{
 		title: "Saténové náramky",
@@ -17,7 +23,11 @@ const products = [
 			"Dve prevedenia materiálu (tenší a hrubší satén)",
 			"Jednostranná aj obojstranná potlač"
 		],
-		image: "/pages/entertainment/latkove_naramky/saten.jpg"
+		image: [
+			"/pages/entertainment/latkove_naramky/saten.jpg",
+			"/pages/entertainment/latkove_naramky/saten2.png",
+			"/pages/entertainment/latkove_naramky/saten3.png",
+		]
 	},
 	{
 		title: "RFID náramky s čipom",

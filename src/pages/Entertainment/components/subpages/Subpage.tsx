@@ -10,19 +10,26 @@ type Props = {
 			category: string;
 			items: {
 				title: string;
+				short_description?: string;
 				description: (string | React.ReactNode)[];
 				image: string | string[];
 			}[]
 		}[]
 		| {
 			title: string;
+			short_description?: string;
 			description: string[];
 			image: string | string[];
 		}[];
 	withCategories?: boolean;
+	cols?: {
+		default: number;
+		md: number;
+		xl: number;
+	}
 }
 
-const Subpage: React.FC<Props> = ({ description, products, withCategories = false }) => {
+const Subpage: React.FC<Props> = ({ description, products, cols, withCategories = false }) => {
 
 	const sectionsRef = useRef<HTMLDivElement[]>([]);
 
@@ -80,6 +87,7 @@ const Subpage: React.FC<Props> = ({ description, products, withCategories = fals
 									<div ref={(el) => (sectionsRef.current[categoryIndex * 10 + productIndex] = el)} key={productIndex}>
 										<Product
 											title={product.title}
+											shortDescription={product.short_description}
 											description={product.description}
 											image={product.image}
 											maxHeight={maxHeight}
@@ -91,12 +99,13 @@ const Subpage: React.FC<Props> = ({ description, products, withCategories = fals
 						</Grid>
 						</div>
 					)) :
-					<Grid cols={1} colsMd={2} colsXl={3} className="gap-10 px-6 flex-1">
+					<Grid cols={cols?.default ?? 1} colsMd={cols?.md ?? 2} colsXl={cols?.xl ?? 3} className="gap-10 px-6 flex-1">
 						{
 							products.map((product, index) => (
 								<div ref={(el) => (sectionsRef.current[index] = el)} key={index}>
 									<Product
 										title={product.title}
+										shortDescription={product.short_description}
 										description={product.description}
 										image={product.image}
 										maxHeight={maxHeight}

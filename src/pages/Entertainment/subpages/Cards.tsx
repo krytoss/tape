@@ -56,7 +56,12 @@ const products = [
 		"Rôzne doplnky ako stierací panel, čiarový kód, personalizácia"
 	  ],
 	  image: [
-		"/pages/entertainment/karty/obaly_na_kartu.png"
+		"/pages/entertainment/karty/obaly_na_kartu_1.png",
+		"/pages/entertainment/karty/obaly_na_kartu_2.png",
+		"/pages/entertainment/karty/obaly_na_kartu_3.png",
+		"/pages/entertainment/karty/obaly_na_kartu_4.png",
+		"/pages/entertainment/karty/obaly_na_kartu_5.png",
+		"/pages/entertainment/karty/obaly_na_kartu_6.png",
 	  ]
 	},
 	{

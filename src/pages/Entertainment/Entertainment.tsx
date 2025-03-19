@@ -20,7 +20,7 @@ const Entertainment: React.FC = () => {
 			{ /* <div className="relative z-20 w-full m-auto"> */ }
 			<Grid className="xl:h-[calc(100vh-5rem)] relative z-20" colsXs={1} colsMd={2} colsXl={3} >
 				<ProductCard
-					link="/zabava/plastove-karty"
+					link="/zabava/karty"
 					className="h-full"
 					title="Plastové karty"
 					description="Plastové karty sú ideálnym riešením pre darčekové a vernostné karty. Slúžia aj na identifikáciu návštevníkov na rôznych podujatiach. Ponúkame karty s plnofarebnou potlačou aj bez potlače, QR kódom a čipmi, ktoré zabezpečia bezpečný a efektívny systém vstupu. Spoľahlivé a praktické. Plastové karty zaručia bezproblémovú organizáciu podujatí a sú skvelým nástrojom pre vernostné programy."

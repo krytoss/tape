@@ -11,6 +11,8 @@ import Bracelets from './pages/Entertainment/subpages/Bracelets';
 import Cards from './pages/Entertainment/subpages/Cards';
 import Eco from './pages/Entertainment/subpages/Eco';
 import Rfid from './pages/Entertainment/subpages/Rfid';
+import Business from './pages/Business/Business';
+import Printers from './pages/Entertainment/subpages/Printers';
 
 type Page = {
 	component: React.FC,
@@ -25,6 +27,9 @@ export const pages: Record<string, Page> = {
 	},
 	"zdravotnictvo": {
 		component: Health,
+	},
+	"business": {
+		component: Business
 	},
 	"zabava": {
 		component: Layout,
@@ -73,6 +78,11 @@ export const pages: Record<string, Page> = {
 				component: Rfid,
 				title: "RFID",
 				img: "/pages/entertainment/rfid.png"
+			},
+			"tlaciarne": {
+				component: Printers,
+				title: "Tlačiarne a čiarové kódy",
+				img: "/pages/entertainment/tlaciarne.png"
 			}
 		}
 	}
