@@ -1,0 +1,20 @@
+name: build-and-deploy
+on: push
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v4
+            - name: install node
+              uses: actions/setup-node@v4
+            - name: install dependencies
+              run:  npm ci
+            - name: build project
+              run: npm run build
+            - name: Deploy to production url
+              if: github.ref == 'refs/heads/main'
+              uses: JamesIves/github-pages-deploy-action@4.1.4
+              with:
+                branch: gh-pages
+                folder: dist

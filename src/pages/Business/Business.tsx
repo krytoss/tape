@@ -12,7 +12,7 @@ const Business: React.FC = () => {
 			<Header className="h-[80vh] relative z-20" img="./health/header.jpeg">
 				<Cover>
 					<Title color="light" size="3xl text-center">
-						Bezpečnosť v zdravotníctve
+						Biznis
 					</Title>
 				</Cover>
 			</Header>
