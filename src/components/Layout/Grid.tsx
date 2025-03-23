@@ -20,6 +20,7 @@ const Grid: React.FC<Props> = ({ children, cols, colsXs, colsSm, colsMd, colsLg,
 		colsMd ? `md:grid-cols-${colsMd}` : "",
 		colsLg ? `lg:grid-cols-${colsLg}` : "",
 		colsXl ? `xl:grid-cols-${colsXl}` : "",
+		gap ? `gap-${gap}` : "",
 		className ?? ""
 	].join(" ");
 

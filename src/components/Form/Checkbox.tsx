@@ -1,11 +1,10 @@
 type Props = {
 	label: string,
 	checked: boolean,
-	onChange: (checked: boolean) => void,
-	required?: boolean
+	onChange: (checked: boolean) => void
 }
 
-const Checkbox: React.FC<Props> = ({ label, checked, onChange, required }) => {
+const Checkbox: React.FC<Props> = ({ label, checked, onChange }) => {
 	
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		onChange(event.target.checked)

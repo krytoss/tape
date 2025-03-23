@@ -55,7 +55,6 @@ const TopMenu: React.FC = () => {
               key={index}
               to={link.to}
               className="hover:text-gray-300 w-full text-center hover:bg-black/40 p-3"
-              onClick={() => setMenuOpen(false)}
             >
               {link.name}
             </Link>

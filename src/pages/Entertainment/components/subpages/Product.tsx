@@ -4,7 +4,7 @@ import gsap from "gsap";
 type ProductProps = {
   title: string;
   shortDescription?: string;
-  description: string[];
+  description: (string | React.ReactNode)[];
   image: string | string[];
   setMaxHeight?: (height: number) => void;
   maxHeight?: number;

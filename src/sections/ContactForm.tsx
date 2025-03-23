@@ -47,7 +47,7 @@ const ContactForm: React.FC = () => {
 		});
 		
 		return () => ctx.revert();
-	})
+	}, [])
 
 	const [ mail, setMail ] = useState<string>("")
 	const [ phone, setPhone ] = useState<string>("")
@@ -84,6 +84,8 @@ const ContactForm: React.FC = () => {
 		}
 	]
 
+	console.log(service, message)
+
 	return (
 		<Section>
 			<Grid cols={1} colsXl={5} className="h-full justify-center items-center">
@@ -119,10 +121,13 @@ const ContactForm: React.FC = () => {
 							label="Mám záujem o:"
 							options={options}
 							required={true}
+							onChange={(value) => {
+								setService(value)
+							}}
 						/>
 						<Textbox
 							label="Správa"
-							value=""
+							value={message}
 							onChange={(value) => {
 								setMessage(value)
 							}}
@@ -131,7 +136,6 @@ const ContactForm: React.FC = () => {
 							label="Súhlasím s používaním mojich údajov na uvedený účel"
 							checked={agreement}
 							onChange={(checked) => {setAgreement(checked)}}
-							required={true}
 						/>
 					</Form>
 				</div>

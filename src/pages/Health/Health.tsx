@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import Cover from "../../components/Layout/Cover"
 import Grid from "../../components/Layout/Grid"
 import Header from "../../components/Layout/Header"
@@ -7,8 +6,6 @@ import Section from "../../components/Layout/Section"
 import Title from "../../components/Layout/Title"
 import Link from "../../components/Navigation/Link"
 import TopMenu from "../../components/Navigation/TopMenu"
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all"
 
 const Health: React.FC = () => {
 
