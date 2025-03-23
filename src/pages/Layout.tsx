@@ -6,7 +6,7 @@ import Title from "../components/Layout/Title";
 import ArrowDown from "../components/Navigation/ArrowDown";
 import ContactForm from "../sections/ContactForm";
 import Section from "../components/Layout/Section";
-import { pages } from "../routes/pages";
+import { pages } from "../routes";
 
 const Layout: React.FC = () => {
 

@@ -1,17 +1,17 @@
-import { Layout } from "lucide-react";
-import Business from "../pages/Business/Business";
-import Health from "../pages/Health/Health";
-import Home from "../sections/Home";
-import Entertainment from "../pages/Entertainment/Entertainment";
-import Printers from "../pages/Entertainment/subpages/Printers";
-import Rfid from "../pages/Entertainment/subpages/Rfid";
-import Eco from "../pages/Entertainment/subpages/Eco";
-import Cords from "../pages/Entertainment/subpages/Cords";
-import Bracelets from "../pages/Entertainment/subpages/Bracelets";
-import Cases from "../pages/Entertainment/subpages/Cases";
-import Cards from "../pages/Entertainment/subpages/Cards";
-import Fabric from "../pages/Entertainment/subpages/Fabric";
-import Silicones from "../pages/Entertainment/subpages/Silicones";
+import Home from './pages/Home/HomePage';
+import Health from './pages/Health/Health';
+import Entertainment from './pages/Entertainment/Entertainment';
+import Silicones from './pages/Entertainment/subpages/Silicones';
+import Layout from './pages/Layout';
+import Fabric from './pages/Entertainment/subpages/Fabric';
+import Cases from './pages/Entertainment/subpages/Cases';
+import Cords from './pages/Entertainment/subpages/Cords';
+import Bracelets from './pages/Entertainment/subpages/Bracelets';
+import Cards from './pages/Entertainment/subpages/Cards';
+import Eco from './pages/Entertainment/subpages/Eco';
+import Rfid from './pages/Entertainment/subpages/Rfid';
+import Business from './pages/Business/Business';
+import Printers from './pages/Entertainment/subpages/Printers';
 
 type Page = {
 	component: React.FC,
