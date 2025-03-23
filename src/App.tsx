@@ -4,7 +4,7 @@ import { pages } from './routes';
 function App() {
 
   return (
-	<BrowserRouter basename='/tape'>
+	<BrowserRouter>
 		<Routes>
 			{
 				Object.entries(pages).map(([path, { component: Component, children }]) => {
