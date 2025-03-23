@@ -80,7 +80,7 @@ const Team: React.FC = () => {
 						Team
 					</Title>
 					<p className="text-slate-700 font-semibold mt-10 text-xl">
-						Spoznajte ľudí, ktorí budú s vami komunikovať
+						Spoznajte ľudí, ktorí budú s vami komunikovať
 					</p>
 				</div>
 				<div className="col-span-2 py-10 pl-10 pr-40 justify-center items-center flex text-slate-700">

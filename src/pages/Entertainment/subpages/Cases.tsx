@@ -106,11 +106,11 @@ const products = [
 		]
       },
       {
-        title: "Vinylové puzdro s uzatvárateľným ZIP systémom",
+        title: "Vinylové puzdro s uzatvárateľným ZIP systémom",
         description: [
           "Vonkajší rozmer: 76x126mm",
           "Vnútorný rozmer: 66x99mm",
-          "Chráni pred nečistotami a vlhkosťou",
+          "Chráni pred nečistotami a vlhkosťou",
           "Ideálne pre použitie vo vonkajšom alebo priemyselnom prostredí",
 		  "Farba: priehľadná",
           "Materiál: vinyl"

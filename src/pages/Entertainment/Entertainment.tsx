@@ -23,7 +23,7 @@ const Entertainment: React.FC = () => {
 					link="/zabava/karty"
 					className="h-full"
 					title="Plastové karty"
-					description="Plastové karty sú ideálnym riešením pre darčekové a vernostné karty. Slúžia aj na identifikáciu návštevníkov na rôznych podujatiach. Ponúkame karty s plnofarebnou potlačou aj bez potlače, QR kódom a čipmi, ktoré zabezpečia bezpečný a efektívny systém vstupu. Spoľahlivé a praktické. Plastové karty zaručia bezproblémovú organizáciu podujatí a sú skvelým nástrojom pre vernostné programy."
+					description="Plastové karty sú ideálnym riešením pre darčekové a vernostné karty. Slúžia aj na identifikáciu návštevníkov na rôznych podujatiach. Ponúkame karty s plnofarebnou potlačou aj bez potlače, QR kódom a čipmi, ktoré zabezpečia bezpečný a efektívny systém vstupu. Spoľahlivé a praktické. Plastové karty zaručia bezproblémovú organizáciu podujatí a sú skvelým nástrojom pre vernostné programy."
 					image="./pages/entertainment/plastove_karty.png"
 				/>
 				<ProductCard
@@ -36,15 +36,15 @@ const Entertainment: React.FC = () => {
 				<ProductCard
 					link="/zabava/naramky"
 					className="h-full"
-					title="Vinylové, plastové a tyvek náramky"
-					description="Vinylové, plastové i Tyvek náramky sú určené na označovanie návštevníkov na diskotékach, festivaloch, kúpaliskách či hromadných podujatiach. Sú neprenosné, čo zvyšuje bezpečnosť a znižuje možné straty pri organizácii masových akcií. Cenová dostupnosť je benefitom a môžu byť alternatívou k látkovým náramkom."
+					title="Vinylové, plastové a tyvek náramky"
+					description="Vinylové, plastové i Tyvek náramky sú určené na označovanie návštevníkov na diskotékach, festivaloch, kúpaliskách či hromadných podujatiach. Sú neprenosné, čo zvyšuje bezpečnosť a znižuje možné straty pri organizácii masových akcií. Cenová dostupnosť je benefitom a môžu byť alternatívou k látkovým náramkom."
 					image="./pages/entertainment/tyvek.png"
 				/>
 				<ProductCard
 					link="/zabava/silikonove-naramky"
 					className="h-full"
 					title="Silikónové náramky"
-					description="Silikónové náramky sa používajú na propagáciu značky alebo podujatia, ako reklamné a darčekové predmety. Sú vodeodolné a trvácne. V ponuke máme rôzne šírky, prevedenia a veľkosti pre deti aj dospelých."
+					description="Silikónové náramky sa používajú na propagáciu značky alebo podujatia, ako reklamné a darčekové predmety. Sú vodeodolné a trvácne. V ponuke máme rôzne šírky, prevedenia a veľkosti pre deti aj dospelých."
 					image="./pages/entertainment/silikonove.png"
 				/>
 				<ProductCard
@@ -58,9 +58,9 @@ const Entertainment: React.FC = () => {
 					link="/zabava/puzdra-menovky-rolery"
 					title="Puzdrá, menovky, rolery"
 					description="Chráňte a prezentujte identifikačné karty vašich návštevníkov, VIP hostí a personálu s našimi kvalitnými plastovými visačkami/puzdrami. Sú výborným doplnkom ku šnúrkam na krk alebo PVC kartám.
-Menovky sú neoceniteľným nástrojom na budovanie vzťahov na hromadných podujatiach. Umožňujú rýchlu vzájomnú identifikáciu, čo prispieva k ľahšiemu kontaktu a zvýšeniu bezpečnosti.
-Rolery sú praktickým držiakom na visačku s identifikačnou kartou. Je možné ich umiestniť kdekoľvek na oblečení či na šnúrku na krk. 
-V našej ponuke nájdete rôzne veľkosti, materiály a prevedenia. "
+Menovky sú neoceniteľným nástrojom na budovanie vzťahov na hromadných podujatiach. Umožňujú rýchlu vzájomnú identifikáciu, čo prispieva k ľahšiemu kontaktu a zvýšeniu bezpečnosti.
+Rolery sú praktickým držiakom na visačku s identifikačnou kartou. Je možné ich umiestniť kdekoľvek na oblečení či na šnúrku na krk. 
+V našej ponuke nájdete rôzne veľkosti, materiály a prevedenia. "
 					image="./pages/entertainment/puzdra.png"
 				/>
 				<ProductCard

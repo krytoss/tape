@@ -44,12 +44,12 @@ const Health: React.FC = () => {
 							Sme oficiálnym distribútorom spoločnosti <Link className="text-brand text-[1rem] !font-bold" to="https://www.pdcorp.com">PDC Precision Dynamics Corporation</Link> (patriaceho do skupiny Brady Corporation) pre Slovenskú republiku. 
 						</span>
 						<span className="block text-xl mt-5">
-						Precision Dynamics Corporation je najväčším celosvetovým výrobcom identifikačných náramkov a etikiet na označovanie liekov a striekačiek. Poskytuje stopercentnú kvalitu, pokiaľ ide o služby, dizajn a výrobu. Potvrdzujú to aj certifikáty ISO-9001:2015 a ISO-13485:2016, ISO-14001:2015 hlavného závodu v San Fernando v Kalifornii v USA.
-						PDC ako prvá na svete uviedla na trh identifikačné náramky v roku 1956.
+						Precision Dynamics Corporation je najväčším celosvetovým výrobcom identifikačných náramkov a etikiet na označovanie liekov a striekačiek. Poskytuje stopercentnú kvalitu, pokiaľ ide o služby, dizajn a výrobu. Potvrdzujú to aj certifikáty ISO-9001:2015 a ISO-13485:2016, ISO-14001:2015 hlavného závodu v San Fernando v Kalifornii v USA.
+						PDC ako prvá na svete uviedla na trh identifikačné náramky v roku 1956.
 						</span>
 						<span className="block text-xl mt-5">
 							Identifikácia ovplyvňuje všetky aspekty klinickej starostlivosti, od skúsenosti pacientov až po spokojnosť zdravotníckeho personálu.
-							Kvalita identifikačných riešení je kľúčová pre bezpečnosť pacientov. Produkty od PDC sú navrhnuté tak, aby zlepšili klinické výsledky v kritických bodoch starostlivosti o pacientov. Náramky a štítky sú vyrobené s dôrazom na maximálnu bezpečnosť, pevnosť a trvanlivosť. 
+							Kvalita identifikačných riešení je kľúčová pre bezpečnosť pacientov. Produkty od PDC sú navrhnuté tak, aby zlepšili klinické výsledky v kritických bodoch starostlivosti o pacientov. Náramky a štítky sú vyrobené s dôrazom na maximálnu bezpečnosť, pevnosť a trvanlivosť. 
 						</span>
 					</p>
 				</div>
@@ -65,13 +65,13 @@ const Health: React.FC = () => {
 							Identifikačné náramky pre pacientov poskytujú jasné a presné informácie o každom pacientovi. Vďaka nim zdravotnícky personál rýchlo a jednoducho identifikuje pacienta, čo zvyšuje bezpečnosť a efektivitu starostlivosti.
 						</p>
 						<p className="mb-5">
-							Dnes dokážeme v oblasti identifikácie uspokojiť akékoľvek požiadavky – riešenia na termálnu potlač, popisovateľné náramky, náramky s vkladacím štítkom, náramky s prelepovacou fóliou, zabezpečujeme identifikáciu matiek a novorodencov aj náramky na TRIAGE.
+							Dnes dokážeme v oblasti identifikácie uspokojiť akékoľvek požiadavky – riešenia na termálnu potlač, popisovateľné náramky, náramky s vkladacím štítkom, náramky s prelepovacou fóliou, zabezpečujeme identifikáciu matiek a novorodencov aj náramky na TRIAGE.
 						</p>
 						<p className="mb-5">
 							Identifikačné náramky pre pacientov neobsahujú latex, ftaláty, sú antimikrobiálne a odolné proti alkoholu, vode, mydlu, dezinfekciám a taktiež väčšine kvapalín, ktoré sa v zdravotníctve používajú.
 						</p>
 						<p>
-							Ponúkame široké portfólio produktov v rôznych farbách, veľkostiach, materiáloch podľa individuálnych potrieb.
+							Ponúkame široké portfólio produktov v rôznych farbách, veľkostiach, materiáloch podľa individuálnych potrieb.
 						</p>
 					</div>
 
@@ -92,7 +92,7 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 								height="400px"
 								title="Popisovateľné náramky"
 								image="./health/popisovatelne.png"
-								description="Popisovateľné náramky sú bezproblémovým riešením pre identifikáciu pacienta v akomkoľvek zdravotníckom zariadení! Pružné a všestranné popisovateľné  náramky sú ideálnou voľbou pre krátkodobé i dlhodobé príjmy pacientov. Jednoduchá manipulácia a možnosť rýchlej vizuálnej pozitívnej identifikácie je výhodou i pre špeciálne oddelenia ako je pohotovosť. Vyberte si zo širokej škály farieb."
+								description="Popisovateľné náramky sú bezproblémovým riešením pre identifikáciu pacienta v akomkoľvek zdravotníckom zariadení! Pružné a všestranné popisovateľné  náramky sú ideálnou voľbou pre krátkodobé i dlhodobé príjmy pacientov. Jednoduchá manipulácia a možnosť rýchlej vizuálnej pozitívnej identifikácie je výhodou i pre špeciálne oddelenia ako je pohotovosť. Vyberte si zo širokej škály farieb."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
@@ -106,21 +106,21 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 								height="400px"
 								title="S vkladacím štítkom"
 								image="./health/vkladacie.png"
-								description="Náramky s vkladacím štítkom sú pohodlné a jednoduché na používanie. Štítok je nositeľom údajov o pacientovi, ktorý sa vloží do priehľadného ochranného puzdra. Sú umývateľné, ľahké, pevné, nemajú ostré hrany, sú vhodné aj pre citlivú pleť."
+								description="Náramky s vkladacím štítkom sú pohodlné a jednoduché na používanie. Štítok je nositeľom údajov o pacientovi, ktorý sa vloží do priehľadného ochranného puzdra. Sú umývateľné, ľahké, pevné, nemajú ostré hrany, sú vhodné aj pre citlivú pleť."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto"
 								height="400px"
 								title="Pre matku a dieťa"
 								image="./health/pre_matku_a_dieta.png"
-								description="Identifikačné náramky v pôrodniciach pre matku a dieťa sú obľúbenou voľbou na trhu. Cieľom je zaistiť neomylnú identifikáciu matky, novorodenca, prípadne ďalších rodinných príslušníkov. Každý pár náramkov je označený jedinečným alfanumerickým kódom pre jednoduché spárovanie matky a dieťaťa. Sú umývateľné, ľahké, nemajú ostré hrany, vhodné pre kojencov aj citlivú pleť."
+								description="Identifikačné náramky v pôrodniciach pre matku a dieťa sú obľúbenou voľbou na trhu. Cieľom je zaistiť neomylnú identifikáciu matky, novorodenca, prípadne ďalších rodinných príslušníkov. Každý pár náramkov je označený jedinečným alfanumerickým kódom pre jednoduché spárovanie matky a dieťaťa. Sú umývateľné, ľahké, nemajú ostré hrany, vhodné pre kojencov aj citlivú pleť."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto"
 								height="400px"
 								title="Termálne tlačiarne"
 								image="./health/termalne_tlaciarne.png"
-								description="Zabezpečujeme dodávku tlačiarní pre termálnu potlač identifikačných náramkov aj etikiet.  Vyznačujú sa malými rozmermi. Sú praktické, čo umožňuje užívateľom jednoduchú manipuláciu s rolkami. Termálne tlačiarne TSC TDP-225W na identifikáciu pacientov používa mnoho nemocníc na Slovensku."
+								description="Zabezpečujeme dodávku tlačiarní pre termálnu potlač identifikačných náramkov aj etikiet.  Vyznačujú sa malými rozmermi. Sú praktické, čo umožňuje užívateľom jednoduchú manipuláciu s rolkami. Termálne tlačiarne TSC TDP-225W na identifikáciu pacientov používa mnoho nemocníc na Slovensku."
 							/>
 						</Grid>
 					</div>

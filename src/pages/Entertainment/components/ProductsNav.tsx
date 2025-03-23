@@ -21,7 +21,7 @@ const ProductsNav: React.FC = () => {
 			to: "/zabava/latkove-naramky"
 		},
 		{
-			name: "Vinylové, plastové a tyvek náramky",
+			name: "Vinylové, plastové a tyvek náramky",
 			img: "/pages/entertainment/tyvek.png",
 			to: "/zabava/naramky"
 		},

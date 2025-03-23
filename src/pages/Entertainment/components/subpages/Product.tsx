@@ -45,7 +45,7 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
       const height = productRef.current.offsetHeight;
       setMaxHeight(height);
     }
-  }, []);
+  }, [ setMaxHeight ]);
 
   return (
     <div
