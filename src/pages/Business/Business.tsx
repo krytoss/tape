@@ -4,6 +4,8 @@ import Header from "../../components/Layout/Header";
 import Section from "../../components/Layout/Section";
 import Title from "../../components/Layout/Title";
 import TopMenu from "../../components/Navigation/TopMenu";
+import ProductCard from "../Entertainment/components/ProductCard";
+import ProductCardWide from "../../components/Layout/ProductCardWide";
 
 const Business: React.FC = () => {
 	return (
@@ -29,26 +31,43 @@ const Business: React.FC = () => {
 						fillRule="evenodd"
 					/>
 				</svg>
-				<div className="relative z-20">
-					<p>
-						<span className="text-3xl block font-semibold">
-							V našej firme veríme, že bezpečnosť pacientov je na prvom mieste.
-							Preto vám prinášame špičkové riešenia na identifikáciu a označovanie
-							v zdravotníckych zariadeniach, ktoré zvyšujú úroveň starostlivosti a
-							znižujú riziko chýb.
-						</span>
-						<span className="block text-2xl mt-5">
-							Sme oficiálnym distribútorom spoločnosti <Link className="text-brand text-[1rem] !font-bold" to="https://www.pdcorp.com">PDC Precision Dynamics Corporation</Link> (patriaceho do skupiny Brady Corporation) pre Slovenskú republiku. 
-						</span>
-						<span className="block text-xl mt-5">
-						Precision Dynamics Corporation je najväčším celosvetovým výrobcom identifikačných náramkov a etikiet na označovanie liekov a striekačiek. Poskytuje stopercentnú kvalitu, pokiaľ ide o služby, dizajn a výrobu. Potvrdzujú to aj certifikáty ISO-9001:2015 a ISO-13485:2016, ISO-14001:2015 hlavného závodu v San Fernando v Kalifornii v USA.
-						PDC ako prvá na svete uviedla na trh identifikačné náramky v roku 1956.
-						</span>
-						<span className="block text-xl mt-5">
-							Identifikácia ovplyvňuje všetky aspekty klinickej starostlivosti, od skúsenosti pacientov až po spokojnosť zdravotníckeho personálu.
-							Kvalita identifikačných riešení je kľúčová pre bezpečnosť pacientov. Produkty od PDC sú navrhnuté tak, aby zlepšili klinické výsledky v kritických bodoch starostlivosti o pacientov. Náramky a štítky sú vyrobené s dôrazom na maximálnu bezpečnosť, pevnosť a trvanlivosť. 
-						</span>
-					</p>
+				<div className="relative z-20 flex flex-col gap-12">
+					<ProductCardWide
+						title="Karty"
+						description="Vstupné karty s plnofarebnou potlačou pre zamestnancov a návštevníkov. Ideálne pre budovy, haly či konferencie – kompatibilné so všetkými čítačkami."
+						image="/pages/business/karty.png"
+						link="/zabava/karty"
+					/>
+
+					<ProductCardWide
+						title="Šnúrky na krk"
+						description="Elegantné saténové aj pevné textilné šnúrky na karty a kľúče s možnosťou potlače. Ideálne na každodenné použitie aj eventy."
+						image="/pages/business/snurky.png"
+						link="/zabava/snurky"
+						invert={true}
+					/>
+
+					<ProductCardWide
+						title="Puzdrá, rolery, menovky"
+						description="Chráňte a prezentujte identifikačné karty profesionálne. Visačky, rolery a menovky z kvalitných materiálov pre firmy a eventy."
+						image="/pages/business/puzdra_rolery_menovky.png"
+						link="/zabava/puzdra-menovky-rolery"
+					/>
+
+					<ProductCardWide
+						title="RFID produkty"
+						description="Bezkontaktné riešenia: RFID karty, náramky a kľúčenky pre dochádzku, vstupy a stravovacie systémy. Možnosť personalizácie."
+						image="/pages/business/rfid.png"
+						link="/zabava/rfid"
+						invert={true}
+					/>
+
+					<ProductCardWide
+						title="Tlačiarne a QR/čiarové kódy"
+						description="Tlač čiarových a QR kódov priamo u vás. Efektívne riešenie pre evidenciu, vstupy a ochranu zamestnancov aj návštevníkov."
+						image="/pages/business/tlaciarne.png"
+						link="/zabava/tlaciarne"
+					/>
 				</div>
 			</Section>
 		</>

@@ -1,43 +1,53 @@
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { HashRouter, Route, Routes, useLocation } from 'react-router';
 import { pages } from './routes';
+import { useScrollToTop } from './components/ScrollToTop';
+import { useLayoutEffect, useRef } from 'react';
+import gsap from 'gsap';
 
-function App() {
+const AppContent = () => {
+	const location = useLocation();
+	const containerRef = useRef<HTMLDivElement>(null);
 
-  return (
-	<BrowserRouter>
-		<Routes>
-			{
-				Object.entries(pages).map(([path, { component: Component, children }]) => {
+	useScrollToTop();
+
+	useLayoutEffect(() => {
+		const ctx = gsap.context(() => {
+			gsap.fromTo(
+				containerRef.current,
+				{ opacity: 0 },
+				{ opacity: 1, duration: 0.5, ease: "power2.out" }
+			);
+		});
+
+		return () => ctx.revert();
+	}, [location.pathname]);
+
+	return (
+		<div ref={containerRef}>
+			<Routes>
+				{Object.entries(pages).map(([path, { component: Component, children }]) => {
 					if (children) {
 						return (
-							<Route path={path} element={<Component />}>
-								{
-									Object.entries(children).map(([childPath, { component: Component }]) => (
-										<Route path={childPath} element={<Component />} />
-									))
-								}
+							<Route key={path} path={path} element={<Component />}>
+								{Object.entries(children).map(([childPath, { component: ChildComponent }]) => (
+									<Route key={childPath} path={childPath} element={<ChildComponent />} />
+								))}
 							</Route>
-						)
+						);
 					}
-					return <Route path={path} element={<Component />} />
-				})
-			/*
-			<Route path="/" element={<Home />} />
-			<Route path="zdravotnictvo" element={<Health />} />
-			<Route path="zabava" element={<Layout />}>
-				<Route path=""	element={<Entertainment />} />
-				<Route path="silikonove-naramky" element={<Silicones />} />
-				<Route path="latkove-naramky" element={<Fabric />} />
-				<Route path="karty" element={<Cards />} />
-				<Route path="puzdra-menovky-rolery" element={<Cases />} />
-				<Route path="snurky" element={<Cords />} />
-				<Route path="vinylove-naramky" element={<Bracelets />} />
-			</Route>
-			*/
-			}
-		</Routes>
-	</BrowserRouter>
-  )
-}
+					return <Route key={path} path={path} element={<Component />} />;
+				})}
+			</Routes>
+		</div>
+	);
+};
 
-export default App
+const App = () => {
+	return (
+		<HashRouter>
+			<AppContent />
+		</HashRouter>
+	);
+};
+
+export default App;

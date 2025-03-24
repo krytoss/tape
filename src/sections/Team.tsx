@@ -27,7 +27,7 @@ const Team: React.FC = () => {
 			scrollTrigger: {
 				trigger: elLeft,
 				start: "top 50%",
-				end: "bottom 50%",
+				end: "bottom 1%",
 				toggleActions: "play reverse play reverse",
 				once: false,
 			}
@@ -43,7 +43,7 @@ const Team: React.FC = () => {
 			scrollTrigger: {
 				trigger: elQuote,
 				start: "top 95%",
-				end: "bottom 50%",
+				end: "bottom 40%",
 				toggleActions: "play reverse play reverse",
 				once: false,
 			}
@@ -61,8 +61,8 @@ const Team: React.FC = () => {
 			  stagger: 0.05,
 			  scrollTrigger: {
 				  trigger: '.person-card',
-				  start: "top 50%",
-				  end: "bottom 50%",
+				  start: "top 80%",
+				  end: "top 20%",
 				  toggleActions: "play reverse play reverse",
 				  once: false
 			  }
@@ -74,8 +74,8 @@ const Team: React.FC = () => {
 	return (
 		<Section className="relative bg-white">
 			<img src="./hexagon.jpg" className="z-10 absolute right-0 bottom-0" />
-			<Grid cols={3} className="h-full bg-gray-300 bg-opacity-90 relative z-20">
-				<div ref={leftRef} className="py-10 pl-40 pr-10 text-center justify-center items-center flex width-full flex-col">
+			<Grid cols={1} colsXl={3} className="h-full bg-gray-300 bg-opacity-90 relative z-20">
+				<div ref={leftRef} className="py-10 xl:pl-40 xl:pr-10 text-center justify-center items-center flex width-full flex-col">
 					<Title color="dark">
 						Team
 					</Title>
@@ -83,26 +83,26 @@ const Team: React.FC = () => {
 						Spoznajte ľudí, ktorí budú s vami komunikovať
 					</p>
 				</div>
-				<div className="col-span-2 py-10 pl-10 pr-40 justify-center items-center flex text-slate-700">
-					<Grid cols={3}>
-						<div className="p-10">
+				<div className="lg:col-span-2 py-10 xl:pl-10 xl:pr-40 justify-center items-center flex text-slate-700">
+					<Grid cols={1} colsLg={3} className="w-full flex justify-center items-center">
+						<div className="p-10 w-1/2 lg:w-auto">
 							<PersonCard img="./team/tatiana.png" name="Tatiana Reindlová" position="konateľ, strategický manažér" />
 						</div>
-						<div className="p-10">
+						<div className="p-10 w-1/2 lg:w-auto">
 							<PersonCard img="./team/peter.png" name="Peter Reindl" position="konateľ, obchodný manažér" />
 						</div>
-						<div className="p-10">
+						<div className="p-10 w-1/2 lg:w-auto">
 							<PersonCard img="./team/monika.png" name="Monika Šafárová" position="koordinátor predaja" />
 						</div>
 					</Grid>
 				</div>
 			</Grid>
-			<div ref={quoteRef} className="absolute bottom-20 right-0 left-0 bg-gray-400/80 p-5 pr-20 z-30 text-right text-3xl text-slate-700">
+			<div ref={quoteRef} className="xl:absolute bottom-10 right-0 left-0 bg-gray-400/80 p-5 pr-20 z-30 text-right text-3xl text-slate-700">
 				<span className="absolute left-20 bottom-0 transform translate-y-[15px] text-8xl font-serif">
 					„
 				</span>
 				<span className="absolute right-10 top-0 transform -translate-y-[20px] text-8xl font-serif">
-				“
+					“
 				</span>
 				Kvalita, rýchlosť a individuálny prístup k zákazníkom sú naším štandardom.
 			</div>

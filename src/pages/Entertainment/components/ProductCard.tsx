@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Cover from "../../../components/Layout/Cover";
 
 type Props = {
@@ -24,7 +25,7 @@ const ProductCard: React.FC<Props> = ({ className, title, description, image, li
 		<div className={`card relative group h-full overflow-hidden ${className ?? ""}`}>
 			{
 				link && (
-					<a href={link} className="absolute z-50 top-0 left-0 right-0 bottom-0" />
+					<Link to={link} className="absolute z-50 top-0 left-0 right-0 bottom-0" />
 				)
 			}
 			<Cover className="h-full opacity-0 group-hover:opacity-90 z-40 transition-all duration-[900ms]" />
