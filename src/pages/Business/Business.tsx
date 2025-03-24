@@ -1,10 +1,8 @@
-import { Link } from "react-router";
 import Cover from "../../components/Layout/Cover";
 import Header from "../../components/Layout/Header";
 import Section from "../../components/Layout/Section";
 import Title from "../../components/Layout/Title";
 import TopMenu from "../../components/Navigation/TopMenu";
-import ProductCard from "../Entertainment/components/ProductCard";
 import ProductCardWide from "../../components/Layout/ProductCardWide";
 
 const Business: React.FC = () => {
