@@ -73,7 +73,7 @@ function HomePage() {
 		);
 
 		tl.to("#logo", {
-			scale: 0.5,
+			scale: 0.33,
 			duration: 0.8,
 			delay: -1.2,
 			top: 0,

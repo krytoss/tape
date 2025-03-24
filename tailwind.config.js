@@ -20,6 +20,10 @@ export default {
 		  variants: ["xs", "sm", "md", "lg", "xl", "2xl"],
 		},
 		{
+		  pattern: /^text-\d+xl$/, 
+		  variants: ["xs", "sm", "md", "lg", "xl", "2xl"],
+		},
+		{
 			pattern: /^text-(red|blue|white|green|yellow|gray|black|slate)-?\d{0,3}$/,
 		},
 	  ],

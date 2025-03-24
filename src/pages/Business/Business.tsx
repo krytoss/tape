@@ -9,14 +9,14 @@ const Business: React.FC = () => {
 	return (
 		<>
 			<TopMenu />
-			<Header className="h-[80vh] relative z-20" img="./health/header.jpeg">
+			<Header className="h-[50vh] md:h-[80vh] relative z-20" img="./health/header.jpeg">
 				<Cover>
 					<Title color="light" size="3xl text-center">
 						Biznis
 					</Title>
 				</Cover>
 			</Header>
-			<Section fullHeight={false} className="px-60 py-20 overflow-visible">
+			<Section fullHeight={false} className="px-5 md:px-10 lg:px-20 xl:px-40 py-20 overflow-visible">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="-100 -100 1093 1093"
@@ -29,7 +29,7 @@ const Business: React.FC = () => {
 						fillRule="evenodd"
 					/>
 				</svg>
-				<div className="relative z-20 flex flex-col gap-12">
+				<div className="relative z-20 flex flex-col gap-6 md:gap-12">
 					<ProductCardWide
 						title="Karty"
 						description="Vstupné karty s plnofarebnou potlačou pre zamestnancov a návštevníkov. Ideálne pre budovy, haly či konferencie – kompatibilné so všetkými čítačkami."
