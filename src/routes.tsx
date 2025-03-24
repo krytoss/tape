@@ -27,7 +27,7 @@ export const pages: Record<string, Page> = {
 	"zdravotnictvo": {
 		component: Health,
 	},
-	"business": {
+	"biznis": {
 		component: Business
 	},
 	"zabava": {

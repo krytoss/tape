@@ -48,14 +48,14 @@ const Layout: React.FC = () => {
 			<TopMenu />
 			<Header
 				className={`
-					h-[50vh] ${!isSubpage && 'xl:h-[100vh]'}
+					h-[50vh] ${!isSubpage && 'xl:h-[80vh]'}
 					relative z-20`
 				}
 				img={currentData.img}
 			>
 				<Cover>
 					<Title color="light" size="3xl text-center">
-						{ currentData.title }
+						{ currentData.title ?? "Zábava" }
 					</Title>
 					<div className={`${!isSubpage && 'xl:block'} hidden`}>
 						<ArrowDown color="light" />
