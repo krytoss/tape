@@ -62,7 +62,7 @@ const Team: React.FC = () => {
 			  scrollTrigger: {
 				  trigger: '.person-card',
 				  start: "top 80%",
-				  end: "top 20%",
+				  end: "bottom 0%",
 				  toggleActions: "play reverse play reverse",
 				  once: false
 			  }
@@ -72,39 +72,41 @@ const Team: React.FC = () => {
 
 
 	return (
-		<Section className="relative bg-white">
+		<Section className="relative bg-white h-auto min-h-screen">
 			<img src="./hexagon.jpg" className="z-10 absolute right-0 bottom-0" />
-			<Grid cols={1} colsXl={3} className="h-full bg-gray-300 bg-opacity-90 relative z-20">
-				<div ref={leftRef} className="py-10 xl:pl-40 xl:pr-10 text-center justify-center items-center flex width-full flex-col">
-					<Title color="dark">
-						Team
-					</Title>
-					<p className="text-slate-700 font-semibold mt-10 text-xl">
-						Spoznajte ľudí, ktorí budú s vami komunikovať
-					</p>
+			<div className="w-full min-h-screen bg-gray-300 bg-opacity-90 z-20 relative pb-20 xl:pb-0">
+				<Grid cols={1} colsMd={1} colsXl={3}>
+					<div ref={leftRef} className="py-10 xl:pl-40 xl:pr-10 text-center justify-center items-center flex width-full flex-col">
+						<Title color="dark">
+							Team
+						</Title>
+						<p className="text-slate-700 font-semibold mt-10 text-md xl:text-xl">
+							Spoznajte ľudí, ktorí budú s vami komunikovať
+						</p>
+					</div>
+					<div className="col-span-3 xl:col-span-2 py-10 xl:pl-10 xl:pr-28 justify-center items-center flex text-slate-700">
+						<Grid cols={1} colsLg={3} gap={0} className="w-full flex justify-center items-center">
+							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 xl:w-1/2 lg:w-auto mx-auto">
+								<PersonCard img="./team/tatiana.png" name="Tatiana Reindlová" position="konateľ, strategický manažér" />
+							</div>
+							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 xl:w-1/2 lg:w-auto mx-auto">
+								<PersonCard img="./team/peter.png" name="Peter Reindl" position="konateľ, obchodný manažér" />
+							</div>
+							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 xl:w-1/2 lg:w-auto mx-auto">
+								<PersonCard img="./team/monika.png" name="Monika Šafárová" position="koordinátor predaja" />
+							</div>
+						</Grid>
+					</div>
+				</Grid>
+				<div ref={quoteRef} className="xl:absolute bottom-10 right-0 left-0 bg-gray-400/80 p-5 pr-20 z-30 text-right text-3xl text-slate-700">
+					<span className="absolute left-20 bottom-0 transform translate-y-[15px] text-8xl font-serif">
+						„
+					</span>
+					<span className="absolute right-10 top-0 transform -translate-y-[20px] text-8xl font-serif">
+						“
+					</span>
+					Kvalita, rýchlosť a individuálny prístup k zákazníkom sú naším štandardom.
 				</div>
-				<div className="lg:col-span-2 py-10 xl:pl-10 xl:pr-40 justify-center items-center flex text-slate-700">
-					<Grid cols={1} colsLg={3} className="w-full flex justify-center items-center">
-						<div className="p-10 w-1/2 lg:w-auto">
-							<PersonCard img="./team/tatiana.png" name="Tatiana Reindlová" position="konateľ, strategický manažér" />
-						</div>
-						<div className="p-10 w-1/2 lg:w-auto">
-							<PersonCard img="./team/peter.png" name="Peter Reindl" position="konateľ, obchodný manažér" />
-						</div>
-						<div className="p-10 w-1/2 lg:w-auto">
-							<PersonCard img="./team/monika.png" name="Monika Šafárová" position="koordinátor predaja" />
-						</div>
-					</Grid>
-				</div>
-			</Grid>
-			<div ref={quoteRef} className="xl:absolute bottom-10 right-0 left-0 bg-gray-400/80 p-5 pr-20 z-30 text-right text-3xl text-slate-700">
-				<span className="absolute left-20 bottom-0 transform translate-y-[15px] text-8xl font-serif">
-					„
-				</span>
-				<span className="absolute right-10 top-0 transform -translate-y-[20px] text-8xl font-serif">
-					“
-				</span>
-				Kvalita, rýchlosť a individuálny prístup k zákazníkom sú naším štandardom.
 			</div>
 		</Section>
 	)
