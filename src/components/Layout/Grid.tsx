@@ -6,11 +6,12 @@ type Props = {
 	colsMd?: number,
 	colsLg?: number,
 	colsXl?: number,
+	cols2Xl?: number,
 	gap?: number,
 	className?: string,
 }
 
-const Grid: React.FC<Props> = ({ children, cols, colsXs, colsSm, colsMd, colsLg, colsXl, gap, className }) => {
+const Grid: React.FC<Props> = ({ children, cols, colsXs, colsSm, colsMd, colsLg, colsXl, cols2Xl, gap, className }) => {
 
 	const classes = [
 		"w-full grid",
@@ -20,6 +21,7 @@ const Grid: React.FC<Props> = ({ children, cols, colsXs, colsSm, colsMd, colsLg,
 		colsMd ? `md:grid-cols-${colsMd}` : "",
 		colsLg ? `lg:grid-cols-${colsLg}` : "",
 		colsXl ? `xl:grid-cols-${colsXl}` : "",
+		cols2Xl ? `2xl:grid-cols-${cols2Xl}` : "",
 		gap ? `gap-${gap}` : "",
 		className ?? ""
 	].join(" ");
