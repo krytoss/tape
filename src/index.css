@@ -26,6 +26,8 @@
 
 html {
 	scroll-snap-type: y mandatory;
+	overflow-x: hidden;
+	width: 100vw;
 }
 
 #homepage section {
