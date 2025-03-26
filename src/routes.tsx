@@ -51,7 +51,7 @@ export const pages: Record<string, Page> = {
 			"karty": {
 				component: Cards,
 				title: "Karty",
-				img: "/pages/entertainment/plastove_karty.png"
+				img: "/pages/entertainment/karty/header.jpeg"
 			},
 			"puzdra-menovky-rolery": {
 				component: Cases,

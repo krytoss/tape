@@ -40,7 +40,7 @@ const Layout: React.FC = () => {
 		},
 	} */
 
-	const currentData = data[location.pathname] || "Tape, s.r.o";
+	const currentData = data[location.pathname] || { title: "Zábava", img: "/pages/entertainment/header.jpeg"};
 	const isSubpage = location.pathname.split("/").length > 2;
 
 	return (

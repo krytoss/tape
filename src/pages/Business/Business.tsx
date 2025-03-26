@@ -9,7 +9,7 @@ const Business: React.FC = () => {
 	return (
 		<>
 			<TopMenu />
-			<Header className="h-[50vh] md:h-[80vh] relative z-20" img="./health/header.jpeg">
+			<Header className="h-[50vh] md:h-[80vh] relative z-20" img="./pages/business/header.jpeg">
 				<Cover>
 					<Title color="light" size="3xl text-center">
 						Biznis
