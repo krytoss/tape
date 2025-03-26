@@ -148,7 +148,7 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 						</ul>
 
 						<div className="mt-20 h-80 inline-block object-cover object-bottom shadow-2xl overflow-visible bg-brand">
-							<img src="./health/etikety.jpeg" className="relative -top-3 left-3 h-80 w-full inline-block object-cover object-bottom shadow-2xl"/>
+							<img src="./pages/health/etikety.jpeg" className="relative -top-3 left-3 h-80 w-full inline-block object-cover object-bottom shadow-2xl"/>
 						</div>
 					</div>
 					<div className="w-full h-full text-slate-700 flex flex-col justify-center text-right relative">
