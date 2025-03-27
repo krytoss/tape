@@ -1,6 +1,3 @@
-import { useState } from "react"
-import Form from "../components/Form/Form"
-import Input from "../components/Form/Input"
 import Grid from "../components/Layout/Grid"
 import Section from "../components/Layout/Section"
 import Title from "../components/Layout/Title"
@@ -8,8 +5,6 @@ import Map from "../components/Map/Map"
 import Link from "../components/Navigation/Link"
 
 const Contact: React.FC = () => {
-
-	const [ name, setName ] = useState<string>("")
 
 	return (
 		<Section>
