@@ -38,18 +38,6 @@ const Contact: React.FC = () => {
 								+421 918 967 970
 							</Link>
 						</p>
-						<div>
-							<Form>
-								<Input
-									id="name"
-									name="name"
-									type="text"
-									placeholder="Meno a priezvisko"
-									value={name}
-									onChange={setName}
-								/>
-							</Form>
-						</div>
 					</div>
 				</div>
 				<div className="p-0 justify-center items-center flex text-slate-700">
