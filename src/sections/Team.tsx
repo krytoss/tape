@@ -10,17 +10,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Team: React.FC = () => {
 
-	const [maxHeight, setMaxHeight] = useState<number | undefined>(0);
-	const [maxWidth, setMaxWidth] = useState<number | undefined>(0);
-
-	const updateMaxHeight = (newHeight: number | undefined) => {
-		setMaxHeight((prevHeight) => newHeight ? Math.max(prevHeight ?? 0, newHeight) : undefined);
-	};
-
-	const updateMaxWidth = (newWidth: number | undefined) => {
-		setMaxWidth((prevHeight) => newWidth ? Math.max(prevHeight ?? 0, newWidth) : undefined);
-	};
-
 	const leftRef = useRef(null)
 	const quoteRef = useRef(null)
 
@@ -97,34 +86,22 @@ const Team: React.FC = () => {
 					</div>
 					<div className="col-span-3 2xl:col-span-2 py-10 2xl:pl-10 2xl:pr-28 justify-center items-center flex text-slate-700">
 						<Grid cols={1} colsLg={3} gap={0} className="w-full flex justify-center items-center">
-							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto">
+							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto h-full">
 								<PersonCard
-									height={maxHeight}
-									setMaxHeight={updateMaxHeight}
-									width={maxWidth}
-									setMaxWidth={updateMaxWidth}
 									img="./team/tatiana.png"
 									name="Tatiana Reindlová"
 									position="konateľ, strategický manažér"
 								/>
 							</div>
-							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto">
+							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto h-full">
 								<PersonCard
-									height={maxHeight}
-									setMaxHeight={updateMaxHeight}
-									width={maxWidth}
-									setMaxWidth={updateMaxWidth}
 									img="./team/peter.png"
 									name="Peter Reindl"
 									position="konateľ, obchodný manažér"
 								/>
 							</div>
-							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto">
+							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto h-full">
 								<PersonCard
-									height={maxHeight}
-									setMaxHeight={updateMaxHeight}
-									width={maxWidth}
-									setMaxWidth={updateMaxWidth}
 									img="./team/monika.png"
 									name="Monika Šafárová"
 									position="koordinátor predaja"
@@ -133,14 +110,16 @@ const Team: React.FC = () => {
 						</Grid>
 					</div>
 				</Grid>
-				<div ref={quoteRef} className="2xl:absolute bottom-10 right-0 left-0 w-full bg-gray-400/80 p-5 pr-20 z-30 text-right text-3xl text-slate-700">
-					<span className="absolute left-20 bottom-0 transform translate-y-[15px] text-8xl font-serif">
-						„
-					</span>
-					<span className="absolute right-10 top-0 transform -translate-y-[20px] text-8xl font-serif">
-						“
-					</span>
-					Kvalita, rýchlosť a individuálny prístup k zákazníkom sú naším štandardom.
+				<div ref={quoteRef} className="2xl:absolute bottom-10 right-0 left-0 w-full bg-gray-400/80 p-5 z-30 text-right px-20 text-3xl text-slate-700">
+					<div className="relative inline-block">
+						<span className="absolute -left-12 bottom-0 transform translate-y-[30px] text-8xl font-serif">
+							„
+						</span>
+						Kvalita, rýchlosť a individuálny prístup k zákazníkom sú naším štandardom.
+						<span className="absolute top-0 transform -translate-y-[40px] text-8xl font-serif">
+							“
+						</span>
+					</div>
 				</div>
 			</div>
 		</Section>
