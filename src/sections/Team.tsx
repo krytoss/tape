@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Grid from "../components/Layout/Grid"
 import Section from "../components/Layout/Section"
 import Title from "../components/Layout/Title"
@@ -9,6 +9,17 @@ import PersonCard from "../components/Team/PersonCard"
 gsap.registerPlugin(ScrollTrigger)
 
 const Team: React.FC = () => {
+
+	const [maxHeight, setMaxHeight] = useState<number | undefined>(0);
+	const [maxWidth, setMaxWidth] = useState<number | undefined>(0);
+
+	const updateMaxHeight = (newHeight: number | undefined) => {
+		setMaxHeight((prevHeight) => newHeight ? Math.max(prevHeight ?? 0, newHeight) : undefined);
+	};
+
+	const updateMaxWidth = (newWidth: number | undefined) => {
+		setMaxWidth((prevHeight) => newWidth ? Math.max(prevHeight ?? 0, newWidth) : undefined);
+	};
 
 	const leftRef = useRef(null)
 	const quoteRef = useRef(null)
@@ -86,14 +97,38 @@ const Team: React.FC = () => {
 					</div>
 					<div className="col-span-3 2xl:col-span-2 py-10 2xl:pl-10 2xl:pr-28 justify-center items-center flex text-slate-700">
 						<Grid cols={1} colsLg={3} gap={0} className="w-full flex justify-center items-center">
-							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-auto mx-auto">
-								<PersonCard img="./team/tatiana.png" name="Tatiana Reindlová" position="konateľ, strategický manažér" />
+							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto">
+								<PersonCard
+									height={maxHeight}
+									setMaxHeight={updateMaxHeight}
+									width={maxWidth}
+									setMaxWidth={updateMaxWidth}
+									img="./team/tatiana.png"
+									name="Tatiana Reindlová"
+									position="konateľ, strategický manažér"
+								/>
 							</div>
-							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-auto mx-auto">
-								<PersonCard img="./team/peter.png" name="Peter Reindl" position="konateľ, obchodný manažér" />
+							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto">
+								<PersonCard
+									height={maxHeight}
+									setMaxHeight={updateMaxHeight}
+									width={maxWidth}
+									setMaxWidth={updateMaxWidth}
+									img="./team/peter.png"
+									name="Peter Reindl"
+									position="konateľ, obchodný manažér"
+								/>
 							</div>
-							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-auto mx-auto">
-								<PersonCard img="./team/monika.png" name="Monika Šafárová" position="koordinátor predaja" />
+							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto">
+								<PersonCard
+									height={maxHeight}
+									setMaxHeight={updateMaxHeight}
+									width={maxWidth}
+									setMaxWidth={updateMaxWidth}
+									img="./team/monika.png"
+									name="Monika Šafárová"
+									position="koordinátor predaja"
+								/>
 							</div>
 						</Grid>
 					</div>
