@@ -8,6 +8,7 @@ import { Observer } from 'gsap/all';
 import Offers from '../../sections/Offers';
 import Contact from '../../sections/Contact';
 import ContactForm from '../../sections/ContactForm';
+import TopMenu from '../../components/Navigation/TopMenu';
 
 gsap.registerPlugin(Observer)
 
@@ -160,6 +161,7 @@ function HomePage() {
 
   return (
 	<div id="homepage">
+		<TopMenu />
 		<Home />
 		<Offers />
 		<About />
