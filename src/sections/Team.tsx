@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import Grid from "../components/Layout/Grid"
 import Section from "../components/Layout/Section"
 import Title from "../components/Layout/Title"
