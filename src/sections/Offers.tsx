@@ -34,7 +34,7 @@ const Offers: React.FC = () => {
 	})
 
 	return (
-		<Section>
+		<Section id="offers">
 			<Grid cols={1} colsXl={3} className="h-full">
 				<div className="offer justify-center items-center flex w-full bg-red-100 group relative h-[33.33vh] xl:h-full overflow-hidden">
 					<img src="./offers/health_industry.jpeg" className="w-full h-auto xl:h-full xl:w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Health industry" />

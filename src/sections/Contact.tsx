@@ -7,7 +7,7 @@ import Link from "../components/Navigation/Link"
 const Contact: React.FC = () => {
 
 	return (
-		<Section>
+		<Section id="contact">
 			<Grid cols={2} className="h-full">
 				<div className="py-10 pl-40 pr-10 text-left justify-center flex flex-col width-full bg-gray-100">
 					<Title>
