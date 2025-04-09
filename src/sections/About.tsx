@@ -49,7 +49,7 @@ const About: React.FC = () => {
 
 	return (
 		<Section id="about">
-			<Grid cols={1} colsMd={3} colsLg={2} className="h-full">
+			<Grid cols={1} colsLg={2} className="h-full">
 				<div ref={leftRef} className="py-10 lg:pl-40 lg:pr-10 text-center justify-center items-center flex width-full">
 					<Title sizeLg="8xl" size="6xl" color="dark">
 						O nás

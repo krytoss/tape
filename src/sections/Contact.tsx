@@ -8,32 +8,35 @@ const Contact: React.FC = () => {
 
 	return (
 		<Section id="contact">
-			<Grid cols={2} className="h-full">
-				<div className="py-10 pl-40 pr-10 text-left justify-center flex flex-col width-full bg-gray-100">
-					<Title>
-						Kontakt
-					</Title>
-					<div className="text-slate-800 text-left">
-						<p className="mt-10">
-							TAPE, s.r.o.<br/>
-							Mlynská 2238<br/>
-							934 01 Levice<br/>
-							IČO: 35 979 852<br/>
-							DIČ: 2022137381<br/>
-							IČ DPH: SK2022137381<br/>
-						</p>
-						<p className="mt-5">
-							<Link to="mailto:info@tape.sk" color="slate-500" uppercase={ false } className="transition transition-color">
-								info<span>@</span>tape<span className="text-brand font-black">.</span>sk
-							</Link><br/>
-							<Link to="tel:+421905945609" color="slate-500" className="transition transition-color hover:text-slate-800">
-								+421 905 945 609
-							</Link><br/>
-							<Link to="tel:+421918967970" color="slate-500" className="transition transition-color hover:text-slate-800">
-								+421 918 967 970
-							</Link>
-						</p>
+			<Grid colsXl={2} className="h-full">
+				<div className="text-left justify-center flex flex-col width-full bg-gray-100 pb-10 min-h-screen xl:min-h-auto">
+					<div className="py-10 pl-40 pr-10">
+						<Title>
+							Kontakt
+						</Title>
+						<div className="text-slate-800 text-left">
+							<p className="mt-10">
+								TAPE, s.r.o.<br/>
+								Mlynská 2238<br/>
+								934 01 Levice<br/>
+								IČO: 35 979 852<br/>
+								DIČ: 2022137381<br/>
+								IČ DPH: SK2022137381<br/>
+							</p>
+							<p className="mt-5">
+								<Link to="mailto:info@tape.sk" color="slate-500" uppercase={ false } className="transition transition-color">
+									info<span>@</span>tape<span className="text-brand font-black">.</span>sk
+								</Link><br/>
+								<Link to="tel:+421905945609" color="slate-500" className="transition transition-color hover:text-slate-800">
+									+421 905 945 609
+								</Link><br/>
+								<Link to="tel:+421918967970" color="slate-500" className="transition transition-color hover:text-slate-800">
+									+421 918 967 970
+								</Link>
+							</p>
+						</div>
 					</div>
+					<img src="./building.png" className="w-1/2 max-w-[400px] mx-auto" />
 				</div>
 				<div className="p-0 justify-center items-center flex text-slate-700">
 					<Map />
