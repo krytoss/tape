@@ -10,8 +10,8 @@ const TopMenu: React.FC = () => {
   const links = [
     { name: "Domov", to: "/" },
     { name: "Bezpečnosť v zdravotníctve", to: "/zdravotnictvo" },
-    { name: "Biznis", to: "/biznis" },
     { name: "Zábava", to: "/zabava" },
+    { name: "Biznis", to: "/biznis" },
   ];
 
   return (

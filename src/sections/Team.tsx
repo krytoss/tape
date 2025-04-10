@@ -88,7 +88,7 @@ const Team: React.FC = () => {
 						<Grid cols={1} colsLg={3} gap={0} className="w-full flex justify-center items-center">
 							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto h-full">
 								<PersonCard
-									img="./team/tatiana.png"
+									img="./team/tana.png"
 									name="Tatiana Reindlová"
 									position="konateľ, strategický manažér"
 								/>
