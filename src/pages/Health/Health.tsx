@@ -148,7 +148,7 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 						</div>
 
 						<p className="mt-20 text-center text-lg">
-							Katalóg predtlačených etikiet k dispozícii - <Link className="text-brand text-lg" to="#">vyplňte formulár</Link>
+							Katalóg predtlačených etikiet k dispozícii - <Link className="text-brand text-2xl font-bold" to="#">vyplňte formulár</Link>
 						</p>
 
 					</div>

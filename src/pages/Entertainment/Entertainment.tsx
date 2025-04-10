@@ -10,7 +10,7 @@ const Entertainment: React.FC = () => {
 				<ProductCard
 					link="/zabava/karty"
 					className="h-full"
-					title="Plastové karty"
+					title="Karty"
 					description="Plastové karty sú ideálnym riešením pre darčekové a vernostné karty. Slúžia aj na identifikáciu návštevníkov na rôznych podujatiach. Ponúkame karty s plnofarebnou potlačou aj bez potlače, QR kódom a čipmi, ktoré zabezpečia bezpečný a efektívny systém vstupu. Spoľahlivé a praktické. Plastové karty zaručia bezproblémovú organizáciu podujatí a sú skvelým nástrojom pre vernostné programy."
 					image="./pages/entertainment/plastove_karty.png"
 				/>
