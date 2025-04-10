@@ -9,7 +9,7 @@ const products = [
 			"Jednorazové alebo opakované použitie"
 		],
 		image: [
-			"/pages/entertainment/latkove_naramky/vysivany.jpg",
+			"/pages/entertainment/latkove_naramky/vysivany.png",
 			"/pages/entertainment/latkove_naramky/vysivany2.png",
 			"/pages/entertainment/latkove_naramky/vysivany3.png",
 			"/pages/entertainment/latkove_naramky/vysivany4.png",

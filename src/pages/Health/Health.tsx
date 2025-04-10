@@ -29,7 +29,8 @@ const Health: React.FC = () => {
 							znižujú riziko chýb.
 						</span>
 						<span className="block text-2xl mt-5">
-							Sme oficiálnym distribútorom spoločnosti <Link className="text-brand text-[1rem] !font-bold" to="https://www.pdcorp.com">PDC Precision Dynamics Corporation</Link> (patriaceho do skupiny Brady Corporation) pre Slovenskú republiku. 
+							Sme oficiálnym distribútorom spoločnosti <Link className="text-brand text-[1rem] !font-bold" to="https://www.pdcorp.com">PDC Precision Dynamics Corporation</Link> (patriaceho do skupiny Brady Corporation) pre Slovenskú republiku.
+							<br />Oficiálne vyhlásenie spoločnosti PDC (Brady) nájdete <a className="text-brand font-semibold" href="PDC_Vyhlasenie.pdf" target="_blank">TU</a>.
 						</span>
 						<span className="block text-xl mt-5">
 						Precision Dynamics Corporation je najväčším celosvetovým výrobcom identifikačných náramkov a etikiet na označovanie liekov a striekačiek. Poskytuje stopercentnú kvalitu, pokiaľ ide o služby, dizajn a výrobu. Potvrdzujú to aj certifikáty ISO-9001:2015 a ISO-13485:2016, ISO-14001:2015 hlavného závodu v San Fernando v Kalifornii v USA.
