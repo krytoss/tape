@@ -23,18 +23,16 @@ const Health: React.FC = () => {
 				<div className="relative z-20">
 					<p>
 						<span className="text-3xl block font-semibold">
-							V našej firme veríme, že bezpečnosť pacientov je na prvom mieste.
-							Preto vám prinášame špičkové riešenia na identifikáciu a označovanie
-							v zdravotníckych zariadeniach, ktoré zvyšujú úroveň starostlivosti a
-							znižujú riziko chýb.
+							V našej firme veríme, že bezpečnosť pacientov je na prvom mieste. Preto vám prinášame špičkové riešenia na identifikáciu a označovanie v zdravotníckych zariadeniach, ktoré zvyšujú úroveň starostlivosti a znižujú riziko chýb.
 						</span>
 						<span className="block text-2xl mt-5">
 							Sme oficiálnym distribútorom spoločnosti <Link className="text-brand text-[1rem] !font-bold" to="https://www.pdcorp.com">PDC Precision Dynamics Corporation</Link> (patriaceho do skupiny Brady Corporation) pre Slovenskú republiku.
 							<br />Oficiálne vyhlásenie spoločnosti PDC (Brady) nájdete <a className="text-brand font-semibold" href="PDC_Vyhlasenie.pdf" target="_blank">TU</a>.
 						</span>
 						<span className="block text-xl mt-5">
-						Precision Dynamics Corporation je najväčším celosvetovým výrobcom identifikačných náramkov a etikiet na označovanie liekov a striekačiek. Poskytuje stopercentnú kvalitu, pokiaľ ide o služby, dizajn a výrobu. Potvrdzujú to aj certifikáty ISO-9001:2015 a ISO-13485:2016, ISO-14001:2015 hlavného závodu v San Fernando v Kalifornii v USA.
-						PDC ako prvá na svete uviedla na trh identifikačné náramky v roku 1956.
+							Precision Dynamics Corporation je najväčším celosvetovým výrobcom identifikačných náramkov a etikiet na označovanie liekov a striekačiek.
+							Poskytuje stopercentnú kvalitu, pokiaľ ide o služby, dizajn a výrobu. Potvrdzujú to aj certifikáty ISO-9001:2015 a ISO-13485:2016, ISO-14001:2015 hlavného závodu v San Fernando v Kalifornii v USA.
+							PDC ako prvá na svete uviedla na trh identifikačné náramky v roku 1956.
 						</span>
 						<span className="block text-xl mt-5">
 							Identifikácia ovplyvňuje všetky aspekty klinickej starostlivosti, od skúsenosti pacientov až po spokojnosť zdravotníckeho personálu.
@@ -54,7 +52,7 @@ const Health: React.FC = () => {
 							Identifikačné náramky pre pacientov poskytujú jasné a presné informácie o každom pacientovi. Vďaka nim zdravotnícky personál rýchlo a jednoducho identifikuje pacienta, čo zvyšuje bezpečnosť a efektivitu starostlivosti.
 						</p>
 						<p className="mb-5">
-							Dnes dokážeme v oblasti identifikácie uspokojiť akékoľvek požiadavky – riešenia na termálnu potlač, popisovateľné náramky, náramky s vkladacím štítkom, náramky s prelepovacou fóliou, zabezpečujeme identifikáciu matiek a novorodencov aj náramky na TRIAGE.
+							Dnes dokážeme v oblasti identifikácie uspokojiť akékoľvek požiadavky - riešenia na termálnu potlač (s čiarovým a QR kódom), popisovateľné náramky, náramky s vkladacím štítkom, náramky s prelepovacou fóliou, zabezpečujeme identifikáciu matiek a novorodencov aj náramky na TRIAGE.
 						</p>
 						<p className="mb-5">
 							Identifikačné náramky pre pacientov neobsahujú latex, ftaláty, sú antimikrobiálne a odolné proti alkoholu, vode, mydlu, dezinfekciám a taktiež väčšine kvapalín, ktoré sa v zdravotníctve používajú.
