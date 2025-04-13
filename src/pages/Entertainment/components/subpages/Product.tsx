@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
+import ImageModal from "../ImageModal";
 
 type ProductProps = {
   title: string;
@@ -11,15 +12,31 @@ type ProductProps = {
 };
 
 const Product: React.FC<ProductProps> = ({ title, shortDescription, description, image, setMaxHeight, maxHeight }) => {
-  const images = Array.isArray(image) ? image : [image];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(1);
-  const [isFirstLoad, setIsFirstLoad] = useState(true);
-  const productRef = useRef<HTMLDivElement>(null);
+	const images = Array.isArray(image) ? image : [image];
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const [direction, setDirection] = useState(1);
+	const [isFirstLoad, setIsFirstLoad] = useState(true);
+	const productRef = useRef<HTMLDivElement>(null);
 
-  const currentImageRef = useRef<HTMLDivElement>(null);
-  const previousImageRef = useRef<HTMLDivElement>(null);
-  const [previousIndex, setPreviousIndex] = useState(0);
+	const currentImageRef = useRef<HTMLDivElement>(null);
+	const previousImageRef = useRef<HTMLDivElement>(null);
+	const [previousIndex, setPreviousIndex] = useState(0);
+
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [activeIndex, setActiveIndex] = useState(0);
+
+	const openModal = (index: number) => {
+		setActiveIndex(index);
+		setIsModalOpen(true);
+	};
+
+	const nextImage = () => {
+		setActiveIndex((prev) => (prev + 1) % images.length);
+	};
+
+	const prevImage = () => {
+		setActiveIndex((prev) => (prev - 1 + images.length) % images.length);
+	};
 
   useEffect(() => {
     if (!isFirstLoad && images.length > 1 && currentImageRef.current && previousImageRef.current) {
@@ -63,11 +80,21 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
               ref={currentImageRef}
               className={`absolute inset-0 w-full h-full flex transition-opacity ${isFirstLoad ? "opacity-100" : ""}`}
             >
-              <img src={images[currentIndex]} alt={title} className="max-w-full max-h-full m-auto" />
+              <img
+			  	src={images[currentIndex]}
+				alt={title}
+				className="max-w-full max-h-full m-auto cursor-pointer"
+				onClick={() => openModal(currentIndex)}
+				/>
             </div>
           </>
         ) : (
-          <img src={images[0]} alt={title} className="max-w-full max-h-full m-auto" />
+          <img
+		  	src={images[0]}
+		  	alt={title}
+		  	className="max-w-full max-h-full m-auto cursor-pointer"
+		  	onClick={() => openModal(0)}
+		  />
         )}
 
         {images.length > 1 && (
@@ -124,6 +151,16 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
           ))}
         </ul>
       </div>
+
+	  {isModalOpen && (
+		<ImageModal
+			images={images}
+			currentIndex={activeIndex}
+			onClose={() => setIsModalOpen(false)}
+			onPrev={prevImage}
+			onNext={nextImage}
+		/>
+	  )}
     </div>
   );
 };
