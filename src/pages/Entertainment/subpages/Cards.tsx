@@ -16,7 +16,7 @@ const products = [
 		<>QR kód, čiarový kód (EAN kód 13, 128 a iné), pozri aj podstránku <Link to="/zabava/qr" className="text-brand hover:underline">Čiarový/QR kód</Link></>,
 		"Emboss - strieborný, zlatý, biely, čierny (čísla, text)",
 		<>Čipy TK4100, EM 4200, MF 1k S50, Fudan a iné (pozri aj <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link>)</>,
-		"Kapacita výroby 350 tis. kariet za cca 3 týždne"
+		<strong>Kapacita výroby 350 tis. kariet za cca 3 týždne</strong>
 	  ],
 	  image: [
 		"/pages/entertainment/karty/plastove_karty_1.png",
