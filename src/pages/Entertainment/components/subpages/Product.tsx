@@ -5,7 +5,7 @@ import ImageModal from "../ImageModal";
 type ProductProps = {
   title: string;
   shortDescription?: string;
-  description: (string | React.ReactNode)[];
+  description?: (string | React.ReactNode)[];
   image: string | string[];
   setMaxHeight?: (height: number) => void;
   maxHeight?: number;
@@ -155,13 +155,15 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
 			<div className="p-5">
 			<h3 className="text-xl font-bold text-gray-900 text-center">{title}</h3>
 			{shortDescription && <p className="text-gray-600 text-sm mt-2">{shortDescription}</p>}
-			<ul className="mt-2 text-gray-600 space-y-1 list-disc pl-2">
-			  {description.map((line, index) => (
-				<li key={index} className="text-sm">
-				  {line}
-				</li>
-			  ))}
-			</ul>
+			{
+				description && <ul className="mt-2 text-gray-600 space-y-1 list-disc pl-2">
+					{description.map((line, index) => (
+						<li key={index} className="text-sm">
+						{line}
+						</li>
+					))}
+				</ul>
+			}
 		  </div>
 		)}
 

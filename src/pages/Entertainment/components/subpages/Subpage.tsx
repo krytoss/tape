@@ -11,12 +11,13 @@ type BasicProps = {
 		md: number;
 		xl: number;
 	}
+	options?: ProductItem;
 }
 
 type ProductItem = {
 	title: string;
 	short_description?: string;
-	description: (string | React.ReactNode)[];
+	description?: (string | React.ReactNode)[];
 	image: string | string[];
 	colSpan?: number;
 	onlyImage?: boolean;
@@ -39,7 +40,7 @@ type ProductsProps = BasicProps & (ProductGroup | ProductFlatList);
 
 const Subpage: React.FC<ProductsProps> = (props) => {
 
-	const { description, cols } = props;
+	const { description, cols, options } = props;
 	const withCategories = props.withCategories;
 
 	const sectionsRef = useRef<HTMLDivElement[]>([]);
@@ -128,6 +129,17 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 						}
 					</Grid>
 			}
+			{ options && (
+				<div className="px-6 mt-10">
+					<Product
+						title={"Možnosti"}
+						image={options.image}
+						maxHeight={maxHeight}
+						setMaxHeight={updateMaxHeight}
+						onlyImage={true}
+					/>
+				</div>
+			) }
 		</div>
 	  </>
 	);

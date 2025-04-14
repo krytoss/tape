@@ -56,12 +56,18 @@ const products = [
 	}
 ];
 
+const options = {
+	title: "",
+	image: "/pages/entertainment/silikonove_naramky/silikon_moznosti-2.jpg"
+}
+
 const Silicones: React.FC = () => {
 
 	return (
 		<Subpage
 			description="V ponuke silikóny fosforeskujúce, segmentované, silikónová kľúčenka, silikónové hodinky, náramok s potlačou QR kódu, náramok s číslovaním, atypický náramok, náramok s viacfarebnou potlačou."
 			products={products}
+			options={options}
 		/>
 	)
 }
