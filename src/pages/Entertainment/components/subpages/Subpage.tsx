@@ -113,7 +113,7 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 					<Grid cols={cols?.default ?? 1} colsMd={cols?.md ?? 2} colsXl={cols?.xl ?? 3} className="gap-10 px-6 flex-1">
 						{
 							props.products.map((product, index) => (
-								<div className={product.colSpan ? `col-span-${product.colSpan}` : ''} ref={ (el) => { if (el) sectionsRef.current[index] = el } } key={index}>
+								<div className={product.colSpan ? `md:col-span-${product.colSpan}` : ''} ref={ (el) => { if (el) sectionsRef.current[index] = el } } key={index}>
 									<Product
 										title={product.title}
 										shortDescription={product.short_description}

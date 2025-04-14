@@ -10,7 +10,14 @@ const products = [
 		"Možnosť jednofarebnej aj viacfarebnej potlače",
 		"Farebnosť náramkov podľa pantone vzorkovníka"
 	  ],
-	  image: "/pages/entertainment/silikonove_naramky/potlac.png"
+	  image: [
+		"/pages/entertainment/silikonove_naramky/potlac.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac2-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac3-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac4-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac5-1.png",
+	  ]
 	},
 	{
 	  title: "Silikónové náramky s ražbou",
@@ -21,19 +28,31 @@ const products = [
 		"Možnosť kombinácie ražby s výplňou farby",
 		"Farebnosť náramkov podľa pantone vzorkovníka"
 	  ],
-	  image: "/pages/entertainment/silikonove_naramky/razba.png"
+	  image: [
+		"/pages/entertainment/silikonove_naramky/razba.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba2-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba3-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba4-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba5-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba6-1.png",
+	  ]
 	},
 	{
 	  title: "Silikónové náramky s RFID čipom",
 	  description: [
-		"Rôzne šírky a obvody",
+		"V ponuke rôzne šírky a obvody",
 		"Možnosť potlače a ražby",
-		"Tvar oválny alebo guľatý",
-		"Farebnosť podľa pantone vzorkovníka",
-		"Veľké množstvo čipov (MF, FUDAN, EM4200, TK4100 a iné)",
+		"Oválny alebo guľatý tvar",
+		"Farebnosť náramkov podľa pantone vzorkovníka",
+		"Na výber veľké množstvo čipov (MF, FUDAN, EM4200, TK4100 a iné)",
 		<>Viac informácií v kategórii <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link></>
 	  ],
-	  image: "/pages/entertainment/silikonove_naramky/rfid.png"
+	  image: [
+		"/pages/entertainment/silikonove_naramky/Silikon_RFID-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_RFID2-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_RFID3-1.png",
+	  ]
 	}
 ];
 

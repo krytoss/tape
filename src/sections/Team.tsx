@@ -110,6 +110,17 @@ const Team: React.FC = () => {
 						</Grid>
 					</div>
 				</Grid>
+				<div ref={quoteRef} className="2xl:absolute flex items-center justify-center bottom-40 right-0 left-0 w-full bg-gray-400/80 p-5 z-30 text-right px-20 text-3xl text-slate-700">
+					<div className="relative inline-block">
+						<span className="absolute -left-12 bottom-0 transform translate-y-[30px] text-8xl font-serif">
+							„
+						</span>
+						Kvalita, rýchlosť a individuálny prístup k zákazníkom sú naším štandardom.
+						<span className="absolute top-0 transform -translate-y-[40px] text-8xl font-serif">
+							“
+						</span>
+					</div>
+				</div>
 				<div ref={quoteRef} className="2xl:absolute bottom-10 right-0 left-0 w-full bg-gray-400/80 p-5 z-30 text-right px-20 text-3xl text-slate-700">
 					<div className="relative inline-block">
 						<span className="absolute -left-12 bottom-0 transform translate-y-[30px] text-8xl font-serif">
