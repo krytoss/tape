@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Subpage from "../components/subpages/Subpage";
 
 const products = [
@@ -35,7 +36,7 @@ const products = [
 			"Čip/tag vhodný na všetky prevedenia látkových náramkov",
 			"Viac typov čipov",
 			"Rôzne materiály a veľkosti",
-			"Viac informácií v kategórii RFID (preklik na podstránku RFID)"
+			<>Viac informácií v kategórii <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link></>
 		],
 		image: "/pages/entertainment/latkove_naramky/rfid.jpg"
 	},
@@ -45,7 +46,7 @@ const products = [
 			"Možnosť potlače QR kódu priamo na náramok alebo na plastový tag",
 			"Čip/tag s potlačou QR kódu vhodný na všetky prevedenia látkových náramkov",
 			"Rôzne prevedenia QR a čiarových kódov",
-			"Viac informácií v kategórii Čiarový/QR kód (preklik na podstránku Čiarový/QR kód)"
+			<>Viac informácií v kategórii <Link to="/zabava/tlaciarne" className="text-brand hover:underline">Čiarový/QR kód</Link></>
 		],
 		image: "/pages/entertainment/latkove_naramky/qr.jpg"
 	},
@@ -54,7 +55,7 @@ const products = [
 		description: [
 			"Štandardný rozmer 15mm x 350mm",
 			"Jednorazové alebo opakované použitie",
-			"Viac informácií v kategórii EKO PRODUKTY (preklik na podstránku EKO PRODUKTY)"
+			<>Viac informácií v kategórii <Link to="/zabava/eko-produkty" className="text-brand hover:underline">EKO PRODUKTY</Link></>
 		],
 		image: "/pages/entertainment/latkove_naramky/eko.jpg"
 	}

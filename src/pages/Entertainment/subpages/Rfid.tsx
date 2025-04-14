@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Subpage from "../components/subpages/Subpage";
 
 const products = [
@@ -10,7 +11,7 @@ const products = [
             "vhodné ako darčekové, vernostné, klubové a zľavové karty",
             "rôzne povrchové prevedenia a doplnky",
             "rôzne frekvencie 125 kHz, 13.56 MHz, UHF",
-            "čipy TK4100, EM 4200, MF 1k S50, Fudan a iné (preklik na Karty)"
+            <><Link to="/zabava/karty" className="text-brand hover:underline">čipy TK4100, EM 4200, MF 1k S50, Fudan a iné</Link></>
         ],
         image: [
 			"/pages/entertainment/rfid/RFID_karty1.png",
@@ -29,7 +30,7 @@ const products = [
             "rôzne možnosti zapínania remienka",
             "farebnosť náramkov podľa pantone vzorkovníka",
             "rôzne frekvencie 125 kHz, 13.56 MHz, UHF",
-            "na výber veľké množstvo čipov (MF, FUDAN, EM4200, TK4100 a iné) (preklik na Silikónové náramky)"
+            <><Link to="/zabava/silikonove-naramky" className="text-brand hover:underline">na výber veľké množstvo čipov (MF, FUDAN, EM4200, TK4100 a iné)</Link></>
         ],
         image: [
 			"/pages/entertainment/rfid/RFID_silikony1.png",
@@ -52,7 +53,7 @@ const products = [
             "rôzne typy čipov (MF, FUDAN, EM4200, TK4100 a iné)",
             "TAG z mäkkého alebo tvrdého plastu",
             "rôzne frekvencie 125 kHz, 13.56 MHz, UHF",
-            "rôzne materiály a veľkosti (preklik na Látkové náramky)"
+            <><Link to="/zabava/latkove-naramky" className="text-brand hover:underline">rôzne materiály a veľkosti</Link></>
         ],
         image: [
 			"/pages/entertainment/rfid/RFID_latkove1.jpg",

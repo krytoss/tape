@@ -64,19 +64,19 @@ const About: React.FC = () => {
 							Venujeme sa zvyšovaniu bezpečnosti v nemocniciach. Sme dodávateľom identifikačných náramkov pre pacientov, etikiet a ďalších produktov.
 							Ďalšou oblasťou je identifikácia zamestnancov, návštevníkov koncertov, festivalov, konferencií a rôznych podujatí.
 						</p>
-						<h3 className="text-xl">
+						<h3 className="text-xl font-semibold">
 							Prečo si vybrať nás?
 						</h3>
 						<p>
 							„Každý zákazník je pre nás dôležitý. Preto ponúkame individuálne riešenia na mieru.“
 						</p>
-						<h3 className="text-xl mt-5">
+						<h3 className="text-xl mt-5 font-semibold">
 							Rýchle dodanie
 						</h3>
 						<p>
 							„Zabezpečujeme rýchlu výrobu a dodanie, aby ste mali svoje produkty včas.“
 						</p>
-						<h3 className="text-xl mt-5">
+						<h3 className="text-xl mt-5 font-semibold">
 							Skúsenosti a profesionalita
 						</h3>
 						<p>
