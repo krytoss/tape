@@ -12,7 +12,7 @@ type ProductProps = {
   onlyImage?: boolean;
 };
 
-const Product: React.FC<ProductProps> = ({ title, shortDescription, description, image, setMaxHeight, maxHeight, onlyImage }) => {
+const Product: React.FC<ProductProps> = ({ title, shortDescription, description, image, setMaxHeight, maxHeight, onlyImage = false }) => {
 	const images = Array.isArray(image) ? image : [image];
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [direction, setDirection] = useState(1);
@@ -65,13 +65,22 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
     }
   }, [ setMaxHeight ]);
 
+  console.log(onlyImage)
+
   return (
     <div
       ref={productRef}
       className="relative bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
       style={{ height: maxHeight ? `${maxHeight}px` : "auto" }}
     >
-      <div className="relative w-full h-64 overflow-hidden flex">
+		{
+			onlyImage && (
+				<div className="p-5">
+					<h3 className="text-xl font-bold text-gray-900 text-center">{title}</h3>
+				</div>
+			)
+		}
+      <div className={`relative w-full ${onlyImage ? 'h-[calc(100%-5rem)]' : 'h-64'} overflow-hidden flex`}>
         {images.length > 1 ? (
           <>
             <div ref={previousImageRef} className="absolute inset-0 w-full h-full flex">
@@ -141,17 +150,19 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
         )}
       </div>
 
-      <div className="p-5">
-        <h3 className="text-xl font-bold text-gray-900 text-center">{title}</h3>
-		{shortDescription && <p className="text-gray-600 text-sm mt-2">{shortDescription}</p>}
-        <ul className="mt-2 text-gray-600 space-y-1 list-disc pl-2">
-          {description.map((line, index) => (
-            <li key={index} className="text-sm">
-              {line}
-            </li>
-          ))}
-        </ul>
-      </div>
+		{!onlyImage && (
+			<div className="p-5">
+			<h3 className="text-xl font-bold text-gray-900 text-center">{title}</h3>
+			{shortDescription && <p className="text-gray-600 text-sm mt-2">{shortDescription}</p>}
+			<ul className="mt-2 text-gray-600 space-y-1 list-disc pl-2">
+			  {description.map((line, index) => (
+				<li key={index} className="text-sm">
+				  {line}
+				</li>
+			  ))}
+			</ul>
+		  </div>
+		)}
 
 	  {isModalOpen && (
 		<ImageModal

@@ -121,7 +121,7 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 										image={product.image}
 										maxHeight={maxHeight}
 										setMaxHeight={updateMaxHeight}
-										onlyImage={true}
+										onlyImage={product.onlyImage}
 									/>
 								</div>
 							))
