@@ -7,14 +7,13 @@ const products = [
 	  description: [
 		"Rozmer 85x54mm/54x85mm spĺňajúci normu ISO 7810",
 		"Vhodné ako darčekové, vernostné, klubové a zľavové karty",
-		"Rôzne atypické tvary",
-		"Jednostranná alebo obojstranná potlač",
+		"Atypické tvary, embos - strieborný, zlatý, biely, čierny",
+		"Jednostranná, obojstranná potlač",
 		"Lesklé, matné, trblietavé alebo transparentné prevedenie",
 		"Biele karty na vlastnú potlač",
-		"Personalizácia: čipy, číslovanie, čiarové kódy, QR kódy, osobné údaje",
+		"Personalizácia: čipy, číslovanie, čiarové/QR kódy",
 		<>Technológie: magnetické pásky, podpisový panel, čipy NFC, RFID (pozri aj <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link>)</>,
 		<>QR kód, čiarový kód (EAN kód 13, 128 a iné), pozri aj podstránku <Link to="/zabava/qr" className="text-brand hover:underline">Čiarový/QR kód</Link></>,
-		"Emboss - strieborný, zlatý, biely, čierny (čísla, text)",
 		<>Čipy TK4100, EM 4200, MF 1k S50, Fudan a iné (pozri aj <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link>)</>,
 		<strong>Kapacita výroby 350 tis. kariet za cca 3 týždne</strong>
 	  ],
