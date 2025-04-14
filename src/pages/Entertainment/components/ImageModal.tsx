@@ -14,9 +14,43 @@ const ImageModal = ({ images, currentIndex, onClose, onNext, onPrev }: Props) =>
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
-    return () => setIsMounted(false);
-  }, []);
+	setIsMounted(true);
+  
+	const handleKeyDown = (e: KeyboardEvent) => {
+	  if (e.key === "ArrowRight") {
+		onNext();
+	  } else if (e.key === "ArrowLeft") {
+		onPrev();
+	  } else if (e.key === "Escape") {
+		onClose();
+	  }
+	};
+  
+	document.addEventListener("keydown", handleKeyDown);
+	return () => {
+	  document.removeEventListener("keydown", handleKeyDown);
+	  setIsMounted(false);
+	};
+  }, [onNext, onPrev, onClose]);
+
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+	setTouchStartX(e.changedTouches[0].clientX);
+  };
+  
+  const handleTouchEnd = (e: React.TouchEvent) => {
+	if (touchStartX !== null) {
+	  const distance = e.changedTouches[0].clientX - touchStartX;
+	  const swipeThreshold = 50;
+  
+	  if (distance > swipeThreshold) {
+		onPrev(); // swipe right
+	  } else if (distance < -swipeThreshold) {
+		onNext(); // swipe left
+	  }
+	}
+  };
 
   if (!isMounted) return null;
 
@@ -24,8 +58,15 @@ const ImageModal = ({ images, currentIndex, onClose, onNext, onPrev }: Props) =>
     <div
 		className="fixed inset-0 z-[9999] bg-black bg-opacity-90 w-screen h-screen flex items-center justify-center select-none"
 		onClick={onClose}
+		onTouchStart={handleTouchStart}
+  		onTouchEnd={handleTouchEnd}
 	>
-		<button onClick={onClose} className="absolute top-5 right-5 text-white text-3xl border-0 px-4 py-1 hover:bg-gray-500">✕</button>
+		<div className="absolute top-0 left-0 w-full h-20 bg-black opacity-50 z-[999999]">
+			<div className="absolute top-5 left-1/2 -translate-x-1/2 text-white text-xl border-0 px-4 py-1 z-[99999]">
+				{currentIndex + 1} / {images.length}
+			</div>
+			<button onClick={onClose} className="absolute top-5 right-5 text-white text-3xl border-0 px-4 py-1 hover:bg-gray-500">✕</button>
+		</div>
 		
 		{
 			images.length > 1 && 
@@ -46,7 +87,7 @@ const ImageModal = ({ images, currentIndex, onClose, onNext, onPrev }: Props) =>
     	>
 			<img
 				src={images[currentIndex]}
-				className="max-w-[calc(100vw-10rem)] max-h-[90vh] object-contain rounded shadow-2xl"
+				className="max-w-[calc(100vw-10rem)] max-h-[calc(100vh-15rem)] object-contain rounded shadow-2xl"
 			/>
     	</div>
 

@@ -9,9 +9,10 @@ type ProductProps = {
   image: string | string[];
   setMaxHeight?: (height: number) => void;
   maxHeight?: number;
+  onlyImage?: boolean;
 };
 
-const Product: React.FC<ProductProps> = ({ title, shortDescription, description, image, setMaxHeight, maxHeight }) => {
+const Product: React.FC<ProductProps> = ({ title, shortDescription, description, image, setMaxHeight, maxHeight, onlyImage }) => {
 	const images = Array.isArray(image) ? image : [image];
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [direction, setDirection] = useState(1);

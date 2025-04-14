@@ -18,6 +18,8 @@ type ProductItem = {
 	short_description?: string;
 	description: (string | React.ReactNode)[];
 	image: string | string[];
+	colSpan?: number;
+	onlyImage?: boolean;
 };
   
 type ProductGroup = {
@@ -92,7 +94,7 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 						<Grid cols={1} colsMd={2} colsXl={3} className="gap-10 px-6 flex-1">
 							{
 								category?.items?.map((product, productIndex) => (
-									<div ref={ (el) => { if (el) sectionsRef.current[categoryIndex * 10 + productIndex] = el; } } key={productIndex}>
+									<div className={product.colSpan ? `col-span-${product.colSpan}` : ''} ref={ (el) => { if (el) sectionsRef.current[categoryIndex * 10 + productIndex] = el; } } key={productIndex}>
 										<Product
 											title={product.title}
 											shortDescription={product.short_description}
@@ -100,6 +102,7 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 											image={product.image}
 											maxHeight={maxHeight}
 											setMaxHeight={updateMaxHeight}
+											onlyImage={product.onlyImage}
 										/>
 									</div>
 								))
@@ -110,7 +113,7 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 					<Grid cols={cols?.default ?? 1} colsMd={cols?.md ?? 2} colsXl={cols?.xl ?? 3} className="gap-10 px-6 flex-1">
 						{
 							props.products.map((product, index) => (
-								<div ref={ (el) => { if (el) sectionsRef.current[index] = el } } key={index}>
+								<div className={product.colSpan ? `col-span-${product.colSpan}` : ''} ref={ (el) => { if (el) sectionsRef.current[index] = el } } key={index}>
 									<Product
 										title={product.title}
 										shortDescription={product.short_description}
@@ -118,6 +121,7 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 										image={product.image}
 										maxHeight={maxHeight}
 										setMaxHeight={updateMaxHeight}
+										onlyImage={true}
 									/>
 								</div>
 							))

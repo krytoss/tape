@@ -67,7 +67,9 @@ const products = [
 	  description: [],
 	  image: [
 		"/pages/entertainment/snurky/doplnky_ku_snurkam.png"
-	  ]
+	  ],
+	  colSpan: 2,
+	  onlyImage: true
 	}
 ];
 
