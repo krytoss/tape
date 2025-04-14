@@ -80,6 +80,7 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
 				</div>
 			)
 		}
+
       <div className={`relative w-full ${onlyImage ? 'h-[calc(100%-5rem)]' : 'h-64'} overflow-hidden flex`}>
         {images.length > 1 ? (
           <>
@@ -102,7 +103,7 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
           <img
 		  	src={images[0]}
 		  	alt={title}
-		  	className="max-w-full max-h-full m-auto cursor-pointer"
+		  	className="max-w-full max-h-[400px] m-auto cursor-pointer"
 		  	onClick={() => openModal(0)}
 		  />
         )}
