@@ -148,13 +148,13 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 					<div className="order-1 xl:order-2 mb-20 xl:mb-0 w-full h-full text-slate-700 flex flex-col justify-center text-right relative">
 						
 						<div className="bg-brand ml-10 xl:ml-20 py-10 shadow-xl">
-							<Title color="light" size="2xl" sizeMd="4xl" sizeXl="6xl" size2Xl={"8xl"} className="border-r-8 border-slate-200 pr-6 mr-10">
+							<Title color="light" size="2xl" sizeMd="4xl" sizeXl="6xl" size2Xl={"6xl"} className="border-r-8 border-slate-200 pr-6 mr-10">
 								Etikety na označovanie
 							</Title>
 						</div>
 
 						<p className="mt-20 text-center text-2xl font-bold">
-							Katalóg predtlačených etikiet k dispozícii - <a className="text-brand" href="#" onClick={scrollToForm}>vyplňte formulár</a>
+							Katalóg predtlačených etikiet k dispozícii - <a className="text-brand uppercase" href="#" onClick={scrollToForm}>vyplňte formulár</a>
 						</p>
 
 					</div>

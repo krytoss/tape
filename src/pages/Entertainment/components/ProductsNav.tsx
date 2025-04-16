@@ -112,9 +112,9 @@ const ProductsNav: React.FC = () => {
 						onClick={handleClick}
 						className="absolute right-10 h-10 top-2 z-40 flex flex-col item-center justify-center space-y-1 sm:hidden bg-gray-600 bg-opacity-60 px-2 rounded-lg border-2 border-gray-500 hover:bg-gray-500 hover:bg-opacity-60"
 					>
-						<span className={`block w-8 h-1 bg-white transition-all duration-300 top-0 relative ${isOpen && "transform top-2 rotate-45"}`} />
+						<span className={`block w-8 h-1 bg-white transition-all duration-300 top-0 relative ${isOpen && "transform top-[8px] rotate-45"}`} />
 						<span className={`block w-8 h-1 bg-white transition-all duration-300 ${isOpen && "opacity-0"}`} />
-						<span className={`block w-8 h-1 bg-white transition-all duration-300 top-0 relative ${isOpen && "transform -top-2 -rotate-45"}`} />
+						<span className={`block w-8 h-1 bg-white transition-all duration-300 top-0 relative ${isOpen && "transform -top-[8px] -rotate-45"}`} />
 					</a>
 					{
 						products.sort((item) => item.to === active ? -1 : 1).map((product, index) => (
