@@ -1,10 +1,11 @@
 type Props = {
 	img: string,
 	name: string,
-	position: string
+	position: string,
+	move?: boolean
 }
 
-const PersonCard: React.FC<Props> = ({ img, name, position }) => {
+const PersonCard: React.FC<Props> = ({ img, name, position, move }) => {
 
 	return (
 		<div
@@ -13,7 +14,7 @@ const PersonCard: React.FC<Props> = ({ img, name, position }) => {
 			}
 		>
 			<div className="w-40 h-40 bg-blue-500 overflow-hidden relative text-center m-auto rounded-full">
-				<img src={img} className="h-auto w-full object-cover absolute top-0 left-1/2 transform -translate-x-1/2" />
+				<img src={img} className={`h-auto w-full object-cover absolute top-0 left-1/2 transform -translate-x-1/2 ${move ? "scale-[1.1] translate-y-[15px]" : ""}`} />
 			</div>
 			<div className="p-4 text-center">
 				<h3 className="text-xl font-semibold">{name}</h3>

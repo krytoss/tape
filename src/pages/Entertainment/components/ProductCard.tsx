@@ -29,8 +29,8 @@ const ProductCard: React.FC<Props> = ({ className, title, description, image, li
 				)
 			}
 			<Cover className="h-full opacity-0 group-hover:opacity-90 z-40 transition-all duration-[900ms]" />
-			<div className="card-image">
-				<img src={image} alt={title} className="w-full h-full object-cover transform opacity-80 group-hover:opacity-100 group-hover:scale-125 duration-[900ms]"/>
+			<div className="card-image h-[calc(100%-4rem)] flex justify-center items-center">
+				<img src={image} alt={title} className="w-full h-full object-contain scale-[0.8] transform opacity-80 group-hover:opacity-100 group-hover:scale-100 duration-[900ms]"/>
 			</div>
 			<div className={`
 				card-content
@@ -42,8 +42,10 @@ const ProductCard: React.FC<Props> = ({ className, title, description, image, li
 				transition-all duration-300
 				group-hover:block
 			`}>
-				<h3 className="text-xl font-semibold">{title}</h3>
-				<p className="transition-all duration-[700ms] h-0 overflow-hidden group-hover:h-40 xl:group-hover:h-60 text-xs xl:text-sm flex flex-col justify-center items-center align-middle">{description}</p>
+				<h3 className="text-xl font-semibold h-6">{title}</h3>
+				<p className="transition-all duration-[700ms] h-0 overflow-hidden group-hover:h-40 xl:group-hover:h-50 xl:group-hover:mt-8 text-xs xl:text-sm flex flex-col justify-center items-center align-middle">
+					{description}
+				</p>
 			</div>
 		</div>
 	)

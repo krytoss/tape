@@ -4,6 +4,14 @@ import { useScrollToTop } from './components/ScrollToTop';
 import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 
+export const scrollToForm = (event: React.MouseEvent<HTMLAnchorElement>) => {
+	event.preventDefault()
+	const el = document.getElementById("form");
+	if (el) {
+		el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	}
+};
+
 const AppContent = () => {
 	const location = useLocation();
 	const containerRef = useRef<HTMLDivElement>(null);

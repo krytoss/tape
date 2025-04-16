@@ -7,14 +7,15 @@ type Props = {
 	image: string;
 	link: string;
 	invert?: boolean;
+	contain?: boolean;
 }
 
-const ProductCardWide: React.FC<Props> = ({ className, title, description, image, link, invert = false }) => {
+const ProductCardWide: React.FC<Props> = ({ className, title, description, image, link, invert = false, contain = false }) => {
 	return (
 		<Link to={link} className="">
 			<div className={`w-full grid grid-cols-1 sm:grid-cols-10 shadow-2xl rounded-xl overflow-hidden relative transform hover:-translate-x-2 transition-transform ${className ?? ""} bg-white`}>
 				<div className={`sm:col-span-3 ${invert ? "sm:order-2" : ""}`}>
-					<img src={image} alt={title} className="w-full h-full object-cover object-center"/>
+					<img src={image} alt={title} className={`w-full h-full ${contain ? "object-contain" : "object-cover"} object-center`}/>
 				</div>
 				<div className={`sm:col-span-7 py-2 px-10 flex flex-col justify-center ${invert ? "order-1" : ""}`}>
 					<h3 className="text-xl font-semibold mb-2">{title}</h3>

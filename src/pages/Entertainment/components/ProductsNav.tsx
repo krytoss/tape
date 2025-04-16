@@ -12,47 +12,47 @@ const ProductsNav: React.FC = () => {
 	const products = [
 		{
 			name: "Karty",
-			img: "/pages/entertainment/plastove_karty.png",
+			img: "/pages/entertainment/new/karty.png",
 			to: "/zabava/karty"
 		},
 		{
 			name: "Látkové náramky",
-			img: "/pages/entertainment/latkove.png",
+			img: "/pages/entertainment/new/latkove.png",
 			to: "/zabava/latkove-naramky"
 		},
 		{
 			name: "Vinylové, plastové a tyvek náramky",
-			img: "/pages/entertainment/tyvek.png",
+			img: "/pages/entertainment/new/tyvek.png",
 			to: "/zabava/naramky"
 		},
 		{
 			name: "Silikónové náramky",
-			img: "/pages/entertainment/silikonove.png",
+			img: "/pages/entertainment/new/silikonove.png",
 			to: "/zabava/silikonove-naramky"
 		},
 		{
 			name: "Šnúrky na krk",
-			img: "/pages/entertainment/snurky.png",
+			img: "/pages/entertainment/new/snurky.png",
 			to: "/zabava/snurky"
 		},
 		{
 			name: "Puzdrá, menovky, rolery",
-			img: "/pages/entertainment/puzdra.png",
+			img: "/pages/entertainment/new/puzdra.png",
 			to: "/zabava/puzdra-menovky-rolery"
 		},
 		{
 			name: "RFID",
-			img: "/pages/entertainment/rfid.png",
+			img: "/pages/entertainment/new/rfid.png",
 			to: "/zabava/rfid"
 		},
 		{
 			name: "EKO produkty",
-			img: "/pages/entertainment/eko.png",
+			img: "/pages/entertainment/new/eko.png",
 			to: "/zabava/eko-produkty"
 		},
 		{
 			name: "Tlačiarne",
-			img: "/pages/entertainment/tlaciarne.png",
+			img: "/pages/entertainment/new/tlaciarne.png",
 			to: "/zabava/tlaciarne"
 		}
 	];
@@ -150,10 +150,13 @@ const ProductsNav: React.FC = () => {
 										src={product.img}
 										alt={product.name}
 										className={`
-											object-cover object-top
+											object-contain object-center
 											product-img
 											h-full
-											mt-4 sm:mt-0
+											w-16 sm:w-auto
+											sm:h-[calc(100%-4rem)]
+											mr-4 sm:mr-0
+											sm:pt-4 sm:mt-0
 											sm:absolute sm:top-0 sm:bottom-0
 											sm:left-1/2 sm:-translate-x-1/2 sm:group-hover:scale-[1.15]
 											${active === product.to && 'sm:scale-[1.15]'}
@@ -161,7 +164,7 @@ const ProductsNav: React.FC = () => {
 									/>
 									<span
 										className={`
-											font-semibold relative z-30 mb-1 sm:transition-all sm:duration-300
+											font-semibold relative z-30 mb-1 sm:transition-all sm:duration-300 h-12 flex items-end
 											${
 												(active === product.to) ?
 													'sm:border-b-2 border-brand'

@@ -1,3 +1,4 @@
+import { scrollToForm } from "../../App"
 import Cover from "../../components/Layout/Cover"
 import Grid from "../../components/Layout/Grid"
 import Header from "../../components/Layout/Header"
@@ -6,6 +7,7 @@ import Section from "../../components/Layout/Section"
 import Title from "../../components/Layout/Title"
 import Link from "../../components/Navigation/Link"
 import TopMenu from "../../components/Navigation/TopMenu"
+import ContactForm from "../../sections/ContactForm"
 
 const Health: React.FC = () => {
 
@@ -19,7 +21,7 @@ const Health: React.FC = () => {
 					</Title>
 				</Cover>
 			</Header>
-			<Section fullHeight={false} className="px-60 py-20 overflow-visible">
+			<Section fullHeight={false} className="px-10 lg:px-20 xl:px-60 py-20 overflow-visible">
 				<div className="relative z-20">
 					<p>
 						<span className="text-3xl block font-semibold">
@@ -41,10 +43,10 @@ const Health: React.FC = () => {
 					</p>
 				</div>
 			</Section>
-			<Section className="relative z-20">
-				<Grid className="h-full" cols={10}>
+			<Section fullHeight={false} className="relative z-20 min-h-screen py-10">
+				<Grid className="h-full" cols={1} cols2Xl={10}>
 
-					<div className="col-span-3 text-slate-700 p-10 flex flex-col justify-center">
+					<div className="col-span-5 lg:col-span-3 text-slate-700 p-10 flex flex-col justify-center">
 						<Title size="3xl" className="my-10">
 							Identifikačné náramky pre pacientov
 						</Title>
@@ -60,10 +62,13 @@ const Health: React.FC = () => {
 						<p>
 							Ponúkame široké portfólio produktov v rôznych farbách, veľkostiach, materiáloch podľa individuálnych potrieb.
 						</p>
+						<p className="font-semibold mt-6 text-2xl">
+							Pre viac informácií nám zavolajte alebo <a className="text-brand" href="#" onClick={scrollToForm}>vyplňte kontaktný formulár</a>.
+						</p>
 					</div>
 
-					<div className="col-span-7 flex flex-col justify-center">
-						<Grid cols={3}>
+					<div className="col-span-5 lg:col-span-7 flex flex-col justify-center">
+						<Grid cols={1} colsMd={2} cols2Xl={3}>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"
@@ -89,21 +94,21 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 								description="Náramky s prelepovacou fóliou majú jedinečný samolepiaci, protiodleskový štít, takže ich možno používať s laserovými či termálnymi etiketami alebo štítkami. Náramky chránia údaje pacientov pred prenikaním tekutín a poskytujú vynikajúce čítacie rýchlosti čiarových kódov. Ochranné náramky sú odolné voči vode, trvanlivé a pevné, no zároveň ľahké a pohodlné."
 							/>
 							<ImageWithDescription
-								className="w-80 m-auto"
+								className="w-80 m-auto mb-10"
 								height="400px"
 								title="S vkladacím štítkom"
 								image="./pages/health/vkladacie.png"
 								description="Náramky s vkladacím štítkom sú pohodlné a jednoduché na používanie. Štítok je nositeľom údajov o pacientovi, ktorý sa vloží do priehľadného ochranného puzdra. Sú umývateľné, ľahké, pevné, nemajú ostré hrany, sú vhodné aj pre citlivú pleť."
 							/>
 							<ImageWithDescription
-								className="w-80 m-auto"
+								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Pre matku a dieťa"
 								image="./pages/health/pre_matku_a_dieta.png"
 								description="Identifikačné náramky v pôrodniciach pre matku a dieťa sú obľúbenou voľbou na trhu. Cieľom je zaistiť neomylnú identifikáciu matky, novorodenca, prípadne ďalších rodinných príslušníkov. Každý pár náramkov je označený jedinečným alfanumerickým kódom pre jednoduché spárovanie matky a dieťaťa. Sú umývateľné, ľahké, nemajú ostré hrany, vhodné pre kojencov aj citlivú pleť."
 							/>
 							<ImageWithDescription
-								className="w-80 m-auto"
+								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Termálne tlačiarne"
 								image="./pages/health/termalne_tlaciarne.png"
@@ -114,9 +119,9 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 
 				</Grid>
 			</Section>
-			<Section className="bg-gray-300">
-				<Grid cols={2} className="h-full">
-					<div className="w-full h-full flex flex-col justify-center px-10">
+			<Section fullHeight={false} className="bg-gray-300 min-h-screen py-10">
+				<Grid cols={1} colsXl={2} className="h-full">
+					<div className="order-2 xl:order-1 w-full h-full flex flex-col justify-center px-10">
 						<p className="mb-5">
 							Ponúkame špeciálne etikety na označovanie, ktoré zabezpečujú správne označenie a identifikáciu liekov a striekačiek.<br/>
 							Tieto etikety pomáhajú predchádzať omylom a zaisťujú, že každý pacient dostane správnu dávku a typ liečiva.
@@ -135,24 +140,27 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 						</ul>
 
 						<div className="mt-20 h-80 inline-block object-cover object-bottom shadow-2xl overflow-visible bg-brand">
-							<img src="./pages/health/etikety.png" className="relative -top-3 left-3 h-80 w-full inline-block object-cover shadow-2xl"/>
+							<div className="relative -top-3 left-3 h-full max-w-full bg-white shadow-2xl text-center">
+							 	<img src="./pages/health/etikety.png" className="h-full w-auto inline-block object-contain"/>
+							</div>
 						</div>
 					</div>
-					<div className="w-full h-full text-slate-700 flex flex-col justify-center text-right relative">
+					<div className="order-1 xl:order-2 mb-20 xl:mb-0 w-full h-full text-slate-700 flex flex-col justify-center text-right relative">
 						
-						<div className="bg-brand ml-20 py-10 shadow-xl">
-							<Title color="light" size="8xl border-r-8 border-slate-200 pr-6 mr-10">
+						<div className="bg-brand ml-10 xl:ml-20 py-10 shadow-xl">
+							<Title color="light" size="2xl" sizeMd="4xl" sizeXl="6xl" size2Xl={"8xl"} className="border-r-8 border-slate-200 pr-6 mr-10">
 								Etikety na označovanie
 							</Title>
 						</div>
 
-						<p className="mt-20 text-center text-lg">
-							Katalóg predtlačených etikiet k dispozícii - <Link className="text-brand text-2xl font-bold" to="#">vyplňte formulár</Link>
+						<p className="mt-20 text-center text-2xl font-bold">
+							Katalóg predtlačených etikiet k dispozícii - <a className="text-brand" href="#" onClick={scrollToForm}>vyplňte formulár</a>
 						</p>
 
 					</div>
 				</Grid>
 			</Section>
+			<ContactForm />
 		</>
 	)
 }

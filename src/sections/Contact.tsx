@@ -7,10 +7,10 @@ import Link from "../components/Navigation/Link"
 const Contact: React.FC = () => {
 
 	return (
-		<Section id="contact">
+		<Section fullHeight={false} className="min-h-screen" id="contact">
 			<Grid colsXl={2} className="h-full">
 				<div className="text-left justify-center flex flex-col width-full bg-gray-100 pb-10 min-h-screen xl:min-h-auto">
-					<div className="py-10 pl-40 pr-10">
+					<div className="pt-28 pb-10 pl-40 pr-10">
 						<Title>
 							Kontakt
 						</Title>

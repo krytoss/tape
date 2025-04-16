@@ -87,7 +87,7 @@ const ContactForm: React.FC = () => {
 	console.log(service, message)
 
 	return (
-		<Section>
+		<Section id="form">
 			<Grid cols={1} colsXl={5} className="h-full justify-center items-center">
 				<div ref={leftRef} className="xl:bg-gray-300 w-full h-full flex items-center justify-center col-span-2">
 					<Title className="mb-20 px-20 text-center xl:text-left">

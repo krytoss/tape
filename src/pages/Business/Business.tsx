@@ -4,6 +4,7 @@ import Section from "../../components/Layout/Section";
 import Title from "../../components/Layout/Title";
 import TopMenu from "../../components/Navigation/TopMenu";
 import ProductCardWide from "../../components/Layout/ProductCardWide";
+import ContactForm from "../../sections/ContactForm";
 
 const Business: React.FC = () => {
 	return (
@@ -89,9 +90,11 @@ const Business: React.FC = () => {
 						]}
 						image="/pages/business/tlaciarne.png"
 						link="/zabava/tlaciarne"
+						contain
 					/>
 				</div>
 			</Section>
+			<ContactForm />
 		</>
 	);
 }
