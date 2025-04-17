@@ -1,10 +1,11 @@
 type Props = {
 	label?: string,
 	value: string,
-	onChange: (value: string) => void
+	onChange: (value: string) => void,
+	required?: boolean
 }
 
-const Textbox: React.FC<Props> = ({ label, value, onChange }) => {
+const Textbox: React.FC<Props> = ({ label, value, onChange, required }) => {
 	
 	const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
 		onChange(event.target.value)
@@ -31,6 +32,7 @@ const Textbox: React.FC<Props> = ({ label, value, onChange }) => {
 				value={value}
 				onChange={handleChange}
 				rows={5}
+				required={required}
 			/>
 		</div>
 	)
