@@ -182,9 +182,6 @@ const ContactForm: React.FC = () => {
 						<button className={`${isSending ? "bg-gray-300 cursor-not-allowed" : "bg-brand"} text-white font-semibold py-2 px-4 rounded mt-4 hover:bg-brand/80 transition duration-300`}>
 							{ isSending ? "Posiela sa..." : "Odoslať" }
 						</button>
-						<p className="text-gray-500 text-sm mt-2">
-							*Odoslaním formulára súhlasíte so spracovaním vašich osobných údajov v súlade s našimi <a href="/gdpr" className="text-brand hover:underline">GDPR podmienkami</a>.
-						</p>
 					</Form>
 				</div>
 			</Grid>
