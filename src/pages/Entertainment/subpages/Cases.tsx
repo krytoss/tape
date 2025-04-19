@@ -165,7 +165,10 @@ const products = [
           "Háčikový systém pre aretáciu polohy - vaše ID zostane otočené dopredu",
           "Farby: červená, čierna, priehľadná modrá, priehľadná červená"
         ],
-        image: "/pages/entertainment/puzdra/roler_2_uchyty.png"
+        image: [
+			"/pages/entertainment/puzdra/roler_2_uchyty.png",
+			"/pages/entertainment/puzdra/roler_2_uchyty_2.png"
+		]
       },
       {
         title: "Štýlový roler na kľúče",

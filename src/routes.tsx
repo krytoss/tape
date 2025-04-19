@@ -36,7 +36,7 @@ export const pages: Record<string, Page> = {
 			"": {
 				component: Entertainment,
 				title: "Zábava",
-				//img: "/offers/entertainment.jpeg"
+				img: "/offers/entertainment.jpeg"
 			},
 			"silikonove-naramky": {
 				component: Silicones,
@@ -51,7 +51,7 @@ export const pages: Record<string, Page> = {
 			"karty": {
 				component: Cards,
 				title: "Karty",
-				//img: "/pages/entertainment/karty/header.jpeg"
+				img: "/pages/entertainment/karty/header.jpeg"
 			},
 			"puzdra-menovky-rolery": {
 				component: Cases,
