@@ -36,52 +36,52 @@ export const pages: Record<string, Page> = {
 			"": {
 				component: Entertainment,
 				title: "Zábava",
-				img: "/offers/entertainment.jpeg"
+				//img: "/offers/entertainment.jpeg"
 			},
 			"silikonove-naramky": {
 				component: Silicones,
 				title: "Silikónové náramky",
-				img: "/pages/entertainment/silikonove.jpeg"
+				//img: "/pages/entertainment/silikonove.jpeg"
 			},
 			"latkove-naramky": {
 				component: Fabric,
 				title: "Látkové náramky",
-				img: "/pages/entertainment/latkove.jpeg"
+				//img: "/pages/entertainment/latkove.jpeg"
 			},
 			"karty": {
 				component: Cards,
 				title: "Karty",
-				img: "/pages/entertainment/karty/header.jpeg"
+				//img: "/pages/entertainment/karty/header.jpeg"
 			},
 			"puzdra-menovky-rolery": {
 				component: Cases,
 				title: "Puzdrá, menovky, rolery",
-				img: "/pages/entertainment/plastove_karty.png"
+				//img: "/pages/entertainment/plastove_karty.png"
 			},
 			"naramky": {
 				component: Bracelets,
 				title: "Náramky",
-				img: "/pages/entertainment/tyvek.png"
+				//img: "/pages/entertainment/tyvek.png"
 			},
 			"snurky": {
 				component: Cords,
 				title: "Šnúrky na krk",
-				img: "/pages/entertainment/snurky.png"
+				//img: "/pages/entertainment/snurky.png"
 			},
 			"eko-produkty": {
 				component: Eco,
 				title: "EKO produkty",
-				img: "/pages/entertainment/eko.png"
+				//img: "/pages/entertainment/eko.png"
 			},
 			"rfid": {
 				component: Rfid,
 				title: "RFID",
-				img: "/pages/entertainment/rfid.png"
+				//img: "/pages/entertainment/rfid.png"
 			},
 			"tlaciarne": {
 				component: Printers,
 				title: "Tlačiarne a čiarové kódy",
-				img: "/pages/entertainment/tlaciarne.png"
+				//img: "/pages/entertainment/tlaciarne.png"
 			}
 		}
 	}
