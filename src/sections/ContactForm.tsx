@@ -25,8 +25,8 @@ const ContactForm: React.FC = () => {
 				duration: 1,
 				scrollTrigger: {
 					trigger: leftRef.current,
-					start: "top 50%",
-					end: "bottom 50%",
+					start: "top 80%",
+					end: "bottom 10%",
 					toggleActions: "play reverse play reverse",
 					once: false
 				}
@@ -38,8 +38,8 @@ const ContactForm: React.FC = () => {
 				duration: 1,
 				scrollTrigger: {
 					trigger: rightRef.current,
-					start: "top 50%",
-					end: "bottom 50%",
+					start: "top 80%",
+					end: "bottom 10%",
 					toggleActions: "play reverse play reverse",
 					once: false
 				}

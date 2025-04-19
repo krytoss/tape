@@ -57,7 +57,7 @@ const products = [
 ];
 
 const options = {
-	title: "",
+	title: "Možnosti",
 	image: "/pages/entertainment/silikonove_naramky/silikon_moznosti-2.jpg"
 }
 

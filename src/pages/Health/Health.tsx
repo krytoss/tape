@@ -68,7 +68,7 @@ const Health: React.FC = () => {
 					</div>
 
 					<div className="col-span-5 lg:col-span-7 flex flex-col justify-center">
-						<Grid cols={1} colsMd={2} cols2Xl={3}>
+						<Grid cols={1} colsSm={2} colsLg={3} cols2Xl={3}>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"

@@ -132,7 +132,7 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 			{ options && (
 				<div className="px-6 mt-10">
 					<Product
-						title={"Možnosti"}
+						title={options.title}
 						image={options.image}
 						maxHeight={maxHeight}
 						setMaxHeight={updateMaxHeight}

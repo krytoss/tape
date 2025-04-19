@@ -61,11 +61,20 @@ const products = [
 	}
 ];
 
+const options = {
+	title: "Patentky",
+	image: [
+		"/pages/entertainment/latkove_naramky/patentky_jednorazove.jpeg",
+		"/pages/entertainment/latkove_naramky/patentky_opakovane.jpeg",
+	]
+}
+
 const Fabric: React.FC = () => {
 
 	return (
 		<Subpage
 			products={products}
+			options={options}
 		/>
 	)
 }
