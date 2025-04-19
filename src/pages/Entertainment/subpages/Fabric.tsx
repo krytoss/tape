@@ -64,7 +64,7 @@ const products = [
 const options = {
 	title: "Patentky",
 	image: [
-		"/pages/entertainment/latkove_naramky/patentky_jednorazove.jpeg",
+		"/pages/entertainment/latkove_naramky/patentky_jednorazove.png",
 		"/pages/entertainment/latkove_naramky/patentky_opakovane.jpeg",
 	]
 }
