@@ -46,7 +46,7 @@ export const pages: Record<string, Page> = {
 			"latkove-naramky": {
 				component: Fabric,
 				title: "Látkové náramky",
-				//img: "/pages/entertainment/latkove.jpeg"
+				img: "/pages/entertainment/latkove_naramky/header.jpeg"
 			},
 			"karty": {
 				component: Cards,
@@ -61,7 +61,7 @@ export const pages: Record<string, Page> = {
 			"naramky": {
 				component: Bracelets,
 				title: "Náramky",
-				//img: "/pages/entertainment/tyvek.png"
+				img: "/pages/entertainment/naramky/header.jpg"
 			},
 			"snurky": {
 				component: Cords,
@@ -76,7 +76,7 @@ export const pages: Record<string, Page> = {
 			"rfid": {
 				component: Rfid,
 				title: "RFID",
-				//img: "/pages/entertainment/rfid.png"
+				img: "/pages/entertainment/rfid/header.jpeg"
 			},
 			"tlaciarne": {
 				component: Printers,

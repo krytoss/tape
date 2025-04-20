@@ -54,7 +54,7 @@ const Layout: React.FC = () => {
 				img={currentData.img}
 			>
 				<Cover>
-					<Title color="light" size="3xl text-center">
+					<Title color="light" size="3xl text-center" className="pt-16 md:pt-20">
 						{ currentData.title ?? "Zábava" }
 					</Title>
 					<div className={`${!isSubpage && 'xl:block'} hidden`}>
