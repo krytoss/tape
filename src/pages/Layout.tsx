@@ -48,7 +48,7 @@ const Layout: React.FC = () => {
 			<TopMenu />
 			<Header
 				className={`
-					h-[50vh] ${!isSubpage && 'xl:h-[80vh]'}
+					h-[60vh] ${!isSubpage && 'xl:h-[80vh]'}
 					relative z-20`
 				}
 				img={currentData.img}
