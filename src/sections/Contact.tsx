@@ -10,8 +10,8 @@ const Contact: React.FC = () => {
 		<Section fullHeight={false} className="min-h-screen" id="contact">
 			<Grid colsXl={2} className="h-full">
 				<div className="text-left justify-center flex flex-col width-full bg-gray-100 pb-10 min-h-screen xl:min-h-auto">
-					<div className="pt-28 pb-10 pl-40 pr-10">
-						<Title>
+					<div className="pt-28 pb-10 lg:pl-40 lg:pr-10 px-10 lg:px-0">
+						<Title sizeLg="8xl" size="4xl">
 							Kontakt
 						</Title>
 						<div className="text-slate-800 text-left">
