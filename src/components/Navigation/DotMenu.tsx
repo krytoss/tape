@@ -46,7 +46,7 @@ const DotMenu: React.FC = () => {
 					<a
 						onClick={() => scrollToId(key)}
 						className={
-							`block py-2 uppercase text-slate-700 text-right mr-10 inline-flex group relative cursor-pointer
+							`block py-2 uppercase text-slate-700 text-right lg:mr-10 sm:mr-2 mr-1 inline-flex group relative cursor-pointer
 							${activeSection === key ? "font-bold" : ""}`
 						}
 					>

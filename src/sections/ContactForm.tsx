@@ -137,8 +137,8 @@ const ContactForm: React.FC = () => {
 		<Section id="form">
 			{
 				isShowModal && (
-					<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center px-20 z-[9999]">
-						<div className="bg-white p-5 rounded shadow-lg max-h-[calc(100vh-10rem)] overflow-y-auto">
+					<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center px-4 md:px-20 z-[9999]">
+						<div className="bg-white p-5 rounded shadow-lg max-h-[calc(100vh-2rem)] md:max-h-[calc(100vh-10rem)] overflow-y-auto">
 						<h1 className="mb-4">Zásady spracovania osobných údajov</h1>
 						<p><strong>TAPE s.r.o.</strong>, so sídlom Mlynská 2238, 934 01 Levice, IČO: 35979852, zapísaná v obchodnom registri Okresného súdu Nitra, ako prevádzkovateľ webovej stránky <strong>tape.sk</strong>, týmto poskytuje informácie o spracúvaní osobných údajov získaných prostredníctvom kontaktného formulára.</p>
 
