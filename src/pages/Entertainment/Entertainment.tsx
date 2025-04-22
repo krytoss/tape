@@ -6,7 +6,7 @@ const Entertainment: React.FC = () => {
 	return (
 		<Section fullHeight={false} className="overflow-visible pt-20 min-h-screen">
 			{ /* <div className="relative z-20 w-full m-auto"> */ }
-			<Grid className="xl:h-[calc(100vh-5rem)] relative z-20" colsXs={1} colsMd={2} colsXl={3} >
+			<Grid className="xl:h-[calc(100vh-5rem)] min-h-[900px] relative z-20" colsXs={1} colsMd={2} colsXl={3} >
 				<ProductCard
 					link="/zabava/karty"
 					className="h-full"
