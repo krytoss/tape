@@ -76,7 +76,7 @@ const Team: React.FC = () => {
 			<img src="./hexagon.jpg" className="z-10 absolute right-0 bottom-0" />
 			<div className="w-full min-h-screen bg-gray-300 bg-opacity-90 z-20 relative pb-20 2xl:pb-0 h-auto flex flex-col items-center justify-center">
 				<Grid cols={1} colsMd={1} cols2Xl={3}>
-					<div ref={leftRef} className="py-10 2xl:pl-40 2xl:pr-10 text-center justify-center items-center flex width-full flex-col">
+					<div ref={leftRef} className="py-10 2xl:pl-40 2xl:pr-10 text-center justify-center items-center flex width-full flex-col pt-20">
 						<Title color="dark">
 							Team
 						</Title>

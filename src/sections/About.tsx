@@ -49,13 +49,13 @@ const About: React.FC = () => {
 
 	return (
 		<Section id="about">
-			<Grid cols={1} colsLg={2} className="h-full">
-				<div ref={leftRef} className="py-10 lg:pl-40 lg:pr-10 text-center justify-center items-center flex width-full">
+			<Grid cols={1} colsLg={2} className="h-full flex flex-col flex-1">
+				<div ref={leftRef} className="lg:pl-40 lg:pr-10 text-center justify-center items-center flex width-full">
 					<Title sizeLg="8xl" size="6xl" color="dark">
 						O nás
 					</Title>
 				</div>
-				<div ref={rightRef} className="md:col-span-2 lg:col-span-1 py-10 px-20 lg:pl-10 lg:pr-40 justify-center items-center flex bg-gray-300 text-slate-700">
+				<div ref={rightRef} className="py-40 h-full md:col-span-2 lg:col-span-1 py-10 px-20 lg:pl-10 lg:pr-40 justify-center items-center flex bg-gray-300 text-slate-700">
 					<p>
 						<span className="text-2xl block">
 							Spoločnosť <span className="text-3xl text-tape font-bold mx-1">TAPE</span>, s.r.o. pôsobí na trhu identifikácie osôb 20 rokov v rôznych formách.

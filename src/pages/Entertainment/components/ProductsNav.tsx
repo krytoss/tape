@@ -13,47 +13,56 @@ const ProductsNav: React.FC = () => {
 		{
 			name: "Karty",
 			img: "/pages/entertainment/new/karty.png",
-			to: "/zabava/karty"
+			to: "/zabava/karty",
+			order: 1
 		},
 		{
 			name: "Látkové náramky",
 			img: "/pages/entertainment/new/latkove.png",
-			to: "/zabava/latkove-naramky"
+			to: "/zabava/latkove-naramky",
+			order: 2
 		},
 		{
 			name: "Vinylové, plastové a tyvek náramky",
 			img: "/pages/entertainment/new/tyvek.png",
-			to: "/zabava/naramky"
+			to: "/zabava/naramky",
+			order: 3
 		},
 		{
 			name: "Silikónové náramky",
 			img: "/pages/entertainment/new/silikonove.png",
-			to: "/zabava/silikonove-naramky"
+			to: "/zabava/silikonove-naramky",
+			order: 4
 		},
 		{
 			name: "Šnúrky na krk",
 			img: "/pages/entertainment/new/snurky.png",
-			to: "/zabava/snurky"
+			to: "/zabava/snurky",
+			order: 5
 		},
 		{
 			name: "Puzdrá, menovky, rolery",
 			img: "/pages/entertainment/new/puzdra.png",
-			to: "/zabava/puzdra-menovky-rolery"
+			to: "/zabava/puzdra-menovky-rolery",
+			order: 6
 		},
 		{
 			name: "RFID",
 			img: "/pages/entertainment/new/rfid.png",
-			to: "/zabava/rfid"
+			to: "/zabava/rfid",
+			order: 7
 		},
 		{
 			name: "EKO produkty",
 			img: "/pages/entertainment/new/eko.png",
-			to: "/zabava/eko-produkty"
+			to: "/zabava/eko-produkty",
+			order: 8
 		},
 		{
 			name: "Tlačiarne",
 			img: "/pages/entertainment/new/tlaciarne.png",
-			to: "/zabava/tlaciarne"
+			to: "/zabava/tlaciarne",
+			order: 9
 		}
 	];
 
@@ -117,7 +126,7 @@ const ProductsNav: React.FC = () => {
 						<span className={`block w-8 h-1 bg-white transition-all duration-300 top-0 relative ${isOpen && "transform -top-[8px] -rotate-45"}`} />
 					</a>
 					{
-						products.sort((item) => item.to === active ? -1 : 1).map((product, index) => (
+						products.sort((item) => item.to === active ? -1 : item.order).map((product, index) => (
 							<div className={`
 								product-link-wrapper
 								min-w-[100vw] w-[100vw]

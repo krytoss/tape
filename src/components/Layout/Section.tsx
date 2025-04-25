@@ -20,7 +20,7 @@ const Section: React.FC<Props> = ({ id, className, children, ref, fullHeight = t
 		</section>
 		 shadow-[0_-5px_20px_0px_rgba(0,0,0,0.3)]
 		*/
-		<section ref={ref} id={id} className={`${fullHeight && 'h-screen'} w-screen relative overflow-hidden ${className}`}>
+		<section ref={ref} id={id} className={`${fullHeight && 'min-h-screen'} w-screen relative overflow-hidden flex flex-col ${className}`}>
 			{children}
 		</section>
 	)

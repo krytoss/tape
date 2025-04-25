@@ -187,13 +187,13 @@ const ContactForm: React.FC = () => {
 					</div>
 				)
 			}
-			<Grid cols={1} colsXl={5} className="h-full justify-center items-center">
-				<div ref={leftRef} className="xl:bg-gray-300 w-full h-full flex items-center justify-center col-span-2">
-					<Title sizeLg="8xl" sizeMd="6xl" size="4xl" className="mb-20 px-20 text-center xl:text-left">
+			<Grid cols={1} colsXl={5} className="flex flex-1 h-full justify-center items-center">
+				<div ref={leftRef} className="xl:bg-gray-300 w-full h-full flex items-center justify-center col-span-2 pt-20 xl:py-20">
+					<Title sizeLg="8xl" sizeMd="6xl" size="4xl" className="mt-20 mb-20 px-20 text-center xl:text-left">
 						Napíšte nám
 					</Title>
 				</div>
-				<div ref={rightRef} className="w-full h-full flex flex-col items-center justify-center col-span-3">
+				<div ref={rightRef} className="w-full h-full flex flex-col items-center justify-center col-span-3 xl:py-20">
 					<Form onSubmit={handleSend} className="w-full sm:w-4/5 xl:w-4/5 max-w-[40rem] px-16">
 						<Input
 							id="email"
