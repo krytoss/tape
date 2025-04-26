@@ -126,7 +126,11 @@ const ProductsNav: React.FC = () => {
 						<span className={`block w-8 h-1 bg-white transition-all duration-300 top-0 relative ${isOpen && "transform -top-[8px] -rotate-45"}`} />
 					</a>
 					{
-						products.sort((item) => item.to === active ? -1 : item.order).map((product, index) => (
+						products.sort((a, b) => {
+							if (a.to === active) return -1;
+							if (b.to === active) return 1;
+							return a.order - b.order;
+						}).map((product, index) => (
 							<div className={`
 								product-link-wrapper
 								min-w-[100vw] w-[100vw]
