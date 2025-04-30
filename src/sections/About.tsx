@@ -4,6 +4,7 @@ import Section from "../components/Layout/Section"
 import Title from "../components/Layout/Title"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useEffect, useRef } from "react"
+import { Link } from "react-router"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -60,9 +61,12 @@ const About: React.FC = () => {
 						<span className="text-2xl block">
 							Spoločnosť <span className="text-3xl text-tape font-bold mx-1">TAPE</span>, s.r.o. pôsobí na trhu identifikácie osôb 20 rokov v rôznych formách.
 						</span>
-						<p className="mt-3 mb-10 text-xl">
+						<p className="mt-3 mb-4 text-xl">
 							Venujeme sa zvyšovaniu bezpečnosti v nemocniciach. Sme dodávateľom identifikačných náramkov pre pacientov, etikiet a ďalších produktov.
 							Ďalšou oblasťou je identifikácia zamestnancov, návštevníkov koncertov, festivalov, konferencií a rôznych podujatí.
+						</p>
+						<p className="mb-10">
+							Sme oficiálnym distribútorom spoločnosti <Link to="https://www.pdcorp.com/products" target="blank" className="text-brand">PDC PRECISION DYNAMICS CORPORATION</Link> (patriaceho do skupiny Brady Corporation) pre Slovenskú republiku. Precision Dynamics Corporation je najväčším celosvetovým výrobcom identifikačných náramkov a etikiet na označovanie liekov a striekačiek. Poskytuje stopercentnú kvalitu, pokiaľ ide o služby, dizajn a výrobu. Potvrdzujú to aj certifikáty ISO-9001:2015 a ISO-13485:2016, ISO-14001:2015 hlavného závodu v San Fernando v Kalifornii v USA. PDC ako prvá na svete uviedla na trh identifikačné náramky v roku 1956.
 						</p>
 						<h3 className="text-xl font-semibold">
 							Prečo si vybrať nás?
