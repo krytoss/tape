@@ -49,7 +49,7 @@ function HomePage() {
 		gsap.set("#text", { opacity: 0 });
 		gsap.set("#home-title", { opacity: 0 });
 		gsap.set("#logo", { scale: 1 })
-		gsap.set("body", { overflow: "hidden" });
+		//gsap.set("body", { overflow: "hidden" });
 		scrollTo(0, 0);
 
 		tl.to("#text", {
