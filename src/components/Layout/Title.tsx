@@ -19,9 +19,9 @@ const Title: React.FC<Props> = ({ children, color = "dark", className, size = "8
 	const xxlClass = size2Xl ? `2xl:text-${size2Xl}` : "";
 
 	return (
-		<h3 className={`text-${size} ${mdClass} ${lgClass} ${xlClass} ${xxlClass} uppercase font-semibold block max-w-full ${className ?? ""} ${colorClass ?? ""}`}>
+		<h2 className={`text-${size} ${mdClass} ${lgClass} ${xlClass} ${xxlClass} uppercase font-semibold block max-w-full ${className ?? ""} ${colorClass ?? ""}`}>
 			{ children }
-		</h3>
+		</h2>
 	)
 }
 
