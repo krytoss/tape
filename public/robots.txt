@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://tape.sk/sitemap.xml
