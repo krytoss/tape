@@ -36,23 +36,26 @@ const AppContent = () => {
 	}
 
 	return (
-		<div ref={containerRef}>
-			<Routes>
-				{Object.entries(pages).map(([path, { component: Component, children }]) => {
-					if (children) {
-						return (
-							<Route key={path} path={path} element={<Component />}>
-								{Object.entries(children).map(([childPath, { component: ChildComponent }]) => (
-									<Route key={childPath} path={childPath} element={<ChildComponent />} />
-								))}
-							</Route>
-						);
-					}
-					return <Route key={path} path={path} element={<Component />} />;
-				})}
-			</Routes>
-			<CookieBanner />
-		</div>
+		<>
+			<link rel="canonical" href={window.location.href} />
+			<div ref={containerRef}>
+				<Routes>
+					{Object.entries(pages).map(([path, { component: Component, children }]) => {
+						if (children) {
+							return (
+								<Route key={path} path={path} element={<Component />}>
+									{Object.entries(children).map(([childPath, { component: ChildComponent }]) => (
+										<Route key={childPath} path={childPath} element={<ChildComponent />} />
+									))}
+								</Route>
+							);
+						}
+						return <Route key={path} path={path} element={<Component />} />;
+					})}
+				</Routes>
+				<CookieBanner />
+			</div>
+		</>
 	);
 };
 

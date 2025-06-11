@@ -58,7 +58,7 @@ const About: React.FC = () => {
 					</Title>
 				</div>
 				<div ref={rightRef} className="py-40 h-full md:col-span-2 lg:col-span-1 py-10 px-20 lg:pl-10 lg:pr-40 justify-center items-center flex bg-gray-300 text-slate-700">
-					<p>
+					<div>
 						<span className="text-2xl block">
 							Spoločnosť <span className="text-3xl text-tape font-bold mx-1">TAPE</span>, s.r.o. pôsobí na trhu identifikácie osôb 20 rokov v rôznych formách.
 						</span>
@@ -87,7 +87,7 @@ const About: React.FC = () => {
 						<p>
 							„Máme dlhoročné skúsenosti a množstvo spokojných zákazníkov.“
 						</p>
-					</p>
+					</div>
 				</div>
 			</Grid>
 		</Section>

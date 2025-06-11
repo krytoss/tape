@@ -19,6 +19,5 @@ export const useAnalytics = () => {
     if (!hasConsent) return;
 
     ReactGA.send({ hitType: "pageview", page: location.pathname });
-    console.log("Page view tracked:", location.pathname);
   }, [location.pathname]);
 };
