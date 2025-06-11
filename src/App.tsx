@@ -1,8 +1,10 @@
-import { HashRouter, Route, Routes, useLocation } from 'react-router';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router';
 import { pages } from './routes';
 import { useScrollToTop } from './components/ScrollToTop';
 import { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { useAnalytics } from './hooks/useAnalytics';
+import CookieBanner from './components/CookieBanner';
 
 export const scrollToForm = (event: React.MouseEvent<HTMLAnchorElement>) => {
 	event.preventDefault()
@@ -13,22 +15,25 @@ export const scrollToForm = (event: React.MouseEvent<HTMLAnchorElement>) => {
 };
 
 const AppContent = () => {
+	useAnalytics();
 	const location = useLocation();
 	const containerRef = useRef<HTMLDivElement>(null);
 
 	useScrollToTop();
 
-	useLayoutEffect(() => {
-		const ctx = gsap.context(() => {
-			gsap.fromTo(
-				containerRef.current,
-				{ opacity: 0 },
-				{ opacity: 1, duration: 0.5, ease: "power2.out" }
-			);
-		});
+	if (typeof window !== 'undefined') {
+		useLayoutEffect(() => {
+			const ctx = gsap.context(() => {
+				gsap.fromTo(
+					containerRef.current,
+					{ opacity: 0 },
+					{ opacity: 1, duration: 0.5, ease: "power2.out" }
+				);
+			});
 
-		return () => ctx.revert();
-	}, [location.pathname]);
+			return () => ctx.revert();
+		}, [location.pathname]);
+	}
 
 	return (
 		<div ref={containerRef}>
@@ -46,15 +51,16 @@ const AppContent = () => {
 					return <Route key={path} path={path} element={<Component />} />;
 				})}
 			</Routes>
+			<CookieBanner />
 		</div>
 	);
 };
 
 const App = () => {
 	return (
-		<HashRouter>
+		<BrowserRouter>
 			<AppContent />
-		</HashRouter>
+		</BrowserRouter>
 	);
 };
 

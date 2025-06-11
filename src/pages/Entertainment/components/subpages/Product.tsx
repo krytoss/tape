@@ -65,8 +65,6 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
     }
   }, [ setMaxHeight ]);
 
-  console.log(onlyImage)
-
   return (
     <div
       ref={productRef}

@@ -80,7 +80,6 @@ const ProductsNav: React.FC = () => {
     }, [active]);
 
     const updateScrollButtons = () => {
-		console.log("scrolling")
         const scrollContainer = scrollContainerRef.current;
         if (scrollContainer) {
             setCanScrollLeft(scrollContainer.scrollLeft > 0);

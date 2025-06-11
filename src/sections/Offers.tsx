@@ -7,30 +7,31 @@ import Cover from "../components/Layout/Cover"
 import Link from "../components/Navigation/Link"
 import { useEffect } from "react"
 
-gsap.registerPlugin(ScrollTrigger)
-
 const Offers: React.FC = () => {
 
 	useEffect(() => {
-		gsap.fromTo(".offer",
-			{
-			  y: 100,
-			  opacity: 0,
-			},
-			{
-			  y: 0,
-			  opacity: 1,
-			  duration: 0.5,
-			  stagger: 0.05,
-			  scrollTrigger: {
-				  trigger: '.offer',
-				  start: "top 30%",
-				  end: "bottom 30%",
-				  toggleActions: "play reverse play reverse",
-				  once: false
-			  }
-			}
-		);
+		if (typeof window !== 'undefined') {
+			gsap.registerPlugin(ScrollTrigger)
+			gsap.fromTo(".offer",
+				{
+				y: 100,
+				opacity: 0,
+				},
+				{
+				y: 0,
+				opacity: 1,
+				duration: 0.5,
+				stagger: 0.05,
+				scrollTrigger: {
+					trigger: '.offer',
+					start: "top 30%",
+					end: "bottom 30%",
+					toggleActions: "play reverse play reverse",
+					once: false
+				}
+				}
+			);
+		}
 	})
 
 	return (

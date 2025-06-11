@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useActiveSection } from "../../hooks/useActiveSection";
 
 const DotMenu: React.FC = () => {
@@ -23,10 +22,6 @@ const DotMenu: React.FC = () => {
 
 	const sectionIds = Object.keys(menuLinks);
 	const activeSection = useActiveSection(sectionIds);
-
-	useEffect(() => {
-		console.log(activeSection)
-	}, [activeSection])
 
 	return (
 		<ul id="menu" className={`

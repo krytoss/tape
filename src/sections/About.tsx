@@ -6,46 +6,47 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useEffect, useRef } from "react"
 import { Link } from "react-router"
 
-gsap.registerPlugin(ScrollTrigger)
-
 const About: React.FC = () => {
 
 	const leftRef = useRef(null)
 	const rightRef = useRef(null)
 
 	useEffect(() => {
-		const elLeft = leftRef.current;
-		const elRight = rightRef.current;
-		gsap.fromTo(elLeft, {
-			opacity: 0,
-			x: -100
-		}, {
-			opacity: 1,
-			x: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: elLeft,
-				start: "top 90%",
-				end: "bottom 10%",
-				toggleActions: "play reverse play reverse",
-				once: false,
-			}
-		})
-		gsap.fromTo(elRight, {
-			opacity: 0,
-			x: 100
-		}, {
-			opacity: 1,
-			x: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: elRight,
-				start: "top 90%",
-				end: "bottom 10%",
-				toggleActions: "play reverse play reverse",
-				once: false
-			}
-		})
+		if (typeof window !== 'undefined') {
+			gsap.registerPlugin(ScrollTrigger)
+			const elLeft = leftRef.current;
+			const elRight = rightRef.current;
+			gsap.fromTo(elLeft, {
+				opacity: 0,
+				x: -100
+			}, {
+				opacity: 1,
+				x: 0,
+				duration: 1,
+				scrollTrigger: {
+					trigger: elLeft,
+					start: "top 90%",
+					end: "bottom 10%",
+					toggleActions: "play reverse play reverse",
+					once: false,
+				}
+			})
+			gsap.fromTo(elRight, {
+				opacity: 0,
+				x: 100
+			}, {
+				opacity: 1,
+				x: 0,
+				duration: 1,
+				scrollTrigger: {
+					trigger: elRight,
+					start: "top 90%",
+					end: "bottom 10%",
+					toggleActions: "play reverse play reverse",
+					once: false
+				}
+			})
+		}
 	})
 
 	return (

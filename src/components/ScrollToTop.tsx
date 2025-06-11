@@ -4,8 +4,11 @@ import { useLocation } from "react-router";
 export const useScrollToTop = () => {
 	const { pathname } = useLocation();
 
+	
 	useEffect(() => {
-		window.scrollTo({ top: 0 });
+		if (typeof window !== 'undefined') {
+			window.scrollTo({ top: 0 });
+		}
 	}, [pathname]);
 };
 

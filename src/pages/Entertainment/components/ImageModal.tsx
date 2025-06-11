@@ -87,6 +87,7 @@ const ImageModal = ({ images, currentIndex, onClose, onNext, onPrev }: Props) =>
     	>
 			<img
 				src={images[currentIndex]}
+				alt={`Obrázok: ${images[currentIndex]}`}
 				className="max-w-[calc(100vw-10rem)] max-h-[calc(100vh-15rem)] object-contain rounded shadow-2xl"
 			/>
     	</div>

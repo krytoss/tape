@@ -6,74 +6,75 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import PersonCard from "../components/Team/PersonCard"
 
-gsap.registerPlugin(ScrollTrigger)
-
 const Team: React.FC = () => {
 
 	const leftRef = useRef(null)
 	const quoteRef = useRef(null)
 
 	useEffect(() => {
-		const elLeft = leftRef.current;
-		const elQuote = quoteRef.current;
+		if (typeof window !== 'undefined') {
+			gsap.registerPlugin(ScrollTrigger)
+			const elLeft = leftRef.current;
+			const elQuote = quoteRef.current;
 
-		gsap.fromTo(elLeft, {
-			opacity: 0,
-			x: -100
-		}, {
-			opacity: 1,
-			x: 0,
-			duration: 1,
-			scrollTrigger: {
-				trigger: '#team',
-				start: "top 50%",
-				end: "bottom 1%",
-				toggleActions: "play reverse play reverse",
-				once: false,
-			}
-		})
+			gsap.fromTo(elLeft, {
+				opacity: 0,
+				x: -100
+			}, {
+				opacity: 1,
+				x: 0,
+				duration: 1,
+				scrollTrigger: {
+					trigger: '#team',
+					start: "top 50%",
+					end: "bottom 1%",
+					toggleActions: "play reverse play reverse",
+					once: false,
+				}
+			})
 
-		gsap.fromTo(elQuote, {
-			opacity: 0,
-			x: -200
-		}, {
-			opacity: 1,
-			x: 0,
-			duration: 0.5,
-			scrollTrigger: {
-				trigger: '#team',
-				start: "top 95%",
-				end: "bottom 5%",
-				toggleActions: "play reverse play reverse",
-				once: false,
-			}
-		})
+			gsap.fromTo(elQuote, {
+				opacity: 0,
+				x: -200
+			}, {
+				opacity: 1,
+				x: 0,
+				duration: 0.5,
+				scrollTrigger: {
+					trigger: '#team',
+					start: "top 95%",
+					end: "bottom 5%",
+					toggleActions: "play reverse play reverse",
+					once: false,
+				}
+			})
 
-		gsap.fromTo(".person-card",
-			{
-			  y: 100,
-			  opacity: 0,
-			},
-			{
-			  y: 0,
-			  opacity: 1,
-			  duration: 0.5,
-			  stagger: 0.05,
-			  scrollTrigger: {
-				  trigger: '#team',
-				  start: "top 80%",
-				  end: "bottom 5%",
-				  toggleActions: "play reverse play reverse",
-				  once: false
-			  }
-			}
-		);
+			gsap.fromTo(".person-card",
+				{
+				y: 100,
+				opacity: 0,
+				},
+				{
+				y: 0,
+				opacity: 1,
+				duration: 0.5,
+				stagger: 0.05,
+				scrollTrigger: {
+					trigger: '#team',
+					start: "top 80%",
+					end: "bottom 5%",
+					toggleActions: "play reverse play reverse",
+					once: false
+				}
+				}
+			);
+		}
 	})
 
 
 	return (
 		<Section id="team" className="relative bg-white !h-auto min-h-screen">
-			<img src="./hexagon.jpg" className="z-10 absolute right-0 bottom-0" />
+			<img src="./hexagon.jpg" alt="Hexagon" className="z-10 absolute right-0 bottom-0" />
 			<div className="w-full min-h-screen bg-gray-300 bg-opacity-90 z-20 relative pb-20 2xl:pb-0 h-auto flex flex-col items-center justify-center">
 				<Grid cols={1} colsMd={1} cols2Xl={3}>
 					<div ref={leftRef} className="py-10 2xl:pl-40 2xl:pr-10 text-center justify-center items-center flex width-full flex-col pt-20">

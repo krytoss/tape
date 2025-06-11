@@ -10,43 +10,44 @@ import Checkbox from "../components/Form/Checkbox"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import gsap from "gsap"
 
-gsap.registerPlugin(ScrollTrigger)
-
 const ContactForm: React.FC = () => {
 
 	const leftRef = useRef(null)
 	const rightRef = useRef(null)
 
 	useEffect(() => {
-		const ctx = gsap.context(() => {
-			gsap.fromTo(leftRef.current, { opacity: 0, x: -100 }, {
-				opacity: 1,
-				x: 0,
-				duration: 1,
-				scrollTrigger: {
-					trigger: leftRef.current,
-					start: "top 90%",
-					end: "bottom 10%",
-					toggleActions: "play none play none",
-					once: false
-				}
+		if (typeof window !== 'undefined') {
+			gsap.registerPlugin(ScrollTrigger)
+			const ctx = gsap.context(() => {
+				gsap.fromTo(leftRef.current, { opacity: 0, x: -100 }, {
+					opacity: 1,
+					x: 0,
+					duration: 1,
+					scrollTrigger: {
+						trigger: leftRef.current,
+						start: "top 90%",
+						end: "bottom 10%",
+						toggleActions: "play none play none",
+						once: false
+					}
+				});
+			
+				gsap.fromTo(rightRef.current, { opacity: 0, x: 100 }, {
+					opacity: 1,
+					x: 0,
+					duration: 1,
+					scrollTrigger: {
+						trigger: rightRef.current,
+						start: "top 90%",
+						end: "bottom 10%",
+						toggleActions: "play none play none",
+						once: false
+					}
+				});
 			});
-		
-			gsap.fromTo(rightRef.current, { opacity: 0, x: 100 }, {
-				opacity: 1,
-				x: 0,
-				duration: 1,
-				scrollTrigger: {
-					trigger: rightRef.current,
-					start: "top 90%",
-					end: "bottom 10%",
-					toggleActions: "play none play none",
-					once: false
-				}
-			});
-		});
-		
-		return () => ctx.revert();
+			
+			return () => ctx.revert();
+		}
 	}, [])
 
 	const [ mail, setMail ] = useState<string>("")

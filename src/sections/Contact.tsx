@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
 							</p>
 						</div>
 					</div>
-					<img src="./building.png" className="w-1/2 max-w-[400px] mx-auto" />
+					<img src="./building.png" alt="Budova" className="w-1/2 max-w-[400px] mx-auto" />
 				</div>
 				<div className="p-0 justify-center items-center flex text-slate-700">
 					<Map />
