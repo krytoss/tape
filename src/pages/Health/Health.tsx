@@ -14,7 +14,7 @@ const Health: React.FC = () => {
 	return (
 		<>
 			<TopMenu />
-			<Header className="h-[80vh] relative z-20" img="./pages/health/header.jpeg">
+			<Header className="h-[40vh] md:h-[80vh] relative z-20" img="./pages/health/header.jpeg">
 				<Cover>
 					<Title color="light" size="3xl text-center">
 						Bezpečnosť v zdravotníctve

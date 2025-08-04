@@ -27,11 +27,11 @@ const Contact: React.FC = () => {
 								<Link to="mailto:info@tape.sk" color="slate-500" uppercase={ false } className="transition transition-color">
 									info<span>@</span>tape<span className="text-brand font-black">.</span>sk
 								</Link><br/>
-								<Link to="tel:+421905945609" color="slate-500" className="transition transition-color hover:text-slate-800">
-									+421 905 945 609
-								</Link><br/>
 								<Link to="tel:+421918967970" color="slate-500" className="transition transition-color hover:text-slate-800">
 									+421 918 967 970
+								</Link><br/>
+								<Link to="tel:+421905945609" color="slate-500" className="transition transition-color hover:text-slate-800">
+									+421 905 945 609
 								</Link>
 							</p>
 						</div>

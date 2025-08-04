@@ -4,7 +4,7 @@ type Props = {
 
 const ArrowDown: React.FC<Props> = ({ color }) => {
 	return (
-		<div className={`w-6 h-6 absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce`}>
+		<div className={`w-6 h-6 absolute bottom-[7rem] left-1/2 -translate-x-1/2 animate-bounce`}>
 			<div
 				className={`
 					absolute rotate-45

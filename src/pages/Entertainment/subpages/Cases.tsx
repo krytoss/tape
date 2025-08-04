@@ -108,12 +108,24 @@ const products = [
       {
         title: "Vinylové puzdro s uzatvárateľným ZIP systémom",
         description: [
-          "Vonkajší rozmer: 76x126mm",
-          "Vnútorný rozmer: 66x99mm",
-          "Chráni pred nečistotami a vlhkosťou",
-          "Ideálne pre použitie vo vonkajšom alebo priemyselnom prostredí",
-		  "Farba: priehľadná",
-          "Materiál: vinyl"
+          <>
+						<span className="font-bold">horizontálne puzdro</span>:
+						<ul>
+							<li>vonkajší rozmer: 108x94 mm</li>
+							<li>vnútorný rozmer: 92x70 mm</li>
+						</ul>
+					</>,
+        	<>
+						<span className="font-bold">vertikálne puzdro</span>:
+						<ul>
+							<li>vonkajší rozmer: 76x126 mm</li>
+							<li>vnútorný rozmer: 60x99 mm</li>
+						</ul>
+					</>,
+        	"chráni pred nečistotami a vlhkosťou",
+        	"ideálne pre použitie vo vonkajšom alebo priemyselnom prostredí",
+        	"farba: priehľadná",
+        	"materiál: vinyl"
         ],
         image: [
 			"/pages/entertainment/puzdra/vinyl_zip.png",
