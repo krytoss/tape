@@ -10,7 +10,7 @@ const Business: React.FC = () => {
 	return (
 		<>
 			<TopMenu />
-			<Header className="h-[40vh] md:h-[80vh] relative z-20" img="./pages/business/header.jpeg">
+			<Header className="h-[40vh] md:h-[80vh] relative z-20" img="./pages/business/header.webp">
 				<Cover>
 					<Title color="light" size="3xl text-center">
 						Biznis
@@ -26,7 +26,7 @@ const Business: React.FC = () => {
 							"S personalizovanými vstupnými kartami môžete ľahko sledovať a kontrolovať pohyb zamestnancov, čím zvýšite úroveň bezpečnosti a ochrany vašich priestorov.",
 							"Ideálne riešenie pre administratívne budovy, výrobné haly, sklady či konferenčné priestory."
 						]}
-						image="/pages/business/karty.png"
+						image="/pages/business/karty.webp"
 						link="/zabava/karty"
 					/>
 
@@ -39,7 +39,7 @@ const Business: React.FC = () => {
 							"Posilnite firemnú identitu a zvýšte povedomie o vašej značke pomocou šnúrok na krk s vaším logom a farbami.",
 							"Ideálne pre konferencie, obchodné stretnutia, veľtrhy alebo každodenné pracovné prostredie.",
 						]}
-						image="/pages/business/snurky.png"
+						image="/pages/business/snurky.webp"
 						link="/zabava/snurky"
 						invert={true}
 					/>
@@ -57,7 +57,7 @@ const Business: React.FC = () => {
 							"V ponuke rôzne veľkosti, materiály a prevedenia, ktoré sa prispôsobia vašim potrebám a firemnému štýlu.",
 							"Zabezpečte profesionálny a efektívny systém identifikácie vo vašej firme."
 						]}
-						image="/pages/business/puzdra_rolery_menovky.png"
+						image="/pages/business/puzdra_rolery_menovky.webp"
 						link="/zabava/puzdra-menovky-rolery"
 					/>
 
@@ -72,7 +72,7 @@ const Business: React.FC = () => {
 							"Naše RFID produkty sú ideálne pre administratívne budovy, sklady, výrobné haly a konferenčné centrá.",
 							"Vďaka možnosti plnofarebnej potlače môžete personalizovať karty a náramky s vaším logom a ďalšími dôležitými informáciami."
 						]}
-						image="/pages/business/rfid.png"
+						image="/pages/business/rfid.webp"
 						link="/zabava/rfid"
 						invert={true}
 					/>
@@ -88,7 +88,7 @@ const Business: React.FC = () => {
 							"Používaním čiarových kódov a QR kódov zabezpečíte rýchlu a spoľahlivú identifikáciu zamestnancov a ochranu pred falšovaním.",
 							"Naše tlačiarne a čiarové/QR kódy sú ideálne pre administratívne budovy, sklady, výrobné haly a konferenčné centrá."
 						]}
-						image="/pages/business/tlaciarne.png"
+						image="/pages/business/tlaciarne.webp"
 						link="/zabava/tlaciarne"
 						contain
 					/>

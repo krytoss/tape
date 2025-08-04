@@ -13,7 +13,7 @@ const products = [
 		"podporuje Zebra ZPL-II a EPL2",
 		"možnosť upevnenia tlačiarne aj na stenu",
 	  ],
-	  image: "/pages/entertainment/tlaciarne/tlaciaren.png"
+	  image: "/pages/entertainment/tlaciarne/tlaciaren.webp"
 	},
 	{
 	  title: "Čiarový/QR kód",
@@ -24,12 +24,12 @@ const products = [
 		"čiarové kódy pre vstupné, predajné miesta a iné platobné systémy",
 		"vytlačte si vlastné prispôsobené náramky v priebehu niekoľkých sekúnd",
 		"tlač náramkov na požiadanie a na mieste",
-		"tlačte len toľko, koľko potrebujete – keď ich potrebujete",
+		"tlačte len toľko, koľko potrebujete - keď ich potrebujete",
 	  ],
 	  image: [
-		"/pages/entertainment/tlaciarne/kod1.png",
-		"/pages/entertainment/tlaciarne/kod2.png",
-		"/pages/entertainment/tlaciarne/kod3.png",
+		"/pages/entertainment/tlaciarne/kod1.webp",
+		"/pages/entertainment/tlaciarne/kod2.webp",
+		"/pages/entertainment/tlaciarne/kod3.webp",
 	  ]
 	}
 ];

@@ -11,12 +11,12 @@ const products = [
 		"Možnosť rôznych zakončení (karabína, úchyt na mobil, krúžok na kľúče a iné)"
 	  ],
 	  image: [
-		"/pages/entertainment/snurky/snurky_sublimacne1.png",
-		"/pages/entertainment/snurky/snurky_sublimacne2.png",
-		"/pages/entertainment/snurky/snurky_sublimacne3.png",
-		"/pages/entertainment/snurky/snurky_sublimacne4.png",
-		"/pages/entertainment/snurky/snurky_sublimacne5.png",
-		"/pages/entertainment/snurky/snurky_sublimacne6.png",
+		"/pages/entertainment/snurky/snurky_sublimacne1.webp",
+		"/pages/entertainment/snurky/snurky_sublimacne2.webp",
+		"/pages/entertainment/snurky/snurky_sublimacne3.webp",
+		"/pages/entertainment/snurky/snurky_sublimacne4.webp",
+		"/pages/entertainment/snurky/snurky_sublimacne5.webp",
+		"/pages/entertainment/snurky/snurky_sublimacne6.webp",
 	  ]
 	},
 	{
@@ -28,10 +28,10 @@ const products = [
 		"Možnosť rôznych zakončení (karabína, úchyt na mobil, krúžok na kľúče a iné)"
 	  ],
 	  image: [
-		"/pages/entertainment/snurky/snurky_sietotlac1.png",
-		"/pages/entertainment/snurky/snurky_sietotlac2.png",
-		"/pages/entertainment/snurky/snurky_sietotlac3.png",
-		"/pages/entertainment/snurky/snurky_sietotlac4.png",
+		"/pages/entertainment/snurky/snurky_sietotlac1.webp",
+		"/pages/entertainment/snurky/snurky_sietotlac2.webp",
+		"/pages/entertainment/snurky/snurky_sietotlac3.webp",
+		"/pages/entertainment/snurky/snurky_sietotlac4.webp",
 	  ]
 	},
 	{
@@ -43,9 +43,9 @@ const products = [
 		<>Pre zaslanie kompletného katalógu nás <Link to="" className="text-brand hover:underline">kontaktujte</Link></>
 	  ],
 	  image: [
-		"/pages/entertainment/snurky/snurky_bez_potlace1.png",
-		"/pages/entertainment/snurky/snurky_bez_potlace2.png",
-		"/pages/entertainment/snurky/snurky_bez_potlace3.png",
+		"/pages/entertainment/snurky/snurky_bez_potlace1.webp",
+		"/pages/entertainment/snurky/snurky_bez_potlace2.webp",
+		"/pages/entertainment/snurky/snurky_bez_potlace3.webp",
 	  ]
 	},
 	{
@@ -56,17 +56,17 @@ const products = [
 		<>Viac informácií v kategórii <Link to="/zabava/eko" className="text-brand hover:underline">EKO produkty</Link></>
 	  ],
 	  image: [
-		"/pages/entertainment/snurky/snurky_eko1.png",
-		"/pages/entertainment/snurky/snurky_eko2.png",
-		"/pages/entertainment/snurky/snurky_eko3.png",
-		"/pages/entertainment/snurky/snurky_eko4.png",
+		"/pages/entertainment/snurky/snurky_eko1.webp",
+		"/pages/entertainment/snurky/snurky_eko2.webp",
+		"/pages/entertainment/snurky/snurky_eko3.webp",
+		"/pages/entertainment/snurky/snurky_eko4.webp",
 	  ]
 	},
 	{
 	  title: "Doplnky k šnúrkam",
 	  description: [],
 	  image: [
-		"/pages/entertainment/snurky/doplnky_ku_snurkam.png"
+		"/pages/entertainment/snurky/doplnky_ku_snurkam.webp"
 	  ],
 	  colSpan: 2,
 	  onlyImage: true

@@ -74,7 +74,7 @@ const Team: React.FC = () => {
 
 	return (
 		<Section id="team" className="relative bg-white !h-auto min-h-screen">
-			<img src="./hexagon.jpg" alt="Hexagon" className="z-10 absolute right-0 bottom-0" />
+			<img src="./hexagon.webp" alt="Hexagon" className="z-10 absolute right-0 bottom-0 w-full h-full" />
 			<div className="w-full min-h-screen bg-gray-300 bg-opacity-90 z-20 relative pb-20 2xl:pb-0 h-auto flex flex-col items-center justify-center">
 				<Grid cols={1} colsMd={1} cols2Xl={3}>
 					<div ref={leftRef} className="py-10 2xl:pl-40 2xl:pr-10 text-center justify-center items-center flex width-full flex-col pt-20">
@@ -89,7 +89,7 @@ const Team: React.FC = () => {
 						<Grid cols={1} colsLg={3} gap={0} className="w-full flex justify-center items-center">
 							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto h-full">
 								<PersonCard
-									img="./team/tana.png"
+									img="./team/tana.webp"
 									name="Tatiana Reindlová"
 									position="konateľ, strategický manažér"
 									move={true}
@@ -97,14 +97,14 @@ const Team: React.FC = () => {
 							</div>
 							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto h-full">
 								<PersonCard
-									img="./team/peter.png"
+									img="./team/peter.webp"
 									name="Peter Reindl"
 									position="konateľ, obchodný manažér"
 								/>
 							</div>
 							<div className="p-6 xl:p-8 w-4/5 sm:w-3/5 md:w-1/2 2xl:w-full lg:w-full mx-auto h-full">
 								<PersonCard
-									img="./team/monika.png"
+									img="./team/monika.webp"
 									name="Monika Šafárová"
 									position="koordinátor predaja"
 								/>

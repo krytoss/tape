@@ -21,26 +21,7 @@ const Layout: React.FC = () => {
 		return acc;
 	}, {});
 
-	/* const data: Record<string, { title: string, img: string }> = {
-		"/zabava": {
-			title: "Zábava",
-			img: "/offers/entertainment.jpeg"
-		},
-		"/zabava/silikonove-naramky": {
-			title: "Silikónové náramky",
-			img: "/pages/entertainment/silikonove.jpeg"
-		},
-		"/zabava/latkove-naramky": {
-			title: "Látkové náramky",
-			img: "/pages/entertainment/latkove.jpeg"
-		},
-		"/zabava/karty": {
-			title: "Karty",
-			img: "/pages/entertainment/plastove_karty.png"
-		},
-	} */
-
-	const currentData = data[location.pathname] || { title: "Zábava", img: "/pages/entertainment/header.jpeg"};
+	const currentData = data[location.pathname] || { title: "Zábava", img: "/pages/entertainment/header.webp"};
 	const isSubpage = location.pathname.split("/").length > 2;
 
 	return (
@@ -52,6 +33,7 @@ const Layout: React.FC = () => {
 					relative z-20`
 				}
 				img={currentData.img}
+				hideBreadcrumbs={isSubpage}
 			>
 				<Cover>
 					<Title color="light" size="3xl text-center" className="pt-16 md:pt-20">

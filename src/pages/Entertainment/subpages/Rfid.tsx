@@ -14,10 +14,10 @@ const products = [
             <><Link to="/zabava/karty" className="text-brand hover:underline">čipy TK4100, EM 4200, MF 1k S50, Fudan a iné</Link></>
         ],
         image: [
-			"/pages/entertainment/rfid/RFID_karty1.png",
-			"/pages/entertainment/rfid/RFID_karty2.png",
-			"/pages/entertainment/rfid/RFID_karty3.png",
-			"/pages/entertainment/rfid/RFID_karty4.png",
+			"/pages/entertainment/rfid/RFID_karty1.webp",
+			"/pages/entertainment/rfid/RFID_karty2.webp",
+			"/pages/entertainment/rfid/RFID_karty3.webp",
+			"/pages/entertainment/rfid/RFID_karty4.webp",
 
 		]
     },
@@ -33,17 +33,17 @@ const products = [
             <><Link to="/zabava/silikonove-naramky" className="text-brand hover:underline">na výber veľké množstvo čipov (MF, FUDAN, EM4200, TK4100 a iné)</Link></>
         ],
         image: [
-			"/pages/entertainment/rfid/RFID_silikony1.png",
-			"/pages/entertainment/rfid/RFID_silikony2.png",
-			"/pages/entertainment/rfid/RFID_silikony3.png",
-			"/pages/entertainment/rfid/RFID_silikony4.png",
-			"/pages/entertainment/rfid/RFID_silikony5.png",
-			"/pages/entertainment/rfid/RFID_silikony6.png",
-			"/pages/entertainment/rfid/RFID_silikony7.png",
-			"/pages/entertainment/rfid/RFID_silikony8.png",
-			"/pages/entertainment/rfid/RFID_silikony9.png",
-			"/pages/entertainment/rfid/RFID_silikony10.png",
-			"/pages/entertainment/rfid/RFID_silikony11.png",
+			"/pages/entertainment/rfid/RFID_silikony1.webp",
+			"/pages/entertainment/rfid/RFID_silikony2.webp",
+			"/pages/entertainment/rfid/RFID_silikony3.webp",
+			"/pages/entertainment/rfid/RFID_silikony4.webp",
+			"/pages/entertainment/rfid/RFID_silikony5.webp",
+			"/pages/entertainment/rfid/RFID_silikony6.webp",
+			"/pages/entertainment/rfid/RFID_silikony7.webp",
+			"/pages/entertainment/rfid/RFID_silikony8.webp",
+			"/pages/entertainment/rfid/RFID_silikony9.webp",
+			"/pages/entertainment/rfid/RFID_silikony10.webp",
+			"/pages/entertainment/rfid/RFID_silikony11.webp",
 		]
     },
     {
@@ -56,10 +56,10 @@ const products = [
             <><Link to="/zabava/latkove-naramky" className="text-brand hover:underline">rôzne materiály a veľkosti</Link></>
         ],
         image: [
-			"/pages/entertainment/rfid/RFID_latkove1.jpg",
-			"/pages/entertainment/rfid/RFID_latkove2.jpg",
-			"/pages/entertainment/rfid/RFID_latkove3.jpg",
-			"/pages/entertainment/rfid/RFID_latkove4.png",
+			"/pages/entertainment/rfid/RFID_latkove1.webp",
+			"/pages/entertainment/rfid/RFID_latkove2.webp",
+			"/pages/entertainment/rfid/RFID_latkove3.webp",
+			"/pages/entertainment/rfid/RFID_latkove4.webp",
 		]
     },
     {
@@ -71,9 +71,9 @@ const products = [
             "rôzne typy čipov (MF, FUDAN, EM4200, TK4100 a iné)"
         ],
         image: [
-			"/pages/entertainment/rfid/RFID_klucenky1.png",
-			"/pages/entertainment/rfid/RFID_klucenky2.png",
-			"/pages/entertainment/rfid/RFID_klucenky3.png",
+			"/pages/entertainment/rfid/RFID_klucenky1.webp",
+			"/pages/entertainment/rfid/RFID_klucenky2.webp",
+			"/pages/entertainment/rfid/RFID_klucenky3.webp",
 		]
     }
 ];

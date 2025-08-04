@@ -12,9 +12,9 @@ const products = [
             <>Rôzne doplnky a zakončenia (viac informácií v kategórii <Link to="/zabava/snurky" className="text-brand hover:underline">Šnúrky na krk</Link>)</>
         ],
         image: [
-			"/pages/entertainment/eko/eko_snurky1.png",
-			"/pages/entertainment/eko/eko_snurky2.png",
-			"/pages/entertainment/eko/eko_snurky3.png",
+			"/pages/entertainment/eko/eko_snurky1.webp",
+			"/pages/entertainment/eko/eko_snurky2.webp",
+			"/pages/entertainment/eko/eko_snurky3.webp",
 		]
     },
     {
@@ -27,8 +27,8 @@ const products = [
             "Pozri aj https://www.pdc-big.com/info/eco-friendly#"
         ],
         image: [
-			"/pages/entertainment/eko/eko_naramky1.png",
-			"/pages/entertainment/eko/eko_naramky2.png",
+			"/pages/entertainment/eko/eko_naramky1.webp",
+			"/pages/entertainment/eko/eko_naramky2.webp",
 		]
     },
     {
@@ -41,9 +41,9 @@ const products = [
             <>Pre viac informácií nás <Link to="" className="text-brand hover:underline">kontaktujte</Link> alebo nám odošlite správu cez <Link to="" className="text-brand hover:underline">kontaktný formulár</Link></>
         ],
         image: [
-			"/pages/entertainment/eko/eko_karty1.png",
-			"/pages/entertainment/eko/eko_karty2.png",
-			"/pages/entertainment/eko/eko_karty3.png",
+			"/pages/entertainment/eko/eko_karty1.webp",
+			"/pages/entertainment/eko/eko_karty2.webp",
+			"/pages/entertainment/eko/eko_karty3.webp",
 		]
     }
 ];

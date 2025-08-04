@@ -38,7 +38,7 @@ const Offers: React.FC = () => {
 		<Section id="offers">
 			<Grid cols={1} colsXl={3} className="h-screen">
 				<div className="offer justify-center items-center flex w-full bg-red-100 group relative h-[33.33vh] xl:h-full overflow-hidden">
-					<img src="./offers/health_industry.jpeg" className="w-full h-auto xl:h-full xl:w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Health industry" />
+					<img src="./offers/health_industry.webp" className="w-full h-auto xl:h-full xl:w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Health industry" />
 					<Cover className="hover:bg-opacity-0 transition transition-colors">
 						<Link to="zdravotnictvo" fullSize={true} center={true}>
 							<Title color="light" size="3xl text-center">
@@ -48,7 +48,7 @@ const Offers: React.FC = () => {
 					</Cover>
 				</div>
 				<div className="offer justify-center items-center flex w-full bg-green-100 group relative h-[33.33vh] xl:h-full overflow-hidden">
-					<img src="./offers/entertainment.jpeg" className="min-w-full min-h-full xl:h-full xl:w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Entertainment" />
+					<img src="./offers/entertainment.webp" className="min-w-full min-h-full xl:h-full xl:w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Entertainment" />
 					<Cover className="hover:bg-opacity-0 transition transition-colors">
 						<Link to="zabava" fullSize={true} center={true}>
 							<Title color="light" size="3xl text-center">
@@ -58,7 +58,7 @@ const Offers: React.FC = () => {
 					</Cover>
 				</div>
 				<div className="offer justify-center items-center flex w-full bg-pink-100 group relative h-[33.33vh] xl:h-full overflow-hidden">
-					<img src="./offers/business.jpeg" className="min-w-full min-h-full xl:h-full xl:w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Business" />
+					<img src="./offers/business.webp" className="min-w-full min-h-full xl:h-full xl:w-auto object-cover filter grayscale group-hover:grayscale-0" alt="Business" />
 					<Cover className="hover:bg-opacity-0 transition transition-colors">
 						<Link to="biznis" fullSize={true} center={true}>
 							<Title color="light" size="3xl text-center">

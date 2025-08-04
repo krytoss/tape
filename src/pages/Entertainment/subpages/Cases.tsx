@@ -14,8 +14,8 @@ const products = [
           "Materiál: polypropylén"
         ],
         image: [
-			"/pages/entertainment/puzdra/klasicke1.png",
-			"/pages/entertainment/puzdra/klasicke2.png",
+			"/pages/entertainment/puzdra/klasicke1.webp",
+			"/pages/entertainment/puzdra/klasicke2.webp",
 		]
       },
       {
@@ -28,8 +28,8 @@ const products = [
           "Materiál: polykarbonát"
         ],
         image: [
-			"/pages/entertainment/puzdra/pevne1.png",
-			"/pages/entertainment/puzdra/pevne2.png",
+			"/pages/entertainment/puzdra/pevne1.webp",
+			"/pages/entertainment/puzdra/pevne2.webp",
 		]
       },
       {
@@ -42,10 +42,10 @@ const products = [
           "Materiál: ABS"
         ],
         image: [
-			"/pages/entertainment/puzdra/otvorene1.png",
-			"/pages/entertainment/puzdra/otvorene2.png",
-			"/pages/entertainment/puzdra/otvorene3.png",
-			"/pages/entertainment/puzdra/otvorene4.png",
+			"/pages/entertainment/puzdra/otvorene1.webp",
+			"/pages/entertainment/puzdra/otvorene2.webp",
+			"/pages/entertainment/puzdra/otvorene3.webp",
+			"/pages/entertainment/puzdra/otvorene4.webp",
 		]
       },
       {
@@ -58,7 +58,7 @@ const products = [
           "Otvor na palec",
 		  "Materiál: polykarbonát"
         ],
-        image: "/pages/entertainment/puzdra/puzdro_premium.png"
+        image: "/pages/entertainment/puzdra/puzdro_premium.webp"
       },
       {
         title: "Pevné puzdro na 1-5 kariet",
@@ -69,7 +69,7 @@ const products = [
           "S koľajničkami pre bezpečné uchytenie karty",
           "Materiál: ABS"
         ],
-        image: "/pages/entertainment/puzdra/pevne_1-5.png"
+        image: "/pages/entertainment/puzdra/pevne_1-5.webp"
       }
     ]
   },
@@ -85,10 +85,10 @@ const products = [
           "Materiál: vinyl"
         ],
         image: [
-			"/pages/entertainment/puzdra/vinyl_farebne1.png",
-			"/pages/entertainment/puzdra/vinyl_farebne2.png",
-			"/pages/entertainment/puzdra/vinyl_farebne3.png",
-			"/pages/entertainment/puzdra/vinyl_farebne4.png",
+			"/pages/entertainment/puzdra/vinyl_farebne1.webp",
+			"/pages/entertainment/puzdra/vinyl_farebne2.webp",
+			"/pages/entertainment/puzdra/vinyl_farebne3.webp",
+			"/pages/entertainment/puzdra/vinyl_farebne4.webp",
 		]
       },
       {
@@ -101,8 +101,8 @@ const products = [
           "Materiál: vinyl"
         ],
         image: [
-			"/pages/entertainment/puzdra/vinyl_a6_1.png",
-			"/pages/entertainment/puzdra/vinyl_a6_2.png"
+			"/pages/entertainment/puzdra/vinyl_a6_1.webp",
+			"/pages/entertainment/puzdra/vinyl_a6_2.webp"
 		]
       },
       {
@@ -128,8 +128,8 @@ const products = [
         	"materiál: vinyl"
         ],
         image: [
-			"/pages/entertainment/puzdra/vinyl_zip.png",
-			"/pages/entertainment/puzdra/vinyl_zip2.png"
+			"/pages/entertainment/puzdra/vinyl_zip.webp",
+			"/pages/entertainment/puzdra/vinyl_zip2.webp"
 		]
       }
     ]
@@ -144,7 +144,7 @@ const products = [
           "So sponou na uchytenie",
           "Farby: čierna, tmavá šedá, oranžová, červená, modrá, biela"
         ],
-        image: "/pages/entertainment/puzdra/roler_klasik.png"
+        image: "/pages/entertainment/puzdra/roler_klasik.webp"
       },
       {
         title: "Roler s otočným štipcom",
@@ -154,7 +154,7 @@ const products = [
           "Jednoduchšie uchytenie kdekoľvek na oblečení",
           "Farby: čierna, modrá, červená, biela, priehľadná"
         ],
-        image: "/pages/entertainment/puzdra/roler_otocny.png"
+        image: "/pages/entertainment/puzdra/roler_otocny.webp"
       },
 	  {
         title: "Roler PREMIUM",
@@ -166,7 +166,7 @@ const products = [
           "Roler bez magnetizujúcich prvkov",
           "Vhodný aj pre použitie v špecifických podmienkach"
         ],
-        image: "/pages/entertainment/puzdra/roler_premium.png"
+        image: "/pages/entertainment/puzdra/roler_premium.webp"
       },
       {
         title: "Roler s 2 úchytmi",
@@ -178,8 +178,8 @@ const products = [
           "Farby: červená, čierna, priehľadná modrá, priehľadná červená"
         ],
         image: [
-			"/pages/entertainment/puzdra/roler_2_uchyty.png",
-			"/pages/entertainment/puzdra/roler_2_uchyty_2.png"
+			"/pages/entertainment/puzdra/roler_2_uchyty.webp",
+			"/pages/entertainment/puzdra/roler_2_uchyty_2.webp"
 		]
       },
       {
@@ -190,7 +190,7 @@ const products = [
           "Na zadnej strane je robustná spona na uchytenie",
           "Farba: čierna"
         ],
-        image: "/pages/entertainment/puzdra/roler_na_kluce.png"
+        image: "/pages/entertainment/puzdra/roler_na_kluce.webp"
       }
     ]
   },
@@ -207,8 +207,8 @@ const products = [
           "Materiál: pružný PVC"
         ],
         image: [
-			"/pages/entertainment/puzdra/visacka1.png",
-			"/pages/entertainment/puzdra/visacka2.png",
+			"/pages/entertainment/puzdra/visacka1.webp",
+			"/pages/entertainment/puzdra/visacka2.webp",
 		]
       }
     ]

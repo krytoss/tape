@@ -14,7 +14,7 @@ const Health: React.FC = () => {
 	return (
 		<>
 			<TopMenu />
-			<Header className="h-[40vh] md:h-[80vh] relative z-20" img="./pages/health/header.jpeg">
+			<Header className="h-[40vh] md:h-[80vh] relative z-20" img="./pages/health/header.webp">
 				<Cover>
 					<Title color="light" size="3xl text-center">
 						Bezpečnosť v zdravotníctve
@@ -73,7 +73,7 @@ const Health: React.FC = () => {
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Na termálnu potlač/s čiarovým alebo QR kódom"
-								image="./pages/health/scanner.jpg"
+								image="./pages/health/scanner.webp"
 								description="Identifikačné náramky pre pacientov, ktoré využívajú termotlač na zabezpečenie správnej identifikácie a bezpečnosti pacientov. Náramky majú za cieľ zlepšiť identifikáciu pacientov, komunikáciu a bezpečnosť pri operáciách a medikamentóznej liečbe.
 Vysoká kvalita tlače zaručuje spoľahlivé skenovanie čiarových a QR kódov.
 Náramky sú odolné voči svetlu, vlhkosti, čistiacim prostriedkom a tekutinám.
@@ -83,35 +83,35 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Popisovateľné náramky"
-								image="./pages/health/popisovatelne.png"
+								image="./pages/health/popisovatelne.webp"
 								description="Popisovateľné náramky sú bezproblémovým riešením pre identifikáciu pacienta v akomkoľvek zdravotníckom zariadení! Pružné a všestranné popisovateľné  náramky sú ideálnou voľbou pre krátkodobé i dlhodobé príjmy pacientov. Jednoduchá manipulácia a možnosť rýchlej vizuálnej pozitívnej identifikácie je výhodou i pre špeciálne oddelenia ako je pohotovosť. Vyberte si zo širokej škály farieb."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Náramky s prelepovacou fóliou"
-								image="./pages/health/prelepovacie.png"
+								image="./pages/health/prelepovacie.webp"
 								description="Náramky s prelepovacou fóliou majú jedinečný samolepiaci, protiodleskový štít, takže ich možno používať s laserovými či termálnymi etiketami alebo štítkami. Náramky chránia údaje pacientov pred prenikaním tekutín a poskytujú vynikajúce čítacie rýchlosti čiarových kódov. Ochranné náramky sú odolné voči vode, trvanlivé a pevné, no zároveň ľahké a pohodlné."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="S vkladacím štítkom"
-								image="./pages/health/vkladacie.png"
+								image="./pages/health/vkladacie.webp"
 								description="Náramky s vkladacím štítkom sú pohodlné a jednoduché na používanie. Štítok je nositeľom údajov o pacientovi, ktorý sa vloží do priehľadného ochranného puzdra. Sú umývateľné, ľahké, pevné, nemajú ostré hrany, sú vhodné aj pre citlivú pleť."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Pre matku a dieťa"
-								image="./pages/health/pre_matku_a_dieta.png"
+								image="./pages/health/pre_matku_a_dieta.webp"
 								description="Identifikačné náramky v pôrodniciach pre matku a dieťa sú obľúbenou voľbou na trhu. Cieľom je zaistiť neomylnú identifikáciu matky, novorodenca, prípadne ďalších rodinných príslušníkov. Každý pár náramkov je označený jedinečným alfanumerickým kódom pre jednoduché spárovanie matky a dieťaťa. Sú umývateľné, ľahké, nemajú ostré hrany, vhodné pre kojencov aj citlivú pleť."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Termálne tlačiarne"
-								image="./pages/health/termalne_tlaciarne.png"
+								image="./pages/health/termalne_tlaciarne.webp"
 								description="Zabezpečujeme dodávku tlačiarní pre termálnu potlač identifikačných náramkov aj etikiet.  Vyznačujú sa malými rozmermi. Sú praktické, čo umožňuje užívateľom jednoduchú manipuláciu s rolkami. Termálne tlačiarne TSC TDP-225W na identifikáciu pacientov používa mnoho nemocníc na Slovensku."
 							/>
 						</Grid>
@@ -141,7 +141,7 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 
 						<div className="mt-20 h-80 inline-block object-cover object-bottom shadow-2xl overflow-visible bg-brand">
 							<div className="relative -top-3 left-3 h-full max-w-full bg-white shadow-2xl text-center">
-							 	<img src="./pages/health/etikety.png" alt="Etikety" className="h-full w-auto inline-block object-contain"/>
+							 	<img src="./pages/health/etikety.webp" alt="Etikety" className="h-full w-auto inline-block object-contain"/>
 							</div>
 						</div>
 					</div>

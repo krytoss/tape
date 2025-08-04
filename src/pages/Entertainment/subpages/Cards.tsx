@@ -18,11 +18,11 @@ const products = [
 		<strong>Kapacita výroby 350 tis. kariet za cca 3 týždne</strong>
 	  ],
 	  image: [
-		"/pages/entertainment/karty/plastove_karty_1.png",
-		"/pages/entertainment/karty/plastove_karty_2.png",
-		"/pages/entertainment/karty/plastove_karty_3.png",
-		"/pages/entertainment/karty/plastove_karty_4.png",
-		"/pages/entertainment/karty/plastove_karty_5.png",
+		"/pages/entertainment/karty/plastove_karty_1.webp",
+		"/pages/entertainment/karty/plastove_karty_2.webp",
+		"/pages/entertainment/karty/plastove_karty_3.webp",
+		"/pages/entertainment/karty/plastove_karty_4.webp",
+		"/pages/entertainment/karty/plastove_karty_5.webp",
 	  ]
 	},
 	{
@@ -37,11 +37,11 @@ const products = [
 		"Výsek na zavesenie"
 	  ],
 	  image: [
-		"/pages/entertainment/karty/papierove_karty_1.png",
-		"/pages/entertainment/karty/papierove_karty_2.png",
-		"/pages/entertainment/karty/papierove_karty_3.png",
-		"/pages/entertainment/karty/papierove_karty_4.png",
-		"/pages/entertainment/karty/papierove_karty_5.png",
+		"/pages/entertainment/karty/papierove_karty_1.webp",
+		"/pages/entertainment/karty/papierove_karty_2.webp",
+		"/pages/entertainment/karty/papierove_karty_3.webp",
+		"/pages/entertainment/karty/papierove_karty_4.webp",
+		"/pages/entertainment/karty/papierove_karty_5.webp",
 	  ]
 	},
 	{
@@ -55,12 +55,12 @@ const products = [
 		"Rôzne doplnky ako stierací panel, čiarový kód, personalizácia"
 	  ],
 	  image: [
-		"/pages/entertainment/karty/obaly_na_kartu_1.png",
-		"/pages/entertainment/karty/obaly_na_kartu_2.png",
-		"/pages/entertainment/karty/obaly_na_kartu_3.png",
-		"/pages/entertainment/karty/obaly_na_kartu_4.png",
-		"/pages/entertainment/karty/obaly_na_kartu_5.png",
-		"/pages/entertainment/karty/obaly_na_kartu_6.png",
+		"/pages/entertainment/karty/obaly_na_kartu_1.webp",
+		"/pages/entertainment/karty/obaly_na_kartu_2.webp",
+		"/pages/entertainment/karty/obaly_na_kartu_3.webp",
+		"/pages/entertainment/karty/obaly_na_kartu_4.webp",
+		"/pages/entertainment/karty/obaly_na_kartu_5.webp",
+		"/pages/entertainment/karty/obaly_na_kartu_6.webp",
 	  ]
 	},
 	{
@@ -73,10 +73,10 @@ const products = [
 		<>Pre viac informácií nás <Link to="" className="text-brand hover:underline">kontaktujte</Link> alebo nám odošlite správu cez <Link to="" className="text-brand hover:underline">kontaktný formulár</Link></>
 	  ],
 	  image: [
-		"/pages/entertainment/karty/eko_karty_1.png",
-		"/pages/entertainment/karty/eko_karty_2.png",
-		"/pages/entertainment/karty/eko_karty_3.png",
-		"/pages/entertainment/karty/eko_karty_4.png",
+		"/pages/entertainment/karty/eko_karty_1.webp",
+		"/pages/entertainment/karty/eko_karty_2.webp",
+		"/pages/entertainment/karty/eko_karty_3.webp",
+		"/pages/entertainment/karty/eko_karty_4.webp",
 	  ]
 	},
 	{
@@ -89,10 +89,10 @@ const products = [
 		<>Čipy TK4100, EM 4200, MF 1k S50, Fudan a iné (pozri aj <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link>)</>
 	  ],
 	  image: [
-		"/pages/entertainment/karty/rfid_karty_1.png",
-		"/pages/entertainment/karty/rfid_karty_2.png",
-		"/pages/entertainment/karty/rfid_karty_3.png",
-		"/pages/entertainment/karty/rfid_karty_4.png",
+		"/pages/entertainment/karty/rfid_karty_1.webp",
+		"/pages/entertainment/karty/rfid_karty_2.webp",
+		"/pages/entertainment/karty/rfid_karty_3.webp",
+		"/pages/entertainment/karty/rfid_karty_4.webp",
 	  ]
 	}
   ];

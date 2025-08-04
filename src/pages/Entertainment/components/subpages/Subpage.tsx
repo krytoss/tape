@@ -3,6 +3,7 @@ import gsap from "gsap";
 import ProductsNav from "../ProductsNav";
 import Grid from "../../../../components/Layout/Grid";
 import Product from "./Product";
+import Breadcrumbs from "../../../../components/Navigation/Breadcrumbs";
 
 type BasicProps = {
 	description?: string | React.ReactNode;
@@ -80,6 +81,7 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 	return (
 	  <>
 		<ProductsNav />
+		<Breadcrumbs />
 		<div className="relative w-full lg:w-4/5 m-auto h-full pt-20 pb-10 flex-1">
 			{
 				description &&

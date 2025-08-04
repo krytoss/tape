@@ -12,55 +12,55 @@ const ProductsNav: React.FC = () => {
 	const products = [
 		{
 			name: "Karty",
-			img: "/pages/entertainment/new/karty.png",
+			img: "/pages/entertainment/new/karty.webp",
 			to: "/zabava/karty",
 			order: 1
 		},
 		{
 			name: "Látkové náramky",
-			img: "/pages/entertainment/new/latkove.png",
+			img: "/pages/entertainment/new/latkove.webp",
 			to: "/zabava/latkove-naramky",
 			order: 2
 		},
 		{
 			name: "Vinylové, plastové a tyvek náramky",
-			img: "/pages/entertainment/new/tyvek.png",
+			img: "/pages/entertainment/new/tyvek.webp",
 			to: "/zabava/naramky",
 			order: 3
 		},
 		{
 			name: "Silikónové náramky",
-			img: "/pages/entertainment/new/silikonove.png",
+			img: "/pages/entertainment/new/silikonove.webp",
 			to: "/zabava/silikonove-naramky",
 			order: 4
 		},
 		{
 			name: "Šnúrky na krk",
-			img: "/pages/entertainment/new/snurky.png",
+			img: "/pages/entertainment/new/snurky.webp",
 			to: "/zabava/snurky",
 			order: 5
 		},
 		{
 			name: "Puzdrá, menovky, rolery",
-			img: "/pages/entertainment/new/puzdra.png",
+			img: "/pages/entertainment/new/puzdra.webp",
 			to: "/zabava/puzdra-menovky-rolery",
 			order: 6
 		},
 		{
 			name: "RFID",
-			img: "/pages/entertainment/new/rfid.png",
+			img: "/pages/entertainment/new/rfid.webp",
 			to: "/zabava/rfid",
 			order: 7
 		},
 		{
 			name: "EKO produkty",
-			img: "/pages/entertainment/new/eko.png",
+			img: "/pages/entertainment/new/eko.webp",
 			to: "/zabava/eko-produkty",
 			order: 8
 		},
 		{
 			name: "Tlačiarne",
-			img: "/pages/entertainment/new/tlaciarne.png",
+			img: "/pages/entertainment/new/tlaciarne.webp",
 			to: "/zabava/tlaciarne",
 			order: 9
 		}

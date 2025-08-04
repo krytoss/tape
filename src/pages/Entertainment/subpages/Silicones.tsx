@@ -11,12 +11,12 @@ const products = [
 		"Farebnosť náramkov podľa pantone vzorkovníka"
 	  ],
 	  image: [
-		"/pages/entertainment/silikonove_naramky/potlac.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_potlac-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_potlac2-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_potlac3-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_potlac4-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_potlac5-1.png",
+		"/pages/entertainment/silikonove_naramky/potlac.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac2-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac3-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac4-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_potlac5-1.webp",
 	  ]
 	},
 	{
@@ -29,13 +29,13 @@ const products = [
 		"Farebnosť náramkov podľa pantone vzorkovníka"
 	  ],
 	  image: [
-		"/pages/entertainment/silikonove_naramky/razba.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_razba-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_razba2-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_razba3-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_razba4-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_razba5-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_razba6-1.png",
+		"/pages/entertainment/silikonove_naramky/razba.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba2-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba3-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba4-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba5-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_razba6-1.webp",
 	  ]
 	},
 	{
@@ -49,16 +49,16 @@ const products = [
 		<>Viac informácií v kategórii <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link></>
 	  ],
 	  image: [
-		"/pages/entertainment/silikonove_naramky/Silikon_RFID-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_RFID2-1.png",
-		"/pages/entertainment/silikonove_naramky/Silikon_RFID3-1.png",
+		"/pages/entertainment/silikonove_naramky/Silikon_RFID-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_RFID2-1.webp",
+		"/pages/entertainment/silikonove_naramky/Silikon_RFID3-1.webp",
 	  ]
 	}
 ];
 
 const options = {
 	title: "Možnosti",
-	image: "/pages/entertainment/silikonove_naramky/silikon_moznosti-2.jpg"
+	image: "/pages/entertainment/silikonove_naramky/silikon_moznosti-2.webp"
 }
 
 const Silicones: React.FC = () => {

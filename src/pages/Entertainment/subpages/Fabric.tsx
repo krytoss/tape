@@ -10,11 +10,11 @@ const products = [
 			"Jednorazové alebo opakované použitie"
 		],
 		image: [
-			"/pages/entertainment/latkove_naramky/vysivany.png",
-			"/pages/entertainment/latkove_naramky/vysivany2.png",
-			"/pages/entertainment/latkove_naramky/vysivany3.png",
-			"/pages/entertainment/latkove_naramky/vysivany4.png",
-			"/pages/entertainment/latkove_naramky/vysivany5.png",
+			"/pages/entertainment/latkove_naramky/vysivany.webp",
+			"/pages/entertainment/latkove_naramky/vysivany2.webp",
+			"/pages/entertainment/latkove_naramky/vysivany3.webp",
+			"/pages/entertainment/latkove_naramky/vysivany4.webp",
+			"/pages/entertainment/latkove_naramky/vysivany5.webp",
 		]
 	},
 	{
@@ -25,9 +25,9 @@ const products = [
 			"Jednostranná aj obojstranná potlač"
 		],
 		image: [
-			"/pages/entertainment/latkove_naramky/saten.jpg",
-			"/pages/entertainment/latkove_naramky/saten2.png",
-			"/pages/entertainment/latkove_naramky/saten3.png",
+			"/pages/entertainment/latkove_naramky/saten.webp",
+			"/pages/entertainment/latkove_naramky/saten2.webp",
+			"/pages/entertainment/latkove_naramky/saten3.webp",
 		]
 	},
 	{
@@ -38,7 +38,7 @@ const products = [
 			"Rôzne materiály a veľkosti",
 			<>Viac informácií v kategórii <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link></>
 		],
-		image: "/pages/entertainment/latkove_naramky/rfid.jpg"
+		image: "/pages/entertainment/latkove_naramky/rfid.webp"
 	},
 	{
 		title: "Látkové náramky s QR kódom",
@@ -48,7 +48,7 @@ const products = [
 			"Rôzne prevedenia QR a čiarových kódov",
 			<>Viac informácií v kategórii <Link to="/zabava/tlaciarne" className="text-brand hover:underline">Čiarový/QR kód</Link></>
 		],
-		image: "/pages/entertainment/latkove_naramky/qr.jpg"
+		image: "/pages/entertainment/latkove_naramky/qr.webp"
 	},
 	{
 		title: "Ekologické náramky",
@@ -57,15 +57,15 @@ const products = [
 			"Jednorazové alebo opakované použitie",
 			<>Viac informácií v kategórii <Link to="/zabava/eko-produkty" className="text-brand hover:underline">EKO PRODUKTY</Link></>
 		],
-		image: "/pages/entertainment/latkove_naramky/eko.jpg"
+		image: "/pages/entertainment/latkove_naramky/eko.webp"
 	}
 ];
 
 const options = {
 	title: "Patentky",
 	image: [
-		"/pages/entertainment/latkove_naramky/patentky_jednorazove.png",
-		"/pages/entertainment/latkove_naramky/patentky_opakovane.png",
+		"/pages/entertainment/latkove_naramky/patentky_jednorazove.webp",
+		"/pages/entertainment/latkove_naramky/patentky_opakovane.webp",
 	]
 }
 

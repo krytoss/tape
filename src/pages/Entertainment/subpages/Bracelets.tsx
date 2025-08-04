@@ -14,8 +14,8 @@ const products = [
             "minimálny odber z farby je od 1000ks"
         ],
         image: [
-			"/pages/entertainment/naramky/tyvek1.png",
-			"/pages/entertainment/naramky/tyvek2.png"
+			"/pages/entertainment/naramky/tyvek1.webp",
+			"/pages/entertainment/naramky/tyvek2.webp"
 		]
     },
     {
@@ -31,16 +31,16 @@ const products = [
             "minimálny odber z farby je od 500ks"
         ],
         image: [
-			"/pages/entertainment/naramky/plastovy_naramok1.png",
-			"/pages/entertainment/naramky/plastovy_naramok2.jpg",
-			"/pages/entertainment/naramky/plastovy_naramok3.jpg",
-			"/pages/entertainment/naramky/plastovy_naramok4.jpg",
-			"/pages/entertainment/naramky/plastovy_naramok5.png",
-			"/pages/entertainment/naramky/plastovy_naramok_sb1.jpg",
-			"/pages/entertainment/naramky/plastovy_naramok_sb2.jpg",
-			"/pages/entertainment/naramky/plastovy_naramok_sb3.jpg",
-			"/pages/entertainment/naramky/plastovy_naramok_sb4.jpg",
-			"/pages/entertainment/naramky/plastovy_naramok_sb5.png",
+			"/pages/entertainment/naramky/plastovy_naramok1.webp",
+			"/pages/entertainment/naramky/plastovy_naramok2.webp",
+			"/pages/entertainment/naramky/plastovy_naramok3.webp",
+			"/pages/entertainment/naramky/plastovy_naramok4.webp",
+			"/pages/entertainment/naramky/plastovy_naramok5.webp",
+			"/pages/entertainment/naramky/plastovy_naramok_sb1.webp",
+			"/pages/entertainment/naramky/plastovy_naramok_sb2.webp",
+			"/pages/entertainment/naramky/plastovy_naramok_sb3.webp",
+			"/pages/entertainment/naramky/plastovy_naramok_sb4.webp",
+			"/pages/entertainment/naramky/plastovy_naramok_sb5.webp",
 		]
     },
     {
@@ -56,11 +56,11 @@ const products = [
             "minimálny odber z farby je od 500ks"
         ],
         image: [
-			"/pages/entertainment/naramky/vinylovy_naramok1.png",
-			"/pages/entertainment/naramky/vinylovy_naramok2.jpg",
-			"/pages/entertainment/naramky/vinylovy_naramok3.jpg",
-			"/pages/entertainment/naramky/vinylovy_naramok4.jpg",
-			"/pages/entertainment/naramky/vinylovy_naramok5.jpg",
+			"/pages/entertainment/naramky/vinylovy_naramok1.webp",
+			"/pages/entertainment/naramky/vinylovy_naramok2.webp",
+			"/pages/entertainment/naramky/vinylovy_naramok3.webp",
+			"/pages/entertainment/naramky/vinylovy_naramok4.webp",
+			"/pages/entertainment/naramky/vinylovy_naramok5.webp",
 		]
     },
     {
@@ -75,14 +75,14 @@ const products = [
             "minimálny odber z farby je od 500ks"
         ],
         image: [
-			"/pages/entertainment/naramky/trblietavy_naramok1.jpg",
-			"/pages/entertainment/naramky/trblietavy_naramok2.jpg",
-			"/pages/entertainment/naramky/trblietavy_naramok3.jpg",
-			"/pages/entertainment/naramky/trblietavy_naramok4.jpg",
-			"/pages/entertainment/naramky/trblietavy_naramok5.png",
-			"/pages/entertainment/naramky/trblietavy_naramok6.jpg",
-			"/pages/entertainment/naramky/trblietavy_naramok7.jpg",
-			"/pages/entertainment/naramky/trblietavy_naramok8.png",
+			"/pages/entertainment/naramky/trblietavy_naramok1.webp",
+			"/pages/entertainment/naramky/trblietavy_naramok2.webp",
+			"/pages/entertainment/naramky/trblietavy_naramok3.webp",
+			"/pages/entertainment/naramky/trblietavy_naramok4.webp",
+			"/pages/entertainment/naramky/trblietavy_naramok5.webp",
+			"/pages/entertainment/naramky/trblietavy_naramok6.webp",
+			"/pages/entertainment/naramky/trblietavy_naramok7.webp",
+			"/pages/entertainment/naramky/trblietavy_naramok8.webp",
 		]
     },
     {
@@ -99,8 +99,8 @@ const products = [
             "termín dodania: 3-kupónové (2-3 týždne), 5-kupónové (6-8 týždňov)"
         ],
         image: [
-			"/pages/entertainment/naramky/kuponovy_naramok1.png",
-			"/pages/entertainment/naramky/kuponovy_naramok2.jpg",
+			"/pages/entertainment/naramky/kuponovy_naramok1.webp",
+			"/pages/entertainment/naramky/kuponovy_naramok2.webp",
 		]
     }
 ];

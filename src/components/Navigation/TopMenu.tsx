@@ -18,7 +18,7 @@ const TopMenu: React.FC = () => {
     <div className="fixed z-50 top-0 left-0 w-full min-h-16 pt-2 md:h-20 text-white flex flex-col items-center bg-black/30 backdrop-blur-md px-6 md:px-12">
       <div className="flex flex-row w-full items-center">
 			<Link to='/'>
-				<img src="/logo.png" alt="Logo" className="h-12 md:h-16" />
+				<img src="/logo.webp" alt="Logo" className="h-12 md:h-16" />
 			</Link>
 		
 		{/* Mobile Menu Toggle */}
