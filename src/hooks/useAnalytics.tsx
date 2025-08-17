@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import ReactGA from "react-ga4";
 import { useLocation } from "react-router";
 
-const GA_MEASUREMENT_ID = "G-SYZHXQ9FMY"; // alebo z .env
+const GA_MEASUREMENT_ID = "G-SYZHXQ9FMY";
 
 export const useAnalytics = () => {
   const location = useLocation();
