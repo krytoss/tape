@@ -6,7 +6,7 @@ const Home: React.FC = () => {
 	return (
 		<Section id="home">
 			<AnimatedLogo />
-			<h1 id="home-title" className="absolute bottom-40 left-1/2 transform -translate-x-1/2 text-slate-700 text-3xl text-center font-bold">
+			<h1 id="home-title" className="absolute bottom-[5rem] left-1/2 transform -translate-x-1/2 text-slate-700 text-xl sm:text-2xl md:text-3xl  text-center font-bold">
 				Bezpečná identifikácia pre všetkých
 			</h1>
 			<ArrowDown />
