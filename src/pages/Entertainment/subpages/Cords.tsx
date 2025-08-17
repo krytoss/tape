@@ -53,7 +53,7 @@ const products = [
 	  description: [
 		"Kompostovateľné, recyklované PET a bambusové materiály",
 		"Rôzne šírky, doplnky a farebné prevedenia",
-		<>Viac informácií v kategórii <Link to="/zabava/eko" className="text-brand hover:underline">EKO produkty</Link></>
+		<>Viac informácií v kategórii <Link to="/zabava/eko-produkty" className="text-brand hover:underline">EKO produkty</Link></>
 	  ],
 	  image: [
 		"/pages/entertainment/snurky/snurky_eko1.webp",
