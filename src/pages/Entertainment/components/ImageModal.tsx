@@ -3,14 +3,16 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type Props = {
-  images: string[];
+  images?: string[];
   currentIndex: number;
+	hideIndex?: boolean;
+	children?: React.ReactNode;
   onClose: () => void;
   onNext: () => void;
   onPrev: () => void;
 };
 
-const ImageModal = ({ images, currentIndex, onClose, onNext, onPrev }: Props) => {
+const ImageModal = ({ images, currentIndex, onClose, onNext, onPrev, hideIndex = false, children }: Props) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -63,13 +65,13 @@ const ImageModal = ({ images, currentIndex, onClose, onNext, onPrev }: Props) =>
 	>
 		<div className="absolute top-0 left-0 w-full h-20 bg-black opacity-50 z-[999999]">
 			<div className="absolute top-5 left-1/2 -translate-x-1/2 text-white text-xl border-0 px-4 py-1 z-[99999]">
-				{currentIndex + 1} / {images.length}
+				{ !hideIndex && `${currentIndex + 1} / ${images?.length}` }
 			</div>
 			<button onClick={onClose} className="absolute top-5 right-5 text-white text-3xl border-0 px-4 py-1 hover:bg-gray-500">✕</button>
 		</div>
 		
 		{
-			images.length > 1 && 
+			images && images?.length > 1 && 
 			<div
 				onClick={(e) => {
 					e.stopPropagation()
@@ -82,18 +84,22 @@ const ImageModal = ({ images, currentIndex, onClose, onNext, onPrev }: Props) =>
 		}
 
 		<div
-      		className="relative flex items-center justify-center"
-      		onClick={(e) => e.stopPropagation()}
-    	>
-			<img
-				src={images[currentIndex]}
-				alt={`Obrázok: ${images[currentIndex]}`}
-				className="max-w-[calc(100vw-10rem)] max-h-[calc(100vh-15rem)] object-contain rounded shadow-2xl"
-			/>
-    	</div>
+			className={`relative flex items-center justify-center ${(children && !images) ? 'w-full h-full' : ''}`}
+			onClick={(e) => e.stopPropagation()}
+		>
+			{ images ? (
+				<img
+					src={images[currentIndex]}
+					alt={`Obrázok: ${images[currentIndex]}`}
+					className="max-w-[calc(100vw-10rem)] max-h-[calc(100vh-15rem)] object-contain rounded shadow-2xl"
+				/>
+			) : (
+				children
+			)}
+		</div>
 
 		{
-			images.length > 1 && 
+			images && images?.length > 1 && 
 			<div onClick={(e) => {
 				e.stopPropagation()
 				onNext()

@@ -13,6 +13,7 @@ type BasicProps = {
 		xl: number;
 	}
 	options?: ProductItem;
+	additionalContent?: React.ReactNode;
 }
 
 type ProductItem = {
@@ -41,7 +42,7 @@ type ProductsProps = BasicProps & (ProductGroup | ProductFlatList);
 
 const Subpage: React.FC<ProductsProps> = (props) => {
 
-	const { description, cols, options } = props;
+	const { description, cols, options, additionalContent } = props;
 	const withCategories = props.withCategories;
 
 	const sectionsRef = useRef<HTMLDivElement[]>([]);
@@ -142,6 +143,13 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 					/>
 				</div>
 			) }
+			{
+				additionalContent && (
+					<div className="px-6 mt-10">
+						{additionalContent}
+					</div>
+				)
+			}
 		</div>
 	  </>
 	);

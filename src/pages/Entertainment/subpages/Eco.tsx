@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import Subpage from "../components/subpages/Subpage";
+import { useEffect, useState } from "react";
+import ImageModal from "../components/ImageModal";
 
 const products = [
     {
@@ -50,10 +52,65 @@ const products = [
 
 const Eco: React.FC = () => {
 
+	const [ showPDF, setShowPDF ] = useState(false);
+	const handleClickBanner = (event: React.MouseEvent<HTMLAnchorElement>) => {
+		event.preventDefault();
+		setShowPDF(!showPDF);
+	};
+
+	const [size, setSize] = useState({ w: window.innerWidth, h: window.innerHeight });
+
+  useEffect(() => {
+    const onResize = () => setSize({ w: window.innerWidth, h: window.innerHeight });
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
   return (
-	<Subpage
-		products={products}
-	/>
+		<Subpage
+			products={products}
+			additionalContent={
+				<>
+					<a
+						href="#"
+						className="block w-4/5 h-auto m-auto mt-10"
+						onClick={handleClickBanner}
+					>
+						<img
+							src="/pages/entertainment/eko/banner.webp"
+							alt="EKO banner"
+							className="w-full"
+						/>
+					</a>
+					{
+						showPDF && (
+							<ImageModal
+								hideIndex={true}
+								currentIndex={0}
+								onClose={() => setShowPDF(false)}
+								onPrev={() => {}}
+								onNext={() => {}}
+							>
+								<div
+									className="flex h-[calc(100vh-5rem)] w-full mt-20 justify-center py-5 px-10"
+									onClick={() => setShowPDF(false)}
+								>
+									<div className="[aspect-ratio:210/325]">
+										<iframe
+											key={`${size.w}x${size.h}`}
+											src="/pages/entertainment/eko/eko.pdf#navpanes=0"
+											className="mx-auto max-w-[90vw] h-full border-0 [aspect-ratio:210/325]"
+											title="EKO PDF"
+											 onClick={(e) => e.stopPropagation()}
+										/>
+									</div>
+								</div>
+							</ImageModal>
+						)
+					}
+				</>
+			}
+		/>
   );
 };
 
