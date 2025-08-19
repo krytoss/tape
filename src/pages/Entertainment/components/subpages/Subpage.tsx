@@ -83,6 +83,13 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 	  <>
 		<ProductsNav />
 		<Breadcrumbs />
+			{
+				additionalContent && (
+					<div className="px-6">
+						{additionalContent}
+					</div>
+				)
+			}
 		<div className="relative w-full lg:w-4/5 m-auto h-full pt-20 pb-10 flex-1">
 			{
 				description &&
@@ -143,13 +150,6 @@ const Subpage: React.FC<ProductsProps> = (props) => {
 					/>
 				</div>
 			) }
-			{
-				additionalContent && (
-					<div className="px-6 mt-10">
-						{additionalContent}
-					</div>
-				)
-			}
 		</div>
 	  </>
 	);

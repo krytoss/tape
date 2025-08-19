@@ -73,7 +73,7 @@ const Eco: React.FC = () => {
 				<>
 					<a
 						href="#"
-						className="block w-4/5 h-auto m-auto mt-10"
+						className="block w-1/3 h-auto m-auto mt-10"
 						onClick={handleClickBanner}
 					>
 						<img
