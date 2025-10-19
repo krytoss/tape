@@ -59,10 +59,10 @@ const About: React.FC = () => {
 				</div>
 				<div ref={rightRef} className="py-40 h-full md:col-span-2 lg:col-span-1 py-10 px-20 lg:pl-10 lg:pr-40 justify-center items-center flex bg-gray-300 text-slate-700">
 					<div>
-						<span className="text-2xl block">
-							Spoločnosť <span className="text-3xl text-tape font-bold mx-1">TAPE</span>, s.r.o. pôsobí na trhu identifikácie osôb 20 rokov v rôznych formách.
+						<span className="tex block">
+							Spoločnosť <span className="text-lg text-tape font-bold mx-1">TAPE</span>, s.r.o. pôsobí na trhu identifikácie osôb 20 rokov v rôznych formách.
 						</span>
-						<p className="mt-3 mb-4 text-xl">
+						<p className="mt-3 mb-4">
 							Venujeme sa zvyšovaniu bezpečnosti v nemocniciach. Sme dodávateľom identifikačných náramkov pre pacientov, etikiet a ďalších produktov.
 							Ďalšou oblasťou je identifikácia zamestnancov, návštevníkov koncertov, festivalov, konferencií a rôznych podujatí.
 						</p>

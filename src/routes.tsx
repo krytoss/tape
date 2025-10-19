@@ -67,6 +67,7 @@ export const pages: Record<string, Page> = {
 			"snurky": {
 				component: Cords,
 				title: "Šnúrky na krk",
+				img: "/pages/entertainment/snurky/header.webp"
 			},
 			"eko-produkty": {
 				component: Eco,
