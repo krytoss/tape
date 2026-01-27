@@ -6,6 +6,7 @@ const DotMenu: React.FC = () => {
 		"home": "Home",
 		"offers": "Ponuka",
 		"about": "O nás",
+		"areas": "Oblasti",
 		"team": "Team",
 		/* "health": "Bezpečnosť v zdravotníctve",
 		"entertainment": "Zábava",

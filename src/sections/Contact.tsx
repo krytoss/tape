@@ -3,6 +3,7 @@ import Section from "../components/Layout/Section"
 import Title from "../components/Layout/Title"
 import Map from "../components/Map/Map"
 import Link from "../components/Navigation/Link"
+import { FaLinkedin } from "react-icons/fa"
 
 const Contact: React.FC = () => {
 
@@ -32,6 +33,9 @@ const Contact: React.FC = () => {
 								</Link><br/>
 								<Link to="tel:+421905945609" color="slate-500" className="transition transition-color hover:text-slate-800">
 									+421 905 945 609
+								</Link><br/>
+								<Link target="_blank" uppercase={false} to="https://www.linkedin.com/company/tapecompany/about/" color="slate-500" className="mt-2 flex shrink w-fit items-center transition transition-color hover:text-slate-800">
+									<FaLinkedin className="inline-block mr-1 text-[#2d64bc]" /> LinkedIn
 								</Link>
 							</p>
 						</div>

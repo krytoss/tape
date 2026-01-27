@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { gsap } from "gsap";
 import DotMenu from '../../components/Navigation/DotMenu';
 import Home from '../../sections/Home';
+import KeyAreas from '../../sections/KeyAreas';
 import About from '../../sections/About';
 import Team from '../../sections/Team';
 import { Observer } from 'gsap/all';
@@ -100,6 +101,7 @@ function HomePage() {
 		<Home />
 		<Offers />
 		<About />
+		<KeyAreas />
 		<Team />
 		<Contact />
 		<ContactForm />
