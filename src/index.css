@@ -90,3 +90,10 @@ button:focus-visible {
 .border-tape, .border-brand {
 	border-color: var(--tape-color)
 }
+
+.line-clamp-3 {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}

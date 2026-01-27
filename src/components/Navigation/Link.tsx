@@ -8,14 +8,15 @@ type Props = {
 	color?: string,
 	className?: string,
 	uppercase?: boolean
+	target?: string,
 }
 
-const TapeLink: React.FC<Props> = ({ to, color = "white", fullSize = false, children, center, uppercase = true, className }) => {
+const TapeLink: React.FC<Props> = ({ to, color = "white", target="_self", fullSize = false, children, center, uppercase = true, className }) => {
 
 	const colorClass = `text-${color}`;
 
 	return (
-		<Link to={to} className={`
+		<Link to={to} target={target} className={`
 			${colorClass} text-2xl font-semibold ${ uppercase ? "uppercase" : "" }
 			${fullSize ? "w-full h-full" : ""}
 			${center ? "flex items-center justify-center" : ""}
