@@ -22,7 +22,7 @@ const ProductCard: React.FC<Props> = ({ className, title, description, image, li
 			</div>
 		</div>
 		*/
-		<div className={`card relative group h-full overflow-hidden ${className ?? ""}`}>
+		<div className={`card relative group h-full overflow-hidden min-h-[33vh] ${className ?? ""}`}>
 			{
 				link && (
 					<Link to={link} className="absolute z-50 top-0 left-0 right-0 bottom-0" />
