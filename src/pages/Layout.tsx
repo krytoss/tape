@@ -24,16 +24,23 @@ const Layout: React.FC = () => {
 	const currentData = data[location.pathname] || { title: "Zábava", img: "/pages/entertainment/header.webp"};
 	const isSubpage = location.pathname.split("/").length > 2;
 
+  console.log("Subpage name", location.pathname.split("/")[2]);
+
+  const customClasses: Record<string, string | undefined> = {
+    "/zabava/snurky": 'w-[80vw] object-bottom'
+  }
+
 	return (
 		<>
 			<TopMenu />
 			<Header
 				className={`
-					h-[40vh] ${!isSubpage && 'xl:h-[80vh]'}
+					h-[55vh] ${!isSubpage && 'xl:h-[80vh]'}
 					relative z-20`
 				}
 				img={currentData.img}
 				hideBreadcrumbs={isSubpage}
+        customClasses={customClasses[location.pathname]}
 			>
 				<Cover>
 					<Title color="light" size="3xl text-center" className="pt-16 md:pt-20">

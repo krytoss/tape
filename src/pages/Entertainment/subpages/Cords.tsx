@@ -16,7 +16,6 @@ const products = [
 		"/pages/entertainment/snurky/snurky_sublimacne3.webp",
 		"/pages/entertainment/snurky/snurky_sublimacne4.webp",
 		"/pages/entertainment/snurky/snurky_sublimacne5.webp",
-		"/pages/entertainment/snurky/snurky_sublimacne6.webp",
 	  ]
 	},
 	{
