@@ -24,10 +24,10 @@ const Health: React.FC = () => {
 			<Section fullHeight={false} className="px-10 lg:px-20 xl:px-60 py-20 overflow-visible">
 				<div className="relative z-20">
 					<p>
-						<span className="text-3xl block font-semibold">
+						<span className="text-xl block">
 							V našej firme veríme, že bezpečnosť pacientov je na prvom mieste. Preto vám prinášame špičkové riešenia na identifikáciu a označovanie v zdravotníckych zariadeniach, ktoré zvyšujú úroveň starostlivosti a znižujú riziko chýb.
 						</span>
-						<span className="block text-2xl mt-5">
+						<span className="block text-xl mt-5">
 							Sme oficiálnym distribútorom spoločnosti <Link className="text-brand text-[1rem] !font-bold" to="https://www.pdcorp.com">PDC Precision Dynamics Corporation</Link> (patriaceho do skupiny Brady Corporation) pre Slovenskú republiku.
 							<br />Oficiálne vyhlásenie spoločnosti PDC (Brady) nájdete <a className="text-brand font-semibold" href="PDC_Vyhlasenie.pdf" target="_blank">TU</a>.
 						</span>

@@ -57,7 +57,7 @@ const About: React.FC = () => {
 						O nás
 					</Title>
 				</div>
-				<div ref={rightRef} className="py-40 h-full md:col-span-2 lg:col-span-1 py-10 px-20 lg:pl-10 lg:pr-40 justify-center items-center flex bg-gray-300 text-slate-700">
+				<div ref={rightRef} className="pt-40 pb-20 h-full md:col-span-2 lg:col-span-1 py-10 px-20 lg:pl-10 lg:pr-40 justify-center items-center flex flex-col justify-between bg-gray-300 text-slate-700">
 					<div>
 						<span className="tex block">
 							Spoločnosť <span className="text-lg text-tape font-bold mx-1">TAPE</span>, s.r.o. pôsobí na trhu identifikácie osôb 20 rokov v rôznych formách.
@@ -88,6 +88,10 @@ const About: React.FC = () => {
 							„Máme dlhoročné skúsenosti a množstvo spokojných zákazníkov.“
 						</p>
 					</div>
+          
+          <div className='flex justify-end items-end w-full'>
+            <img src="/pdc.webp" alt="PDC (Brady)" className="h-20 mt-20 w-auto opacity-80" />
+          </div>
 				</div>
 			</Grid>
 		</Section>

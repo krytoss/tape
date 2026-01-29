@@ -34,7 +34,7 @@ const ProductCard: React.FC<Props> = ({ className, title, description, image, li
 			</div>
 			<div className={`
 				card-content
-				text-center p-4
+				text-justify p-4
 				bg-brand text-white shadow-md
 				absolute z-40
 				left-1 right-1 xl:bottom-1
@@ -42,7 +42,7 @@ const ProductCard: React.FC<Props> = ({ className, title, description, image, li
 				transition-all duration-300
 				group-hover:block
 			`}>
-				<h3 className="text-xl font-semibold h-6">{title}</h3>
+				<h3 className="text-xl text-center font-semibold h-6">{title}</h3>
 				<p className="transition-all duration-[700ms] h-0 overflow-hidden group-hover:h-40 md:group-hover:h-44 xl:group-hover:h-50 xl:group-hover:mt-8 text-xs xl:text-sm flex flex-col justify-center items-center align-middle">
 					{description}
 				</p>

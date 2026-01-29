@@ -33,7 +33,7 @@ const ImageWithDescription: React.FC<Props> = ({
     </div>
 
     <div
-      className="absolute inset-0 bg-brand text-white flex items-center justify-center text-center p-4 opacity-0 
+      className="absolute inset-0 bg-brand text-white flex items-center justify-center text-justify p-4 opacity-0 
         group-hover:opacity-100 transition-opacity duration-300 z-20"
     >
       <p className="text-md font-semibold">{description}</p>

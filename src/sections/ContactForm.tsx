@@ -252,13 +252,6 @@ const ContactForm: React.FC = () => {
 					</Form>
 				</div>
 			</Grid>
-			<div className="w-full border-t border-slate-200 bg-white/80">
-				<div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-3 px-6 py-4 text-slate-6000">
-					<div className="flex items-center gap-3">
-						<img src="/pdc.webp" alt="PDC (Brady)" className="h-20 w-auto opacity-80" />
-					</div>
-				</div>
-			</div>
 		</Section>
 	)
 }
