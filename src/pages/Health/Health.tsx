@@ -184,10 +184,6 @@ const Health: React.FC = () => {
 							</Title>
 						</div>
 						<p className="mt-20 text-center text-xl font-bold">
-							<span className="font-semibold block">Potrebujete spoľahlivé označenie kože?</span>
-							<span className="block mt-1">
-								Objednajte popisovače Aspen™ pre váš operačný tím.
-							</span>
 							<a
 								href="#"
 								onClick={scrollToForm}
@@ -222,17 +218,10 @@ const Health: React.FC = () => {
 								<span className="font-semibold">Komplexné riešenie:</span> Každý popisovač obsahuje pravítko
 								pre presné meranie a plánovanie rezu priamo pred operáciou.
 							</li>
-							<li>
-								<span className="font-semibold">Minimálna objednávka:</span> 100 ks
-							</li>
 						</ul>
-						<a
-							href="#"
-							onClick={scrollToForm}
-							className="mt-6 inline-flex w-fit items-center justify-center rounded-full bg-brand px-5 py-2 text-base font-semibold text-white transition hover:bg-brand/90"
-						>
-							Objednať popisovače Aspen™
-						</a>
+						<p className="mt-5">
+              <span className="font-semibold">Minimálna objednávka:</span> 100ks
+            </p>
 						<div className="mt-12 h-80 inline-block object-cover object-bottom shadow-2xl overflow-visible bg-brand">
 							<div className="relative -top-3 left-3 h-full max-w-full bg-white shadow-2xl text-center">
 								<img src="./pages/health/popisovac.webp" alt="Popisovač Aspen" className="h-full w-auto inline-block object-contain"/>
