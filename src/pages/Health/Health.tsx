@@ -50,20 +50,21 @@ const Health: React.FC = () => {
 						<Title size="3xl" className="my-10">
 							Identifikačné náramky pre pacientov
 						</Title>
-						<p className="mb-5">
-							Identifikačné náramky pre pacientov poskytujú jasné a presné informácie o každom pacientovi. Vďaka nim zdravotnícky personál rýchlo a jednoducho identifikuje pacienta, čo zvyšuje bezpečnosť a efektivitu starostlivosti.
+						<h2 className="text-2xl font-semibold">
+							Certifikované identifikačné náramky pre pacientov a bezpečnosť v zdravotníctve
+						</h2>
+						<p className="mt-4">
+							Ponúkame široké portfólio produktov prispôsobených potrebám rôznych oddelení:
 						</p>
-						<p className="mb-5">
-							Dnes dokážeme v oblasti identifikácie uspokojiť akékoľvek požiadavky - riešenia na termálnu potlač (s čiarovým a QR kódom), popisovateľné náramky, náramky s vkladacím štítkom, náramky s prelepovacou fóliou, zabezpečujeme identifikáciu matiek a novorodencov aj náramky na TRIAGE.
-						</p>
-						<p className="mb-5">
-							Identifikačné náramky pre pacientov neobsahujú latex, ftaláty, sú antimikrobiálne a odolné proti alkoholu, vode, mydlu, dezinfekciám a taktiež väčšine kvapalín, ktoré sa v zdravotníctve používajú.
-						</p>
-						<p>
-							Ponúkame široké portfólio produktov v rôznych farbách, veľkostiach, materiáloch podľa individuálnych potrieb.
-						</p>
-						<p className="font-semibold mt-6 text-2xl">
-							Pre viac informácií nám zavolajte alebo <a className="text-brand" href="#" onClick={scrollToForm}>vyplňte kontaktný formulár</a>.
+						<a
+							href="#"
+							onClick={scrollToForm}
+							className="mt-6 inline-flex w-fit items-center justify-center rounded-full bg-brand px-5 py-2 text-base font-semibold text-white transition hover:bg-brand/90 text-center"
+						>
+							Konzultujte bezpečnosť vašich pacientov s nami
+						</a>
+						<p className="mt-6 italic text-slate-600">
+							„Našim riešeniam dôveruje väčšina slovenských nemocníc.“
 						</p>
 					</div>
 
@@ -74,17 +75,14 @@ const Health: React.FC = () => {
 								height="400px"
 								title="Na termálnu potlač/s čiarovým alebo QR kódom"
 								image="./pages/health/scanner.webp"
-								description="Identifikačné náramky pre pacientov, ktoré využívajú termotlač na zabezpečenie správnej identifikácie a bezpečnosti pacientov. Náramky majú za cieľ zlepšiť identifikáciu pacientov, komunikáciu a bezpečnosť pri operáciách a medikamentóznej liečbe.
-Vysoká kvalita tlače zaručuje spoľahlivé skenovanie čiarových a QR kódov.
-Náramky sú odolné voči svetlu, vlhkosti, čistiacim prostriedkom a tekutinám.
-Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie a neobsahuje latex. Majú antimikrobiálnu vrstvu, ktorá chráni povrch proti prenosu baktérií."
+								description="Ideálne riešenie pre digitalizované nemocnice. Náramky s čiarovým alebo QR kódom umožňujú okamžitý prístup k elektronickej zdravotnej dokumentácii, ako aj priradenie spotreby ŠZM a medikamentov ku konkrétnemu pacientovi. Vysoká kvalita tlače zabezpečuje bezproblémové skenovanie počas celej doby hospitalizácie."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Popisovateľné náramky"
 								image="./pages/health/popisovatelne.webp"
-								description="Popisovateľné náramky sú bezproblémovým riešením pre identifikáciu pacienta v akomkoľvek zdravotníckom zariadení! Pružné a všestranné popisovateľné  náramky sú ideálnou voľbou pre krátkodobé i dlhodobé príjmy pacientov. Jednoduchá manipulácia a možnosť rýchlej vizuálnej pozitívnej identifikácie je výhodou i pre špeciálne oddelenia ako je pohotovosť. Vyberte si zo širokej škály farieb."
+								description="Univerzálne riešenie pre oddelenia ako pohotovosť (triage) alebo krátkodobé príjmy. Ponúkame varianty s ochrannou prelepovacou fóliou, ktorá chráni rukou písané údaje pred rozmazaním a vlhkosťou."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
@@ -105,38 +103,44 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 								height="400px"
 								title="Pre matku a dieťa"
 								image="./pages/health/pre_matku_a_dieta.webp"
-								description="Identifikačné náramky v pôrodniciach pre matku a dieťa sú obľúbenou voľbou na trhu. Cieľom je zaistiť neomylnú identifikáciu matky, novorodenca, prípadne ďalších rodinných príslušníkov. Každý pár náramkov je označený jedinečným alfanumerickým kódom pre jednoduché spárovanie matky a dieťaťa. Sú umývateľné, ľahké, nemajú ostré hrany, vhodné pre kojencov aj citlivú pleť."
+								description="Špeciálne sety pre pôrodnice navrhnuté pre bezpečnú identifikáciu novorodencov. Každý set obsahuje náramky s unikátnym alfanumerickým kódom, ktorý zabezpečuje neomylné spárovanie matky a dieťaťa. Materiál je mimoriadne jemný k citlivej pokožke dojčiat."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Termálne tlačiarne"
 								image="./pages/health/termalne_tlaciarne.webp"
-								description="Zabezpečujeme dodávku tlačiarní pre termálnu potlač identifikačných náramkov aj etikiet.  Vyznačujú sa malými rozmermi. Sú praktické, čo umožňuje užívateľom jednoduchú manipuláciu s rolkami. Termálne tlačiarne TSC TDP-225W na identifikáciu pacientov používa mnoho nemocníc na Slovensku."
+								description="Overené riešenie pre potlač náramkov a etikiet v desiatkach slovenských nemocníc. Modely TSC TDP-225W a DH 220 a termálne tlačiarne Zebra vynikajú malými rozmermi, vysokou spoľahlivosťou, jednoduchou obsluhou a nenáročnou údržbou."
 							/>
 						</Grid>
 					</div>
 
 				</Grid>
 			</Section>
-			<Section fullHeight={false} className="bg-gray-300 min-h-screen py-10">
+			<Section fullHeight={false} className="bg-gray-300 min-h-screen py-20">
 				<Grid cols={1} colsXl={2} className="h-full">
 					<div className="order-2 xl:order-1 w-full h-full flex flex-col justify-center px-10">
 						<p className="mb-5">
-							Ponúkame špeciálne etikety na označovanie, ktoré zabezpečujú správne označenie a identifikáciu liekov a striekačiek.<br/>
-							Tieto etikety pomáhajú predchádzať omylom a zaisťujú, že každý pacient dostane správnu dávku a typ liečiva.
-						</p>
-						<p className="mb-5">
-							Sme dodávateľom  komplexného, uceleného systému etikiet, pričom farebné kódovanie vychádza z medzinárodných noriem.<br/>
-							<span className="font-semibold">Využitie</span>: operačné sály, OAIM, ostatné oddelenia, laboratória, lekárne, záchranky
+							Zabezpečte maximálnu bezpečnosť pacientov s naším uceleným systémom zdravotníckych etikiet. Naše riešenia pre identifikáciu liečiv pomáhajú eliminovať zámeny a zaisťujú presné dávkovanie na všetkých oddeleniach.
+              Využívame farebné kódovanie podľa medzinárodných noriem (ISO), ktoré umožňuje personálu okamžitú orientáciu aj v kritických situáciách.
 						</p>
 
-						<span className="block text-xl mb-2">Naše etikety sú:</span>
+						<h3 className="block text-xl mb-2 font-semibold">Široké využitie v zdravotníctve</h3>
+            <span className="block text-lg mt-1/2">
+              Naše etikety sú navrhnuté pre náročné podmienky v oblastiach:
+            </span>
 						<ul className="list-disc list-inside text-md">
-							<li>odolné proti rozmazaniu</li>
-							<li>odolné voči oderu a vode</li>
-							<li>majú jednoduché a pohodlné použitie</li>
-							<li>štandardné alebo na zákazku</li>
+							<li>Operačné sály a OAIM (anestéziologické etikety)</li>
+							<li>Laboratóriá a lekárne (presné značenie vzoriek a prípravkov)</li>
+							<li>Záchranné služby a urgentné príjmy</li>
+							<li>Lôžkové oddelenia nemocníc</li>
+						</ul>
+
+						<h3 className="block text-xl mb-2 font-semibold mt-2">Prečo si vybrať naše etikety na striekačky?</h3>
+						<ul className="list-disc list-inside text-md">
+							<li><span className="font-semibold">Vysoká odolnosť:</span> Odolné voči vode, oderu a rozmazaniu textu.</li>
+							<li><span className="font-semibold">Praktickosť:</span> Jednoduchá manipulácia a rýchle použitie priamo pri lôžku pacienta.</li>
+							<li><span className="font-semibold">Flexibilita:</span> Dodávame štandardizované sady alebo etikety na mieru podľa vašich špecifikácií.</li>
 						</ul>
 
 						<div className="mt-20 h-80 inline-block object-cover object-bottom shadow-2xl overflow-visible bg-brand">
@@ -148,15 +152,92 @@ Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie
 					<div className="order-1 xl:order-2 mb-20 xl:mb-0 w-full h-full text-slate-700 flex flex-col justify-center text-right relative">
 						
 						<div className="bg-brand ml-10 xl:ml-20 py-10 shadow-xl">
-							<Title color="light" size="2xl" sizeMd="4xl" sizeXl="6xl" size2Xl={"6xl"} className="border-r-8 border-slate-200 pr-6 mr-10">
-								Etikety na označovanie
+							<Title color="light" size="2xl" sizeMd="3xl" sizeXl="4xl" size2Xl={"5xl"} className="border-r-8 border-slate-200 pr-6 mr-10">
+								Profesionálne etikety na označovanie liekov a striekačiek
 							</Title>
 						</div>
 
-						<p className="mt-20 text-center text-2xl font-bold">
-							Katalóg predtlačených etikiet k dispozícii - <a className="text-brand uppercase" href="#" onClick={scrollToForm}>vyplňte formulár</a>
+						<p className="mt-20 text-center text-xl font-bold">
+              <span className='font-semibold block'>Zvýšte úroveň bezpečnosti vo vašom zariadení</span>
+							<span className='block mt-1'>
+                Potrebujete vzorky produktov alebo vypracovanie cenovej ponuky na mieru?
+              </span>
+              <a
+                href="#"
+                onClick={scrollToForm}
+                className="mt-6 inline-flex w-fit items-center justify-center rounded-full bg-brand px-5 py-2 text-base font-semibold text-white transition hover:bg-brand/90 text-center"
+              >
+                Kontaktujte nás
+              </a>
 						</p>
 
+					</div>
+				</Grid>
+			</Section>
+
+			<Section fullHeight={false} className="bg-[#f8f0e7] min-h-screen py-20">
+				<Grid cols={1} colsXl={2} className="h-full">
+					<div className="order-1 xl:order-1 mb-10 xl:mb-0 w-full h-full text-slate-700 flex flex-col justify-center text-left relative">
+						<div className="bg-brand mr-10 xl:mr-20 py-10 shadow-xl">
+							<Title color="light" size="2xl" sizeMd="3xl" sizeXl="4xl" size2Xl={"5xl"} className="border-l-8 border-slate-200 pl-6 ml-10">
+								Chirurgické popisovače Aspen™
+							</Title>
+						</div>
+						<p className="mt-20 text-center text-xl font-bold">
+							<span className="font-semibold block">Potrebujete spoľahlivé označenie kože?</span>
+							<span className="block mt-1">
+								Objednajte popisovače Aspen™ pre váš operačný tím.
+							</span>
+							<a
+								href="#"
+								onClick={scrollToForm}
+								className="mt-6 inline-flex w-fit items-center justify-center rounded-full bg-brand px-5 py-2 text-base font-semibold text-white transition hover:bg-brand/90 text-center"
+							>
+								Objednať popisovače Aspen™
+							</a>
+						</p>
+					</div>
+					<div className="order-2 xl:order-2 w-full h-full flex flex-col justify-center px-10">
+						<h2 className="text-2xl font-semibold text-slate-700">
+							Chirurgické popisovače kože Aspen™ pre precízne zákroky
+						</h2>
+						<p className="mt-4 text-slate-700">
+							Zabezpečte maximálnu presnosť pri každom chirurgickom výkone. Chirurgický popisovač Aspen™
+							je navrhnutý pre potreby všeobecnej aj plastickej chirurgie, dermatológie a všetkých zákrokov,
+							ktoré vyžadujú jasné a nezmazateľné označenie miesta rezu.
+						</p>
+						<h3 className="mt-8 text-xl font-semibold text-slate-700">
+							Hlavné výhody a vlastnosti popisovača:
+						</h3>
+						<ul className="mt-4 list-disc list-inside space-y-2 text-md text-slate-700">
+							<li>
+								<span className="font-semibold">Vysoká viditeľnosť:</span> Použitý atrament z genciánová violeť
+								zaručuje výbornú čitateľnosť na pokožke počas celého zákroku.
+							</li>
+							<li>
+								<span className="font-semibold">Maximálna hygiena a bezpečnosť:</span> Popisovače sú dodávané
+								v sterilnom balení a sú úplne bez obsahu latexu, čím eliminujú riziko alergických reakcií.
+							</li>
+							<li>
+								<span className="font-semibold">Komplexné riešenie:</span> Každý popisovač obsahuje pravítko
+								pre presné meranie a plánovanie rezu priamo pred operáciou.
+							</li>
+							<li>
+								<span className="font-semibold">Minimálna objednávka:</span> 100 ks
+							</li>
+						</ul>
+						<a
+							href="#"
+							onClick={scrollToForm}
+							className="mt-6 inline-flex w-fit items-center justify-center rounded-full bg-brand px-5 py-2 text-base font-semibold text-white transition hover:bg-brand/90"
+						>
+							Objednať popisovače Aspen™
+						</a>
+						<div className="mt-12 h-80 inline-block object-cover object-bottom shadow-2xl overflow-visible bg-brand">
+							<div className="relative -top-3 left-3 h-full max-w-full bg-white shadow-2xl text-center">
+								<img src="./pages/health/popisovac.webp" alt="Popisovač Aspen" className="h-full w-auto inline-block object-contain"/>
+							</div>
+						</div>
 					</div>
 				</Grid>
 			</Section>

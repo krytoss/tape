@@ -30,6 +30,7 @@ const products = [
 		"/pages/entertainment/tlaciarne/kod1.webp",
 		"/pages/entertainment/tlaciarne/kod2.webp",
 		"/pages/entertainment/tlaciarne/kod3.webp",
+		"/pages/entertainment/tlaciarne/kod4.webp",
 	  ]
 	}
 ];

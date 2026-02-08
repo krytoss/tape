@@ -101,7 +101,7 @@ const Product: React.FC<ProductProps> = ({ title, shortDescription, description,
           <img
 		  	src={images[0]}
 		  	alt={title}
-		  	className="max-w-full max-h-[350px] m-auto cursor-pointer"
+		  	className="max-w-full h-full max-h-[350px] m-auto cursor-pointer"
 		  	onClick={() => openModal(0)}
 		  />
         )}

@@ -35,15 +35,15 @@ const products = [
         image: [
 			"/pages/entertainment/rfid/RFID_silikony1.webp",
 			"/pages/entertainment/rfid/RFID_silikony2.webp",
-			"/pages/entertainment/rfid/RFID_silikony3.webp",
+			//"/pages/entertainment/rfid/RFID_silikony3.webp",
 			"/pages/entertainment/rfid/RFID_silikony4.webp",
 			"/pages/entertainment/rfid/RFID_silikony5.webp",
-			"/pages/entertainment/rfid/RFID_silikony6.webp",
+			/* "/pages/entertainment/rfid/RFID_silikony6.webp",
 			"/pages/entertainment/rfid/RFID_silikony7.webp",
 			"/pages/entertainment/rfid/RFID_silikony8.webp",
 			"/pages/entertainment/rfid/RFID_silikony9.webp",
 			"/pages/entertainment/rfid/RFID_silikony10.webp",
-			"/pages/entertainment/rfid/RFID_silikony11.webp",
+			"/pages/entertainment/rfid/RFID_silikony11.webp", */
 		]
     },
     {

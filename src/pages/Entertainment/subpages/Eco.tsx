@@ -17,6 +17,8 @@ const products = [
 			"/pages/entertainment/eko/eko_snurky1.webp",
 			"/pages/entertainment/eko/eko_snurky2.webp",
 			"/pages/entertainment/eko/eko_snurky3.webp",
+			"/pages/entertainment/eko/eko_snurky4.webp",
+			"/pages/entertainment/eko/eko_snurky5.webp",
 		]
     },
     {

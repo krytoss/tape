@@ -29,7 +29,7 @@ const products = [
         ],
         image: [
 			"/pages/entertainment/puzdra/pevne1.webp",
-			"/pages/entertainment/puzdra/pevne2.webp",
+			//"/pages/entertainment/puzdra/pevne2.webp",
 		]
       },
       {
@@ -88,7 +88,7 @@ const products = [
 			"/pages/entertainment/puzdra/vinyl_farebne1.webp",
 			"/pages/entertainment/puzdra/vinyl_farebne2.webp",
 			"/pages/entertainment/puzdra/vinyl_farebne3.webp",
-			"/pages/entertainment/puzdra/vinyl_farebne4.webp",
+			//"/pages/entertainment/puzdra/vinyl_farebne4.webp",
 		]
       },
       {
@@ -179,7 +179,7 @@ const products = [
         ],
         image: [
 			"/pages/entertainment/puzdra/roler_2_uchyty.webp",
-			"/pages/entertainment/puzdra/roler_2_uchyty_2.webp"
+			//"/pages/entertainment/puzdra/roler_2_uchyty_2.webp"
 		]
       },
       {
@@ -208,7 +208,7 @@ const products = [
         ],
         image: [
 			"/pages/entertainment/puzdra/visacka1.webp",
-			"/pages/entertainment/puzdra/visacka2.webp",
+			//"/pages/entertainment/puzdra/visacka2.webp",
 		]
       }
     ]
