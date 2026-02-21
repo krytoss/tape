@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { scrollToForm } from "../../App"
 import Cover from "../../components/Layout/Cover"
 import Grid from "../../components/Layout/Grid"
@@ -8,8 +9,30 @@ import Title from "../../components/Layout/Title"
 import Link from "../../components/Navigation/Link"
 import TopMenu from "../../components/Navigation/TopMenu"
 import ContactForm from "../../sections/ContactForm"
+import ImageModal from "../Entertainment/components/ImageModal"
 
 const Health: React.FC = () => {
+	const etiketyImages = [
+		"./pages/health/etikety/FOTO_zdravotnictvo_etikety (1).webp",
+		"./pages/health/etikety/FOTO_zdravotnictvo_etikety (2).webp",
+		"./pages/health/etikety/FOTO_zdravotnictvo_etikety (3).webp",
+		"./pages/health/etikety/FOTO_zdravotnictvo_etikety (6).webp",
+	]
+	const [isEtiketyOpen, setIsEtiketyOpen] = useState(false)
+	const [etiketyIndex, setEtiketyIndex] = useState(0)
+
+	const openEtiketyModal = (index: number) => {
+		setEtiketyIndex(index)
+		setIsEtiketyOpen(true)
+	}
+
+	const nextEtikety = () => {
+		setEtiketyIndex((prev) => (prev + 1) % etiketyImages.length)
+	}
+
+	const prevEtikety = () => {
+		setEtiketyIndex((prev) => (prev - 1 + etiketyImages.length) % etiketyImages.length)
+	}
 
 	return (
 		<>
@@ -47,15 +70,33 @@ const Health: React.FC = () => {
 				<Grid className="h-full" cols={1} cols2Xl={10}>
 
 					<div className="col-span-5 lg:col-span-3 text-slate-700 p-10 flex flex-col justify-center">
-						<Title size="3xl" className="my-10">
-							Identifikačné náramky pre pacientov
-						</Title>
 						<h2 className="text-2xl font-semibold">
 							Certifikované identifikačné náramky pre pacientov a bezpečnosť v zdravotníctve
 						</h2>
 						<p className="mt-4">
 							Ponúkame široké portfólio produktov prispôsobených potrebám rôznych oddelení:
 						</p>
+            <h3 className="text-xl mt-4 mb-1 font-semibold">1. Identifikačné náramky s termálnou potlačou</h3>
+            <p>
+              Ideálne riešenie pre digitalizované nemocnice. Náramky s čiarovým alebo QR kódom umožňujú okamžitý prístup k elektronickej zdravotnej dokumentácii, ako aj priradenie spotreby ŠZM a&nbsp;medikamentov ku konkrétnemu pacientovi.
+              Vysoká kvalita tlače zabezpečuje bezproblémové skenovanie počas celej doby hospitalizácie.
+            </p>
+
+            <h3 className="text-xl mt-4 mb-1 font-semibold">2. Náramky pre matku a dieťa</h3>
+            <p>
+              Špeciálne sety pre pôrodnice navrhnuté pre bezpečnú identifikáciu novorodencov. Každý set obsahuje náramky s unikátnym alfanumerickým kódom, ktorý zabezpečuje neomylné spárovanie matky a dieťaťa.
+              Materiál je mimoriadne jemný k citlivej pokožke dojčiat.
+            </p>
+
+            <h3 className="text-xl mt-4 mb-1 font-semibold">3. Popisovateľné náramky a náramky s vkladacím štítkom</h3>
+            <p>
+              Univerzálne riešenie pre oddelenia ako pohotovosť (triage) alebo krátkodobé príjmy. Ponúkame varianty s ochrannou prelepovacou fóliou, ktorá chráni rukou písané údaje pred rozmazaním a vlhkosťou.
+            </p>
+
+            <h3 className="text-xl mt-4 mb-1 font-semibold">4. Termálne tlačiarne</h3>
+            <p>
+              Overené riešenie pre potlač náramkov a etikiet v desiatkach slovenských nemocníc. Modely TSC TDP-225W a DH 220 a&nbsp;termálne tlačiarne Zebra vynikajú malými rozmermi, vysokou spoľahlivosťou, jednoduchou obsluhou a&nbsp;nenáročnou údržbou.
+            </p>
 						<a
 							href="#"
 							onClick={scrollToForm}
@@ -75,14 +116,17 @@ const Health: React.FC = () => {
 								height="400px"
 								title="Na termálnu potlač/s čiarovým alebo QR kódom"
 								image="./pages/health/scanner.webp"
-								description="Ideálne riešenie pre digitalizované nemocnice. Náramky s čiarovým alebo QR kódom umožňujú okamžitý prístup k elektronickej zdravotnej dokumentácii, ako aj priradenie spotreby ŠZM a medikamentov ku konkrétnemu pacientovi. Vysoká kvalita tlače zabezpečuje bezproblémové skenovanie počas celej doby hospitalizácie."
+								description="Identifikačné náramky pre pacientov, ktoré využívajú termotlač na zabezpečenie správnej identifikácie a bezpečnosti pacientov. Náramky majú za cieľ zlepšiť identifikáciu pacientov, komunikáciu a bezpečnosť pri operáciách a medikamentóznej liečbe.
+Vysoká kvalita tlače zaručuje spoľahlivé skenovanie čiarových a QR kódov.
+Náramky sú odolné voči svetlu, vlhkosti, čistiacim prostriedkom a tekutinám.
+Sú vyrobené z mäkkého, ľahkého materiálu, ktorý je príjemný na nosenie a neobsahuje latex. Majú antimikrobiálnu vrstvu, ktorá chráni povrch proti prenosu baktérií."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Popisovateľné náramky"
 								image="./pages/health/popisovatelne.webp"
-								description="Univerzálne riešenie pre oddelenia ako pohotovosť (triage) alebo krátkodobé príjmy. Ponúkame varianty s ochrannou prelepovacou fóliou, ktorá chráni rukou písané údaje pred rozmazaním a vlhkosťou."
+								description="Popisovateľné náramky sú bezproblémovým riešením pre identifikáciu pacienta v akomkoľvek zdravotníckom zariadení! Pružné a všestranné popisovateľné  náramky sú ideálnou voľbou pre krátkodobé i dlhodobé príjmy pacientov. Jednoduchá manipulácia a možnosť rýchlej vizuálnej pozitívnej identifikácie je výhodou i pre špeciálne oddelenia ako je pohotovosť. Vyberte si zo širokej škály farieb."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
@@ -103,14 +147,14 @@ const Health: React.FC = () => {
 								height="400px"
 								title="Pre matku a dieťa"
 								image="./pages/health/pre_matku_a_dieta.webp"
-								description="Špeciálne sety pre pôrodnice navrhnuté pre bezpečnú identifikáciu novorodencov. Každý set obsahuje náramky s unikátnym alfanumerickým kódom, ktorý zabezpečuje neomylné spárovanie matky a dieťaťa. Materiál je mimoriadne jemný k citlivej pokožke dojčiat."
+								description="Identifikačné náramky v pôrodniciach pre matku a dieťa sú obľúbenou voľbou na trhu. Cieľom je zaistiť neomylnú identifikáciu matky, novorodenca, prípadne ďalších rodinných príslušníkov. Každý pár náramkov je označený jedinečným alfanumerickým kódom pre jednoduché spárovanie matky a dieťaťa. Sú umývateľné, ľahké, nemajú ostré hrany, vhodné pre kojencov aj citlivú pleť."
 							/>
 							<ImageWithDescription
 								className="w-80 m-auto mb-10"
 								height="400px"
 								title="Termálne tlačiarne"
 								image="./pages/health/termalne_tlaciarne.webp"
-								description="Overené riešenie pre potlač náramkov a etikiet v desiatkach slovenských nemocníc. Modely TSC TDP-225W a DH 220 a termálne tlačiarne Zebra vynikajú malými rozmermi, vysokou spoľahlivosťou, jednoduchou obsluhou a nenáročnou údržbou."
+								description="Zabezpečujeme dodávku tlačiarní pre termálnu potlač identifikačných náramkov aj etikiet.  Vyznačujú sa malými rozmermi. Sú praktické, čo umožňuje užívateľom jednoduchú manipuláciu s rolkami. Termálne tlačiarne TSC TDP-225W na identifikáciu pacientov používa mnoho nemocníc na Slovensku."
 							/>
 						</Grid>
 					</div>
@@ -147,6 +191,22 @@ const Health: React.FC = () => {
 							<div className="relative -top-3 left-3 h-full max-w-full bg-white shadow-2xl text-center">
 							 	<img src="./pages/health/etikety.webp" alt="Etikety" className="h-full w-auto inline-block object-contain"/>
 							</div>
+						</div>
+						<div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
+							{etiketyImages.map((image, index) => (
+								<button
+									key={image}
+									type="button"
+									onClick={() => openEtiketyModal(index)}
+									className="h-24 sm:h-28 w-full rounded-md overflow-hidden shadow bg-white"
+								>
+									<img
+										src={image}
+										alt={`Etikety ${index + 1}`}
+										className="h-full w-full object-cover"
+									/>
+								</button>
+							))}
 						</div>
 					</div>
 					<div className="order-1 xl:order-2 mb-20 xl:mb-0 w-full h-full text-slate-700 flex flex-col justify-center text-right relative">
@@ -231,6 +291,16 @@ const Health: React.FC = () => {
 				</Grid>
 			</Section>
 			<ContactForm />
+
+			{isEtiketyOpen && (
+				<ImageModal
+					images={etiketyImages}
+					currentIndex={etiketyIndex}
+					onClose={() => setIsEtiketyOpen(false)}
+					onPrev={prevEtikety}
+					onNext={nextEtikety}
+				/>
+			)}
 		</>
 	)
 }
