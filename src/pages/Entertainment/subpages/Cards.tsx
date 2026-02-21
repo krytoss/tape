@@ -61,6 +61,9 @@ const products = [
 		"/pages/entertainment/karty/obaly_na_kartu_4.webp",
 		"/pages/entertainment/karty/obaly_na_kartu_5.webp",
 		"/pages/entertainment/karty/obaly_na_kartu_6.webp",
+		"/pages/entertainment/karty/obaly_na_kartu_7.webp",
+		"/pages/entertainment/karty/obaly_na_kartu_8.webp",
+		"/pages/entertainment/karty/obaly_na_kartu_9.webp",
 	  ]
 	},
 	{

@@ -48,6 +48,7 @@ const products = [
 			"/pages/entertainment/eko/eko_karty1.webp",
 			"/pages/entertainment/eko/eko_karty2.webp",
 			"/pages/entertainment/eko/eko_karty3.webp",
+			"/pages/entertainment/eko/eko_karty4.webp",
 		]
     }
 ];

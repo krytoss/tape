@@ -15,8 +15,6 @@ const products = [
 		"/pages/entertainment/silikonove_naramky/Silikon_potlac-1.webp",
 		"/pages/entertainment/silikonove_naramky/Silikon_potlac2-1.webp",
 		"/pages/entertainment/silikonove_naramky/Silikon_potlac3-1.webp",
-		"/pages/entertainment/silikonove_naramky/Silikon_potlac4-1.webp",
-		"/pages/entertainment/silikonove_naramky/Silikon_potlac5-1.webp",
 	  ]
 	},
 	{
@@ -49,6 +47,7 @@ const products = [
 		<>Viac informácií v kategórii <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link></>
 	  ],
 	  image: [
+		"/pages/entertainment/silikonove_naramky/rfid.webp",
 		"/pages/entertainment/silikonove_naramky/Silikon_RFID-1.webp",
 		"/pages/entertainment/silikonove_naramky/Silikon_RFID2-1.webp",
 		"/pages/entertainment/silikonove_naramky/Silikon_RFID3-1.webp",

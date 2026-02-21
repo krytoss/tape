@@ -30,7 +30,6 @@ const products = [
 		"/pages/entertainment/snurky/snurky_sietotlac1.webp",
 		"/pages/entertainment/snurky/snurky_sietotlac2.webp",
 		"/pages/entertainment/snurky/snurky_sietotlac3.webp",
-		"/pages/entertainment/snurky/snurky_sietotlac4.webp",
 	  ]
 	},
 	{
@@ -59,6 +58,7 @@ const products = [
 		"/pages/entertainment/snurky/snurky_eko2.webp",
 		"/pages/entertainment/snurky/snurky_eko3.webp",
 		"/pages/entertainment/snurky/snurky_eko4.webp",
+		"/pages/entertainment/snurky/snurky_eko5.webp",
 	  ]
 	},
 	{

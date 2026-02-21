@@ -15,6 +15,7 @@ const products = [
 			"/pages/entertainment/latkove_naramky/vysivany3.webp",
 			"/pages/entertainment/latkove_naramky/vysivany4.webp",
 			"/pages/entertainment/latkove_naramky/vysivany5.webp",
+			"/pages/entertainment/latkove_naramky/vysivany6.webp",
 		]
 	},
 	{
@@ -28,6 +29,7 @@ const products = [
 			"/pages/entertainment/latkove_naramky/saten.webp",
 			"/pages/entertainment/latkove_naramky/saten2.webp",
 			"/pages/entertainment/latkove_naramky/saten3.webp",
+			"/pages/entertainment/latkove_naramky/saten4.webp",
 		]
 	},
 	{
@@ -38,7 +40,12 @@ const products = [
 			"Rôzne materiály a veľkosti",
 			<>Viac informácií v kategórii <Link to="/zabava/rfid" className="text-brand hover:underline">RFID</Link></>
 		],
-		image: "/pages/entertainment/latkove_naramky/rfid.webp"
+		image: [
+      "/pages/entertainment/latkove_naramky/rfid.webp",
+      "/pages/entertainment/latkove_naramky/rfid2.webp",
+      "/pages/entertainment/latkove_naramky/rfid3.webp",
+      "/pages/entertainment/latkove_naramky/rfid4.webp"
+    ]
 	},
 	{
 		title: "Látkové náramky s QR kódom",
@@ -57,7 +64,10 @@ const products = [
 			"Jednorazové alebo opakované použitie",
 			<>Viac informácií v kategórii <Link to="/zabava/eko-produkty" className="text-brand hover:underline">EKO PRODUKTY</Link></>
 		],
-		image: "/pages/entertainment/latkove_naramky/eko.webp"
+		image: [
+      "/pages/entertainment/latkove_naramky/eko.webp",
+      "/pages/entertainment/latkove_naramky/eko2.webp",
+    ]
 	}
 ];
 

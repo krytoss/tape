@@ -72,6 +72,7 @@ export const pages: Record<string, Page> = {
 			"eko-produkty": {
 				component: Eco,
 				title: "EKO produkty",
+        img: "/pages/entertainment/eko/header.webp"
 			},
 			"rfid": {
 				component: Rfid,
